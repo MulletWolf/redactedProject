@@ -694,11 +694,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: b746dfbf-3729-4d4e-9d7f-0f3066565f53
+  cloudProjectId: 464ba04f-3f08-4710-8ef5-8076697562ee
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: GameProject
-  organizationId: diana-ogualiri
+  projectName: redactedProject
+  organizationId: oluwatunmise-adegbola
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
