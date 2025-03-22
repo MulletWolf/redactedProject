@@ -16,6 +16,7 @@ public class ProgressBar2 : MonoBehaviour
     public int currentProgress;
     public float fillAmount;
     public Image fillmask;
+    //public UnlockPainting unlocked;
     public List<int> puzzleProgress = new List<int>();
    // public int puzzleIndex = 0;
     
@@ -56,6 +57,7 @@ public class ProgressBar2 : MonoBehaviour
             inventory.AddItem(itemData);
             currentProgress -= maxProgress;//restart progress to 0
             UpdateProgress();
+            //unlocked.Unlock();
             Debug.Log("Item added to inventory"+itemData.name);
             
         }
