@@ -1,23 +1,33 @@
 using System.Collections.Generic;
 using System.Net.Mime;
+using Narrative;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
 
 
-public class ProgressBar2 : MonoBehaviour
+public class ProgressBar : MonoBehaviour
 {
-
+    
+    //used to control the progress
+    //item is added to inventory when 
+    //painting unlocked once tasks are completed
+    //i use trask tracker now not gem data
+    //scratch this use task tracker
+    
+    //ONLY FOR UPDATING PROGRESSBAR NOTHING ELSE 
+   
     public Inventory inventory;
+    
 
-    public InventoryItem item;
+  
     public ItemData itemData;
     public int maxProgress;
     public int currentProgress;
     public float fillAmount;
     public Image fillmask;
     //public UnlockPainting unlocked;
-    public List<int> puzzleProgress = new List<int>();
+  //  public List<int> puzzleProgress = new List<int>();
    // public int puzzleIndex = 0;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,8 +39,9 @@ public class ProgressBar2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+       
+
+
         //current progress--is the count
         //each puuzzleIndex is the index inside puzzleProgress list
         //every time a gem is clicked the puzzelprogres sincreases
@@ -58,10 +69,14 @@ public class ProgressBar2 : MonoBehaviour
             currentProgress -= maxProgress;//restart progress to 0
             UpdateProgress();
             //unlocked.Unlock();
+           // unlockableItem.UnlockItem("Painting");//unlock painting
+            
             Debug.Log("Item added to inventory"+itemData.name);
             
         }
     }
+
+ 
 
     // public void SetProgress()
     // {

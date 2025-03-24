@@ -15,7 +15,13 @@ public class TaskTracker : MonoBehaviour
     public Slider progressBar;
     public Text taskListText;
 
-    private int completedTasks = 0;
+  //  private int completedTasks = 0;
+    
+    public int completedTasks = 0;
+
+    
+    
+    
 
     void Start()
     {
@@ -30,6 +36,16 @@ public class TaskTracker : MonoBehaviour
             completedTasks++;
             UpdateUI();
         }
+    }
+
+    public int getTasks()
+    {
+        return completedTasks;
+    }
+
+    public void setTassk(int completedTask)
+    {
+        completedTasks = completedTask;
     }
 
     void UpdateUI()
