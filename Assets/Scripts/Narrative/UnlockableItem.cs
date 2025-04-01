@@ -1,8 +1,14 @@
+using UnityEngine;
+
+
 namespace Narrative
 {
-    public class UnlockableItem
+    [CreateAssetMenu(fileName = "NewUnlockable", menuName = "ScriptableObjects/Unlockable/CiphersAndPaintings")]
+    public class UnlockableItem: ScriptableObject
     {
+        
         public string itemName;
         public bool isUnlocked;
     }
+    
 }

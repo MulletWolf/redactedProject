@@ -14,6 +14,7 @@ public class TaskTracker : MonoBehaviour
     public List<Task> tasks = new List<Task>();
     public Slider progressBar;
     public Text taskListText;
+    public Inventory inventory;
 
   //  private int completedTasks = 0;
     
@@ -43,7 +44,7 @@ public class TaskTracker : MonoBehaviour
         return completedTasks;
     }
 
-    public void setTassk(int completedTask)
+    public void setTasks(int completedTask)
     {
         completedTasks = completedTask;
     }

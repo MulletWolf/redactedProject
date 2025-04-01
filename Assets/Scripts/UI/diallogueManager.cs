@@ -1,7 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class DialogueSystem : MonoBehaviour
     public bool isGlitchEnabled = false;
 
     private string currentDialogue;
-    private bool isTyping = false;
+    //private bool isTyping = false;
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class DialogueSystem : MonoBehaviour
 
     IEnumerator TypeText()
     {
-        isTyping = true;
+        //isTyping = true;
         dialogueText.text = "";
 
         foreach (char letter in currentDialogue)
@@ -48,7 +48,7 @@ public class DialogueSystem : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(textSpeed);
         }
-        isTyping = false;
+     //   isTyping = false;
     }
 
     public void EnableGlitchEffect(bool enable)

@@ -18,10 +18,10 @@ public class ProgressBar : MonoBehaviour
     //ONLY FOR UPDATING PROGRESSBAR NOTHING ELSE 
    
     public Inventory inventory;
-    
+    public TaskTracker taskTracker;
 
   
-    public ItemData itemData;
+   // public ItemData itemData;
     public int maxProgress;
     public int currentProgress;
     public float fillAmount;
@@ -29,6 +29,7 @@ public class ProgressBar : MonoBehaviour
     //public UnlockPainting unlocked;
   //  public List<int> puzzleProgress = new List<int>();
    // public int puzzleIndex = 0;
+   public UnlockableItem itemData;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -65,13 +66,13 @@ public class ProgressBar : MonoBehaviour
             //every time the progressbar is fulll user can enter painting
             //so put the progressbar.Add() at the end of each puzzle 
             //set sizefor max progress
-            inventory.AddItem(itemData);
+            inventory.AddItem(itemData);//adding itemData into inventory
             currentProgress -= maxProgress;//restart progress to 0
             UpdateProgress();
             //unlocked.Unlock();
            // unlockableItem.UnlockItem("Painting");//unlock painting
             
-            Debug.Log("Item added to inventory"+itemData.name);
+            Debug.Log("Item added to inventory"+itemData.itemName);
             
         }
     }

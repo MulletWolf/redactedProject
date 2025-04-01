@@ -6,23 +6,33 @@ using UnityEngine;
 //using UnityEngine.Rendering;
 using UnityEngine.EventSystems;
 using Microsoft.Unity.VisualStudio.Editor;
+using Narrative;
 using UnityEngine.Rendering.Universal;
 [Serializable]
-public class Gem : MonoBehaviour
+public class ClickItem: MonoBehaviour
 {
- /*public static event HandleGemCollected OnGemCollected;
- 
- 
- 
+ /*public static event HandleGemCollected OnGemCollected; 
  public delegate void HandleGemCollected(ItemData itemData);*/
-  public ItemData itemData;
+ 
+ enum ClickBehaviour
+ {
+   None,
+   OpenScene,
+   ShowPicture
+ } 
+ 
+  public UnlockableItem itemData;
   public Inventory inventory;
   SpriteRenderer myRenderer;
   Color origcolour;
-  public ProgressBar2 progressBar;
+  public ProgressBar progressBar;
+  
+  ClickBehaviour clickBehaviour = ClickBehaviour.None;
   
   void Start(){
   GameObject inventoryObj = GameObject.FindWithTag("Inventory");
+    myRenderer=GetComponent<SpriteRenderer>();
+    origcolour=myRenderer.material.color;
   if(inventoryObj!=null){
     inventory = inventoryObj.GetComponent<Inventory>();
     if (inventory==null)
@@ -32,11 +42,10 @@ public class Gem : MonoBehaviour
 
   }
   else{
-    Debug.Log("Inventory found");
+    Debug.Log("Inventory not found");
 
   }
-    myRenderer=GetComponent<SpriteRenderer>();
-    origcolour=myRenderer.material.color;
+  
 
 }
   public void Update(){
@@ -56,7 +65,7 @@ public class Gem : MonoBehaviour
   //          
   //       }
   //   }
-    public void Raycasting()
+    public void Raycasting()//use all this for when clicking objects  and what happens when u do
     {
         
         
@@ -68,7 +77,7 @@ public class Gem : MonoBehaviour
         if(hit.collider!=null){
             Debug.Log(hit.collider.gameObject.name +"was hit!");
 
-            if( hit.transform.gameObject == gameObject )
+            if( hit.transform.gameObject == gameObject )//and this what happens when u clcik an object
             {
               //
               // if (progressBar != null)
@@ -83,23 +92,29 @@ public class Gem : MonoBehaviour
               //
             // // myRenderer.material.color=Color.red;
          //   OnGemCollected?.Invoke(gemData);//allows other place sto use gemDatat
-             /// inventory.Add(itemData);
+              inventory.AddItem(itemData);
+              Debug.Log("inventory added to inventory"+itemData.name);
+              ;
              
-             progressBar.AddProgress();
-               Destroy(gameObject);
+             progressBar.AddProgress();//use this for each tasks
+             Debug.Log("added to inventory"+itemData.name);
+              Destroy(gameObject);
+              Debug.Log("Gameobject destroyed"+itemData.name);
+              // return true;
             }
         }
         else{
              Debug.Log("No item hit");
+             
         }
-
+//return false;
 
     }
-    public void OnMouseEnter(){
+    public void OnMouseEnter(){//when u click mouse what happens
       myRenderer.material.color=Color.red;
 
     }
-    public void OnMouseExit(){
+    public void OnMouseExit(){ //remove mouse what happens
       myRenderer.material.color=origcolour;
 
     }

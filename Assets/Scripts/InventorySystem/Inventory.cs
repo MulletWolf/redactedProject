@@ -1,12 +1,17 @@
 using System.Collections.Generic;
+using Narrative;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
-{
+{ 
+    //public List<InventoryItem> inventory=new List<InventoryItem>();
     public List<InventoryItem> inventory=new List<InventoryItem>();
+    
     public InventoryItem inventoryItem;
-    public ItemData itemData;
+   // public ItemData itemdata;
+    public Unlockable unlockable;
+    public UnlockableItem itemData;
     
     
 
@@ -21,32 +26,37 @@ public class Inventory : MonoBehaviour
         Gem.OnGemCollected-=Add;
     }*/
 
-    public void AddItem(ItemData itemdata){//focusing on
+    public void AddItem(UnlockableItem itemdata){//focusing on
         bool itemisFound=false;
        // InventoryItem newItem= new InventoryItem(itemData);
        // InventoryItem newItem= new InventoryItem(itemData);
         
+       
         foreach(var item in inventory){
             //if item existed increase quantity
-            if(item.itemData==itemData){
+            
+            //if item existed increase quantity
+            if(item.itemData==itemdata){
                 itemisFound=true;
                 item.IncreaseQuantity();//same thing increase quantity
                 //continue;
-            // itemisFound=true;
-            Debug.Log( itemdata.itemName + "increased to: " + item.quantity);
+                // itemisFound=true;
+                Debug.Log( itemdata.itemName + "increased to: " + item.quantity);
 
                 break;
 
-            }
         }
-        if(!itemisFound){//if it doesnt create new inventory object  and add it to it
+        //if item didnt exist before
+        
          InventoryItem newItem= new InventoryItem(itemData);
+//UnlockableItem unlockableItem = new UnlockableItem();
        //sse from constructor
         inventory.Add(newItem);
         Debug.Log("Added " + itemdata.itemName + " to inventory.");
 
 
         }
+    
 
        // int numberOfItemsCarried = inventory.Count; // number of items we have picked up
  //   InventoryItem currentItem = inventory[2];//index 2 of inventoru

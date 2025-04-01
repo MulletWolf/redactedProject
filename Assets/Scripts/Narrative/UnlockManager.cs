@@ -9,6 +9,7 @@ namespace Narrative
         public Unlockable unlockableData; 
      //   public ProgressBar progressBar;
         public ProgressManager progressManager;
+        public UnlockManager instance;
        
 
         
@@ -16,7 +17,7 @@ namespace Narrative
             {
                 if (progressManager == null || progressManager.progressBar == null)///if reference is empty
                 {
-                    Debug.LogError("ProgressManager or ProgressBar is not assigned in UnlockManager!");
+                   /// Debug.LogError("ProgressManager or ProgressBar is not assigned in UnlockManager!");
                     return; // Exit if there's an issue with the progress manager.
                 }
 
@@ -40,6 +41,7 @@ namespace Narrative
             if (progressManager.progressBar.currentProgress>=progressManager.progressBar.maxProgress&&!unlockableData.IsUnlocked(itemName))///and not already unlocked then
             {
                 unlockableData.UnlockItem(itemName);//make itemname unlocked
+                
                 SaveUnlockData();
             }
         }

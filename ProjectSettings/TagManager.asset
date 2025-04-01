@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Inventory
+  - gem
   layers:
   - Default
   - TransparentFX
