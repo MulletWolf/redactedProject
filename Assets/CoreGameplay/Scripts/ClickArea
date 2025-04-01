@@ -1,0 +1,46 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ClickArea : MonoBehaviour
+{
+public float xMin, xMax, yMin, yMax;
+public GameObject messageUI;
+public string message = "Door Closed";
+private bool isShowing = false;
+
+void Start()
+{
+messageUI.SetActive(false);
+}
+
+void Update()
+{
+if (Input.GetMouseButtonDown(0))
+{
+Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+if (mousePosition.x >= xMin && mousePosition.x <= xMax &&
+mousePosition.y >= yMin && mousePosition.y <= yMax)
+{
+ShowMessage();
+}
+}
+}
+
+void ShowMessage()
+{
+if (!isShowing)
+{
+messageUI.SetActive(true);
+messageUI.GetComponent<Text>().text = message;
+isShowing = true;
+Invoke("HideMessage", 2f);
+}
+}
+
+void HideMessage()
+{
+messageUI.SetActive(false);
+isShowing = false;
+}
+}
