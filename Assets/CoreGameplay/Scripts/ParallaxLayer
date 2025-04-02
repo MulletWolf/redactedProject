@@ -1,0 +1,19 @@
+// attach this script as a component to every single parallax layer && set values so that background layers are positively 
+//- increasing in value and the foreground elements are negatively-decreasing values 
+
+using UnityEngine;
+ 
+[ExecuteInEditMode]
+public class ParallaxLayer : MonoBehaviour
+{
+    public float parallaxFactor;
+ 
+    public void Move(float delta)
+    {
+        Vector3 newPos = transform.localPosition;
+        newPos.x -= delta * parallaxFactor;
+ 
+        transform.localPosition = newPos;
+    }
+ 
+}
