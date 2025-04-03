@@ -23,6 +23,7 @@ using UnityEngine.UI;
 
         //   public Slider progressBar;
         public int currentSceneIndex = 0;
+        public bool isdebug = true;
 
         private void Awake()
         {
@@ -41,23 +42,31 @@ using UnityEngine.UI;
 
         void Update()
         {
+            if (isdebug)
+            {
+                Debug.Log("debug mode activates,sceneloading cancelld");
+
+            }
+            else
+            {
             
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 // currentSceneIndex ++;
-               
+
                 Debug.Log("Space pressed! Loading next scene...");
                 StartCoroutine(LoadSceneAsync());
             }
-            
-           /* if (Input.GetKeyDown(KeyCode.Space))
-            {
-                transition.SetTrigger("End");
-                Debug.Log($"Loading: {scenes[currentSceneIndex]}"); // Verify in Console
-                SceneManager.LoadScene(scenes[currentSceneIndex]);
-                currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
-                transition.SetTrigger("Start");
-            }*/
+        }
+        /* if (Input.GetKeyDown(KeyCode.Space))
+         {
+             transition.SetTrigger("End");
+             Debug.Log($"Loading: {scenes[currentSceneIndex]}"); // Verify in Console
+             SceneManager.LoadScene(scenes[currentSceneIndex]);
+             currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
+             transition.SetTrigger("Start");
+         }*/
         }
         
 

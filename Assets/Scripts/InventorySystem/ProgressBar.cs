@@ -30,6 +30,7 @@ public class ProgressBar : MonoBehaviour
   //  public List<int> puzzleProgress = new List<int>();
    // public int puzzleIndex = 0;
    public UnlockableItem itemData;
+   public InventoryItem newItem;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -57,22 +58,35 @@ public class ProgressBar : MonoBehaviour
         //puzzleProgress[0] first puzzle
         //puzzleProgress[1]-- 2nd puzzle ecetra
         //do i need to say puzzleIndex when , its my chouice to say i orpuzzleIndex
-        maxProgress = 7;
+        maxProgress = 3;
 
         currentProgress++;
+        if (currentProgress<maxProgress)
+        {
+            //every time the progressbar is fulll user can enter painting
+            //so put the progressbar.Add() at the end of each puzzle 
+            //set sizefor max progress
+            inventory.inventory.Add(newItem);//adding itemData into inventory
+            
+            //unlocked.Unlock();
+            // unlockableItem.UnlockItem("Painting");//unlock painting
+            
+            Debug.Log("Item added to inventory"+itemData.itemName);
+            
+        }
 
         if (currentProgress>=maxProgress)
         {
             //every time the progressbar is fulll user can enter painting
             //so put the progressbar.Add() at the end of each puzzle 
             //set sizefor max progress
-            inventory.AddItem(itemData);//adding itemData into inventory
-            currentProgress -= maxProgress;//restart progress to 0
+            //inventory.AddItem(itemData);//adding itemData into inventory
+            currentProgress=currentProgress/maxProgress;//restart progress to 0
             UpdateProgress();
             //unlocked.Unlock();
            // unlockableItem.UnlockItem("Painting");//unlock painting
             
-            Debug.Log("Item added to inventory"+itemData.itemName);
+           // Debug.Log("Item added to inventory"+itemData.itemName);
             
         }
     }

@@ -36,13 +36,15 @@ namespace Narrative
 
    }
 
-   public void UnlockItem(string itemName) //unlockingitem when ....
+   public bool UnlockItem(string itemName) //unlockingitem when ....
    {
        if (itemDictionary.TryGetValue(itemName, out var item) && !item.isUnlocked)
        {
-           item.isUnlocked = true;
+         return  item.isUnlocked = true;
            //  Debug.Log($"{itemName} has been unlocked!");
        }
+
+       return false;
    }
 
    public bool IsUnlocked(string itemName) //if isUnlocked==true then 

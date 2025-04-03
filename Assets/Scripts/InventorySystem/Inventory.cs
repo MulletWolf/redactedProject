@@ -8,9 +8,9 @@ public class Inventory : MonoBehaviour
     //public List<InventoryItem> inventory=new List<InventoryItem>();
     public List<InventoryItem> inventory=new List<InventoryItem>();
     
-    public InventoryItem inventoryItem;
+    //public InventoryItem inventoryItem;
    // public ItemData itemdata;
-    public Unlockable unlockable;
+   // public Unlockable unlockable;
     public UnlockableItem itemData;
     
     
@@ -25,29 +25,32 @@ public class Inventory : MonoBehaviour
      private void OnDisable(){
         Gem.OnGemCollected-=Add;
     }*/
-
+bool itemisFound=false;
+       //
     public void AddItem(UnlockableItem itemdata){//focusing on
-        bool itemisFound=false;
+         //InventoryItem newItem= new InventoryItem(itemData);
        // InventoryItem newItem= new InventoryItem(itemData);
-       // InventoryItem newItem= new InventoryItem(itemData);
-        
        
-        foreach(var item in inventory){
-            //if item existed increase quantity
-            
-            //if item existed increase quantity
-            if(item.itemData==itemdata){
-                itemisFound=true;
-                item.IncreaseQuantity();//same thing increase quantity
-                //continue;
-                // itemisFound=true;
-                Debug.Log( itemdata.itemName + "increased to: " + item.quantity);
+       foreach (var item in inventory)
+       {
+           //if item existed increase quantity
 
-                break;
+           //if item existed increase quantity
+           if (item.itemData == itemdata)
+           {
+               itemisFound = true;
+               item.IncreaseQuantity(); //same thing increase quantity
+               //continue;
+               // itemisFound=true;
+               Debug.Log(itemdata.itemName + "increased to: " + item.quantity);
 
-        }
-        //if item didnt exist before
-        
+               break;
+
+           }
+       }
+
+       //if item didnt exist before
+        if(!itemisFound){
          InventoryItem newItem= new InventoryItem(itemData);
 //UnlockableItem unlockableItem = new UnlockableItem();
        //sse from constructor
@@ -63,7 +66,7 @@ public class Inventory : MonoBehaviour
 //this is for showing 1 item at a time using a 1 box 
 //press left or right to go up/dowm
     }
-     public void Remove(ItemData itemdata){
+     public void Remove(UnlockableItem itemdata){
 
         foreach(var item in inventory){
           

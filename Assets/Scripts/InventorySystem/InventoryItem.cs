@@ -14,7 +14,7 @@ public class InventoryItem
    public int quantity;
 
    public InventoryItem(UnlockableItem item){
-    this.itemData=item;
+    itemData=item;
     IncreaseQuantity();
     //inventory inventory =ne inventory(); it takes in itemdata 
 

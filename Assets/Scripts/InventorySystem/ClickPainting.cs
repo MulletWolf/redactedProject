@@ -12,6 +12,7 @@ namespace InventorySystem
     public Unlockable unlockable;
     Color origcolour;
     //public ProgressBar progressBar;
+    private bool debug = true;
 
     void Start()
     {
@@ -23,12 +24,22 @@ namespace InventorySystem
 
     public void Update()
     {
+      if (debug)
+      {
+        Debug.Log("Debugging");
+       // return;
+      }
+      else
+      {
+      
+
       if (Input.GetMouseButtonDown(0))
       {
         ClickP("");
 
       }
     }
+  }
     
     public bool ClickP(string itemName) //use all this for when clicking objects  and what happens when u do
     {
@@ -51,7 +62,7 @@ namespace InventorySystem
             //  PaintingClick(item);
             Debug.Log("Painting"+item.itemName);
               return itemName.Contains("Painting");
-              Debug.Log("Painting");
+              //Debug.Log("Painting");
               
 
             }

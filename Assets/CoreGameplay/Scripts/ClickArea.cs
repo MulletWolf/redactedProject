@@ -22,7 +22,7 @@ Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 if (mousePosition.x >= xMin && mousePosition.x <= xMax &&
 mousePosition.y >= yMin && mousePosition.y <= yMax)
 {
-ShowMessage();
+//ShowMessage();
 }
 }
 }
