@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Net.Mime;
+using InventorySystem;
 using Narrative;
 using NUnit.Framework;
 using UnityEngine;
@@ -31,6 +32,7 @@ public class ProgressBar : MonoBehaviour
    // public int puzzleIndex = 0;
    public UnlockableItem itemData;
    public InventoryItem newItem;
+   ProgressManager progressManager;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -66,12 +68,12 @@ public class ProgressBar : MonoBehaviour
             //every time the progressbar is fulll user can enter painting
             //so put the progressbar.Add() at the end of each puzzle 
             //set sizefor max progress
-            inventory.inventory.Add(newItem);//adding itemData into inventory
+            //inventory.inventory.Add(newItem);//adding itemData into inventory
             
             //unlocked.Unlock();
             // unlockableItem.UnlockItem("Painting");//unlock painting
             
-            Debug.Log("Item added to inventory"+itemData.itemName);
+           // Debug.Log("Item added to inventory"+itemData.itemName);
             
         }
 
@@ -81,8 +83,11 @@ public class ProgressBar : MonoBehaviour
             //so put the progressbar.Add() at the end of each puzzle 
             //set sizefor max progress
             //inventory.AddItem(itemData);//adding itemData into inventory
-            currentProgress=currentProgress/maxProgress;//restart progress to 0
-            UpdateProgress();
+            currentProgress=currentProgress%maxProgress;//restart progress to 0
+          //  UpdateProgress();
+          
+            Debug.Log("ProgressBar full");
+            
             //unlocked.Unlock();
            // unlockableItem.UnlockItem("Painting");//unlock painting
             

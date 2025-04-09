@@ -4,126 +4,54 @@ using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
-{ 
+{
     //public List<InventoryItem> inventory=new List<InventoryItem>();
-    public List<InventoryItem> inventory=new List<InventoryItem>();
-    
+    public List<UnlockableItem> items = new List<UnlockableItem>();
+
     //public InventoryItem inventoryItem;
-   // public ItemData itemdata;
-   // public Unlockable unlockable;
-    public UnlockableItem itemData;
-    
-    
+    // public ItemData itemdata;
+    // public Unlockable unlockable;
+    //public UnlockableItem newItem;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
+    }
+
+
+    public void AddItem(UnlockableItem newItem)
+    {
+        //focusing on
+        
+        //if lsit already ahs an item then add item
+
+        if (!items.Contains(newItem))
+        {
+            items.Add(newItem);
+            Debug.Log(newItem + "Added mto inventory yayy");
+            Debug.Log($"Added {newItem}";
+        }
+        else
+        {
+            Debug.Log($"[Inventory] {newItem.itemName} already exists in inventory");
+        }
+
+    }
+
+    public void Remove(UnlockableItem newItem)
+    {
+        if (items.Contains(newItem))
+        {
+            items.Remove(newItem);
+            Debug.Log(newItem + "Removed from inventory");
+        }
 
         
-    
-    //public Dictionary<ItemData,InventoryItem> itemDictionary=new Dictionary<ItemData,InventoryItem>();
 
-   /* private void OnEnable(){
-        Gem.OnGemCollected+=Add;
-    }
-     private void OnDisable(){
-        Gem.OnGemCollected-=Add;
-    }*/
-bool itemisFound=false;
-       //
-    public void AddItem(UnlockableItem itemdata){//focusing on
-         //InventoryItem newItem= new InventoryItem(itemData);
-       // InventoryItem newItem= new InventoryItem(itemData);
-       
-       foreach (var item in inventory)
-       {
-           //if item existed increase quantity
-
-           //if item existed increase quantity
-           if (item.itemData == itemdata)
-           {
-               itemisFound = true;
-               item.IncreaseQuantity(); //same thing increase quantity
-               //continue;
-               // itemisFound=true;
-               Debug.Log(itemdata.itemName + "increased to: " + item.quantity);
-
-               break;
-
-           }
-       }
-
-       //if item didnt exist before
-        if(!itemisFound){
-         InventoryItem newItem= new InventoryItem(itemData);
-//UnlockableItem unlockableItem = new UnlockableItem();
-       //sse from constructor
-        inventory.Add(newItem);
-        Debug.Log("Added " + itemdata.itemName + " to inventory.");
-
-
-        }
-    
-
-       // int numberOfItemsCarried = inventory.Count; // number of items we have picked up
- //   InventoryItem currentItem = inventory[2];//index 2 of inventoru
-//this is for showing 1 item at a time using a 1 box 
-//press left or right to go up/dowm
-    }
-     public void Remove(UnlockableItem itemdata){
-
-        foreach(var item in inventory){
-          
-            if(item.itemData==itemdata){//item=i  =itemdata[i]
-                item.DecreaseQuantity();//same thing remove quantity
-                //continue;
-            
-             Debug.Log(itemData+"removed from iventory at "+item.itemData);
-              
-             if(item.quantity==0)
-             {
-                 inventory.Remove(item);
-                 Debug.Log("Removed " + itemdata.itemName + " from inventory. Total: " + item.quantity);
-
-             }
-             else
-             {
-                 Debug.Log(itemdata.itemName+"decreased to "+item.quantity);
-             }
-
-        }
-    
-       
-
-        }
 
     }
-
-
-
-    /*   public void Add(ItemData itemData){
-     if(itemDictionary.TryGetValue(itemData,out  InventoryItem item)){
-            item.toAdd();
-            Debug.Log(item.itemData.itemName+"stack is "+item);
-
-        }else{
-            InventoryItem newItem=new InventoryItem(itemData);
-            inventory.Add(newItem);
-            itemDictionary.Add(itemData,newItem);
-              Debug.Log("Added "+ itemData.itemName+" to inventory for first time");
-
-
-          
-
-        }
-
-    }*/
-   /* public void Remove(ItemData itemData){
-        if(itemDictionary.TryGetValue(itemData,out  InventoryItem item)){
-            item.toRemove();
-            if(item.quantity==0){
-                inventory.Remove(item);
-                itemDictionary.Remove(itemData);
-
-            }
-
-        }
-
-    }*/
 }
+
+
+
+   

@@ -3,27 +3,29 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //using System.Linq;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
-//namespace Scenes
+namespace Scenes{
 //{// transition.SetTrigger("Start");
 
     public class LevelManager : MonoBehaviour
     {
-        public static LevelManager instance;
+        private static LevelManager instance;
         //public GameObject transitionsContainer;
         //  private SceneTransition[] transitions;
         public string[] scenes = { "towerScene", "DoorFocus",  "Fall_Transition", "BlackScreen", "Main_Menu", "MainRoom", "Gallery" ,"Banquet","Library","Courtroom"};
-        public float fadeDuration = 2f;
+        public float fadeDuration = 1f;
        // public AsyncOperation asyncload;
        public CrossFade crossFade;
 
        // public SceneTransition transition;
+       
      //   public Animator transition;
 
         //   public Slider progressBar;
-        public int currentSceneIndex = 0;
+        public int currentSceneIndex = 0; 
         public bool isdebug = true;
+       // int currentSceneIndex = 0;
 
         private void Awake()
         {
@@ -42,43 +44,44 @@ using UnityEngine.UI;
 
         void Update()
         {
-            if (isdebug)
-            {
-                Debug.Log("debug mode activates,sceneloading cancelld");
+            // if (isdebug)
+            // {
+            //     //Debug.Log("debug mode activates,sceneloading cancelld");
+            //
+            // }
+            // else
+            // {
 
-            }
-            else
-            {
+
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    // currentSceneIndex ++;
+
+                    Debug.Log("Space pressed! Loading next scene...");
+                    StartCoroutine(LoadSceneAsync());
+                }
             
+            /* if (Input.GetKeyDown(KeyCode.Space))
+             {
+                 transition.SetTrigger("End");
+                 Debug.Log($"Loading: {scenes[currentSceneIndex]}"); // Verify in Console
+                 SceneManager.LoadScene(scenes[currentSceneIndex]);
+                 currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
+                 transition.SetTrigger("Start");
+             }*/
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                // currentSceneIndex ++;
 
-                Debug.Log("Space pressed! Loading next scene...");
-                StartCoroutine(LoadSceneAsync());
-            }
+
+            /*  private IEnumerator Transition()
+               {
+
+                //   transition.SetTrigger("End");
+                   yield return StartCoroutine(LoadSceneAsync());
+                   //   crossFade.FaidIn();
+                 //   transition.SetTrigger("Start");
+               }*/
+
         }
-        /* if (Input.GetKeyDown(KeyCode.Space))
-         {
-             transition.SetTrigger("End");
-             Debug.Log($"Loading: {scenes[currentSceneIndex]}"); // Verify in Console
-             SceneManager.LoadScene(scenes[currentSceneIndex]);
-             currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
-             transition.SetTrigger("Start");
-         }*/
-        }
-        
-
-     /*  private IEnumerator Transition()
-        {
-          
-         //   transition.SetTrigger("End");
-            yield return StartCoroutine(LoadSceneAsync());
-            //   crossFade.FaidIn();
-          //   transition.SetTrigger("Start");
-        }*/
-
 
         private IEnumerator LoadSceneAsync()
             {
@@ -92,8 +95,8 @@ using UnityEngine.UI;
             //    yield return  StartCoroutine(crossFade.FadeOut());
                currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
 
-           Debug.Log("Fade Out");
-          //yield return new WaitForSeconds(fadeDuration);
+          // Debug.Log("Fade Out");
+          yield return new WaitForSeconds(fadeDuration);
           // currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
                 string sceneName = scenes[currentSceneIndex];
                 Debug.Log("Loading next scene..."+sceneName);
@@ -118,4 +121,4 @@ using UnityEngine.UI;
 
             }
         }
-   // }//
+   }

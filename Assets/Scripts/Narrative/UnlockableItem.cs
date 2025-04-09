@@ -9,6 +9,7 @@ namespace Narrative
         
         public string itemName;
         public bool isUnlocked;
+        
     }
     
 }

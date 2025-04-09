@@ -9,7 +9,7 @@ namespace Narrative
         public Unlockable unlockableData; 
      //   public ProgressBar progressBar;
         public ProgressManager progressManager;
-        public UnlockManager instance;
+      //a  public UnlockManager instance;
        
 
         
@@ -20,30 +20,43 @@ namespace Narrative
                    /// Debug.LogError("ProgressManager or ProgressBar is not assigned in UnlockManager!");
                     return; // Exit if there's an issue with the progress manager.
                 }
+             
 
                 
             
 
            // UnlockItem(itemName:unlockableData.name);
-            LoadUnlockData();
+           // LoadUnlockData();
             
             
         }
+
+           
         public void UnlockItem(string itemName)
         {
-            if (unlockableData == null)
+         
+         // Debug.Log(unlockableData.name + " is locked");
+      //   unlockableData.SetUnlockItem("Painting1");
+         
+            if (progressManager.isProgressFull&&!unlockableData.IsUnlocked(itemName))///and not already unlocked then
             {
-                Debug.LogError("Unlockable Data is NOT assigned in UnlockManager!");
-                return; // Prevent further execution if `unlockableData` is missing.
-            }
-
-          //  int currentProgress = 0;
-            if (progressManager.progressBar.currentProgress>=progressManager.progressBar.maxProgress&&!unlockableData.IsUnlocked(itemName))///and not already unlocked then
-            {
-                unlockableData.UnlockItem(itemName);//make itemname unlocked
+               if (!unlockableData.IsUnlocked(itemName))
+               {
+                   Debug.Log($"[Unlock] {itemName} is locked (Progress: {progressManager.progressBar.currentProgress}/{progressManager.progressBar.maxProgress})"); 
+                   // More context helps debugging
+               }
+                unlockableData.SetUnlockItem(itemName);//make itemname unlocked
+               // Debug.Log("Unlocked item: " + itemName);
+                Debug.Log($"[Unlock] {itemName} unlocked (Progress: {progressManager.progressBar.currentProgress}/{progressManager.progressBar.maxProgress})");
                 
                 SaveUnlockData();
             }
+           /* else
+            {
+                Debug.Log($"[Unlock] {itemName} is locked (Progress: {progressManager.progressBar.currentProgress}/{progressManager.progressBar.maxProgress})"); 
+            }
+*/
+            
         }
 
         public bool CheckUnlockStatus(string itemName) => unlockableData.IsUnlocked(itemName);

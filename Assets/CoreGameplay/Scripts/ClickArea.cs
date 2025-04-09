@@ -15,7 +15,7 @@ messageUI.SetActive(false);
 
 void Update()
 {
-if (Input.GetMouseButtonDown(0))
+/*if (Input.GetMouseButtonDown(0))
 {
 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -25,6 +25,7 @@ mousePosition.y >= yMin && mousePosition.y <= yMax)
 //ShowMessage();
 }
 }
+*/
 }
 
 void ShowMessage()

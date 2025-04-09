@@ -1,13 +1,12 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+
+using InventorySystem;
+
 using UnityEngine;
 //using UnityEngine.Rendering;
-using UnityEngine.EventSystems;
-using Microsoft.Unity.VisualStudio.Editor;
+
 using Narrative;
-using UnityEngine.Rendering.Universal;
+
 [Serializable]
 public class ClickItem: MonoBehaviour
 {
@@ -21,22 +20,37 @@ public class ClickItem: MonoBehaviour
    ShowPicture
  } 
  */
-  public UnlockableItem itemData;
-  public Inventory inventory;
-  SpriteRenderer myRenderer;
-  Color origcolour;
-  public ProgressBar progressBar;
-  public Unlockable unlockable;
+ public UnlockableItem itemData;
+ 
+ /* SpriteRenderer myRenderer;
+  Color origcolour;*/
+  
+ //  public GameObject Cipher1;
+   // public GameObject Cipher2;
+   // public GameObject Cipher3;
+//  public GameObject GetCipher1() => Cipher1; 
+  
+  [SerializeField] private Inventory inventory;
+  [SerializeField] private ProgressBar progressBar;
+  [SerializeField] private Unlockable unlockable;
+  [SerializeField] private ProgressManager progressManager;
+
   
 
-  //private bool clickedbefore;
+  //l clickedbefore;
   public bool wasClicked;
   /*ClickBehaviour clickBehaviour = ClickBehaviour.None;*/
   
   void Start(){
- ;
-    myRenderer=GetComponent<SpriteRenderer>();
-    origcolour=myRenderer.material.color;
+
+   /* if (Cipher1!=null)
+    {
+       myRenderer = Cipher1.GetComponent<SpriteRenderer>();
+       // myRenderer = Cipher2.GetComponent<SpriteRenderer>();
+       // myRenderer = Cipher3.GetComponent<SpriteRenderer>();
+    }
+*/
+   //origcolour=myRenderer.color;
   if(inventory!=null){
     inventory = inventory.GetComponent<Inventory>();
     if (inventory==null)
@@ -67,27 +81,23 @@ public class ClickItem: MonoBehaviour
 
 
 
-    if (Input.GetMouseButtonDown(0))
+   /* if (Input.GetMouseButtonDown(0))
     {
-      
+
       // OnItemClick();
       //Raycasting();
-       Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.up*0.01f);
 
-      if (hit.collider != null && hit.collider.gameObject == gameObject)
-        {
-          Debug.Log($"{gameObject.name} was clicked!");
-          wasClicked = true;
-          //OnItemClick(hit.collider.gameObject.name);
-          OnItemClick("");
-        }
-      }
+      Debug.Log($"{gameObject.name} was clicked!");
+      wasClicked = true;
+      //OnItemClick(hit.collider.gameObject.name);
+      OnItemClick(gameObject.name);
 
-    
+
+//
+    }*/
+   //OnItemClick(gameObject.name);
 
   }
-
 
   // private void OnTriggerEnter2D(Collider2D other)
   //   {
@@ -99,69 +109,81 @@ public class ClickItem: MonoBehaviour
   //       }
 
 
-  public bool OnItemClick(string itemName)
+  public string OnItemClick(string itemName)
   {
-    bool isPainting = false;
-    bool isCipher = false;
+   
 
     if (unlockable == null)
     {
       Debug.Log("Unlockable null");
-      return false;
+     // return false;
+     return null;
     }
 
+   
+
+      if (gameObject.name.Contains("cherry"))
+      {
+        Debug.Log($"Progress Bar currentprogress :  {progressBar.currentProgress}, ");
+        Debug.Log($"{itemName} is {gameObject.name}");
+        progressBar.AddProgress();
+        Debug.Log($"Progress Bar increased cherry {progressBar.currentProgress}, ");
+        Destroy(gameObject);
+        //return false;
+        return "cherry";
+
+      }
+      //wait time here
+    
     foreach (var item in unlockable.items)
     {
-      Debug.Log($"Comparing {item.itemName} with {gameObject.name}");
+      //Debug.Log($"Comparing {item.itemName} with {gameObject.name}");
       if (item.itemName == itemName)
       {
         
-        Debug.Log($"Item {gameObject.name} clicked, it matches {item.itemName}");
-        if (inventory != null)
-        {
-          inventory.AddItem(itemData);
-          Debug.Log($"Clicked and added  {gameObject.name}, to inventory" + itemData.name);
-        }
-
-        if (progressBar != null)
-        {
-          progressBar.AddProgress();
-          Debug.Log($"Progress Bar increased  {progressBar.currentProgress}, ");
-
-        }
-
-        myRenderer.material.color = Color.green;
-        // Debug.Log($"GameObject destroyed  {gameObject.name}, " + itemData.name);
-        // Destroy(gameObject, 0.5f);
-
-        if (item.itemName.Contains("Painting"))
-        {
-          isPainting = true;
-          Debug.Log($"Item {gameObject.name} contains the unlockable item {item.itemName}");
-        }
-
-        if (item.itemName.Contains("Cipher"))
-        {
-          isCipher = true;
-          Debug.Log($"Item {gameObject.name} contains  the unlockable item  {item.itemName}");
-        }
-
+        //Debug.Log($"Item {gameObject.name} clicked, it matches {item.itemName}");
+      
+       
+          if (item.itemName.Contains("Cipher"))
+          {
+              // ProgressManager.CheckProgressAndUnlock(item.itemName);
+              // progressManager.HandleUnlockablesProgress(item.itemName, item.itemName);
+             progressManager.CheckProgressAndUnlock(item.itemName);
+             inventory.AddItem(itemData);
+              Debug.Log($"Item {gameObject.name}is added to the inventory ");
+               //isCipher = true;
+               //  Debug.Log($"Item {gameObject.name} contains  the unlockable item  {item.itemName}");
+             return item.itemName;
+         }
+          /*
+            if (item.itemName.Contains("Painting"))
+                  {
+                   // ProgressManager.UnlockScene();
+                    progressManager.CheckProgressAndUnlock(itemName);
+                   // isPainting = true;
+                    Debug.Log($"Item {gameObject.name} contains the unlockable item {item.itemName}");
+                    return item.itemName; 
+                  }
+*/
     
         //   }
-        Debug.Log($"GameObject destroyed  {gameObject.name}, " + itemData.name);
-        Destroy(gameObject, 0.5f);
+       // Debug.Log($"GameObject destroyed  {gameObject.name}, " + itemData.name);
+        //   Destroy(gameObject, 0.5f);
 
-       return isPainting || isCipher; //returns ispainting or iscipher
+         // return isPainting || isCipher; //returns ispainting or iscipher
 
       }
     }
-    Debug.Log("No match found");
+   // Debug.Log("No match found");
 
-    return false;
+    return null;
   }
 
   
   //ignore the raycasting
+  
+  /*
+  
   public void Raycasting()
     {
 
@@ -187,23 +209,14 @@ public class ClickItem: MonoBehaviour
 
               if (inventory != null)
               {
-                inventory.AddItem(itemData);
-
-                Debug.Log($"Item : {itemData.itemName}, added to inv");
-                // Destroy(gameObject);
-                // Debug.Log($"GameObject : {gameObject.name}, destroyed");
+             
               }
 
 
-              if (progressBar != null)
-              {
-                progressBar.AddProgress();
-                Debug.Log($"Progress Bar increased  {progressBar.currentProgress}, ");
-
-              }
+              
 
 
-              myRenderer.material.color = Color.green;
+             
               Destroy(gameObject);
               Debug.Log($"GameObject : {gameObject.name}, destroyed");
               if (item.itemName.Contains("Painting"))
@@ -214,44 +227,36 @@ public class ClickItem: MonoBehaviour
 
               if (item.itemName.Contains("Cipher"))
               {
-                //  isCipher=true;
+               
                 Debug.Log($"Item {gameObject.name} contains {item.itemName}");
               }
 
-              //
-              // // myRenderer.material.color=Color.red;
-              //   OnGemCollected?.Invoke(gemData);//allows other place sto use gemDatat
-
-
-
-
-              // Debug.Log($"ProgressBar : {itemData.itemName}, added to inv");
-              //   Destroy(gameObject);
+         
             }
 
             //Debug.Log("no itemmmmm hittt");
-          }
-
-         
-      }
- else{
-         Debug.Log("No item hit");
         }
       }
+      else{
+            Debug.Log("No item hit"); 
+      }
+   }
      
                
-    
-
-    public void OnMouseEnter(){//when u click mouse what happens
-      myRenderer.color=Color.red;
+  */  
+  
+    public void OnMouseDown(){//when u click mouse what happens
+     // myRenderer.color=Color.red;
+     OnItemClick(gameObject.name);
 
     }
+    /*
     public void OnMouseExit(){ //remove mouse what happens
       myRenderer.color=origcolour;
 
     }
     
- 
+ */
  
    
 }
