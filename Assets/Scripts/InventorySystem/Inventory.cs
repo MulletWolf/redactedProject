@@ -29,7 +29,7 @@ public class Inventory : MonoBehaviour
         {
             items.Add(newItem);
             Debug.Log(newItem + "Added mto inventory yayy");
-            Debug.Log($"Added {newItem}";
+            Debug.Log($"Added {newItem}");
         }
         else
         {

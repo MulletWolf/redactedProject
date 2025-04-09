@@ -149,8 +149,8 @@ public class ClickItem: MonoBehaviour
               // ProgressManager.CheckProgressAndUnlock(item.itemName);
               // progressManager.HandleUnlockablesProgress(item.itemName, item.itemName);
              progressManager.CheckProgressAndUnlock(item.itemName);
-             inventory.AddItem(itemData);
-              Debug.Log($"Item {gameObject.name}is added to the inventory ");
+             // inventory.AddItem(itemData);
+             //  Debug.Log($"Item {gameObject.name}is added to the inventory ");
                //isCipher = true;
                //  Debug.Log($"Item {gameObject.name} contains  the unlockable item  {item.itemName}");
              return item.itemName;
