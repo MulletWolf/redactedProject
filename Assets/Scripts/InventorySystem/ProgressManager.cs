@@ -72,27 +72,29 @@ namespace InventorySystem
         public bool CheckProgressAndUnlock(string itemName)
         {
            // unlockable.SetUnlockItem("Painting1") ;//automatically makes Painting1 unlocked
+           string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
            if (!isProgressFull)
            {
-              
-               unlockable.LockItems();
+               //Debug.Log($"[Unlock] {itemName} is locked (Progress: {progress})"); 
+               //unlockable.LockItems();
+              // Debug.Log($"[Unlock] {itemName} is locked (Progress: {progress})"); 
+               Debug.Log($"[Progrss] {itemName} -Progresss uncomplete{progress}");
+               
+               return true;
            }
-           
-           
-            
-
-
-
-            if (isProgressFull&&!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
+            if (unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
             {
                 //prevents same thing being unlocked
                // Debug.Log(itemName +" is locked ");
-                unlockManager.UnlockItem(itemName);//unlock item
+               //Debug.Log(unlockable.name + " has already been  unlocked");
+                
                 //Debug.Log(itemName + "has become unlocked ");
                 return true;
-            }
+                    //unlockManager.UnlockItem(itemName);
+            } Debug.Log("Unlocking "+itemName);
+            unlockManager.UnlockItem(itemName);//unlock item
 
-            return false;
+            return true;
 
         }
 
@@ -159,8 +161,8 @@ namespace InventorySystem
 
 
                 // Check for unlockables for each scene
-                case 4: // Lab → Unlock Cipher1 → Painting2
-                    HandleUnlockablesProgress("Cipher1", "Painting2");
+                case 5: // Lab → Unlock Cipher1 → Painting2
+                    HandleUnlockablesProgress("Cipher1", "Painting1");
                     break;
                 case 8: // Library → Unlock Cipher2 → Painting3
                     HandleUnlockablesProgress("Cipher2", "Painting3");
@@ -172,6 +174,7 @@ namespace InventorySystem
 
             }
         }
+        public void SceneSwitch(string sceneName)
 
         public void HandleUnlockablesProgress(string cipherName, string paintingName)
         {
@@ -184,14 +187,14 @@ namespace InventorySystem
             {
                  CheckProgressAndUnlock(cipherName);
             
-            CheckProgressAndUnlock(paintingName);
+           CheckProgressAndUnlock(paintingName);
 
             if (clickItem.OnItemClick(paintingName).Contains("Painting"))//if painting is clicked then go to gallery which is scene 6
               {
                   
                   //here is the options dialogue enter scene yes or no
                   
-                 UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[5]);
+                 UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
                   Debug.Log($"{paintingName} is clicked goes to gallery.");
               }
 

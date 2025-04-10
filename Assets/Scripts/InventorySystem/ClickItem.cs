@@ -20,7 +20,7 @@ public class ClickItem: MonoBehaviour
    ShowPicture
  } 
  */
- public UnlockableItem itemData;
+ //public UnlockableItem itemData;
  
  /* SpriteRenderer myRenderer;
   Color origcolour;*/
@@ -34,11 +34,13 @@ public class ClickItem: MonoBehaviour
   [SerializeField] private ProgressBar progressBar;
   [SerializeField] private Unlockable unlockable;
   [SerializeField] private ProgressManager progressManager;
+  [SerializeField] private UnlockManager unlockManager;
+  
 
   
 
   //l clickedbefore;
-  public bool wasClicked;
+  //public bool wasClicked;
   /*ClickBehaviour clickBehaviour = ClickBehaviour.None;*/
   
   void Start(){
@@ -77,7 +79,7 @@ public class ClickItem: MonoBehaviour
 
   public void Update()
   {
-    if (wasClicked) return;
+   // if (wasClicked) return;
 
 
 
@@ -111,6 +113,7 @@ public class ClickItem: MonoBehaviour
 
   public string OnItemClick(string itemName)
   {
+    string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
    
 
     if (unlockable == null)
@@ -122,7 +125,7 @@ public class ClickItem: MonoBehaviour
 
    
 
-      if (gameObject.name.Contains("cherry"))
+      if (itemName.Contains("cherry"))
       {
         Debug.Log($"Progress Bar currentprogress :  {progressBar.currentProgress}, ");
         Debug.Log($"{itemName} is {gameObject.name}");
@@ -144,29 +147,73 @@ public class ClickItem: MonoBehaviour
         //Debug.Log($"Item {gameObject.name} clicked, it matches {item.itemName}");
       
        
-          if (item.itemName.Contains("Cipher"))
+          if (item.itemName=="Cipher1")
           {
+           // string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
               // ProgressManager.CheckProgressAndUnlock(item.itemName);
               // progressManager.HandleUnlockablesProgress(item.itemName, item.itemName);
-             progressManager.CheckProgressAndUnlock(item.itemName);
+              if (progressBar.currentProgress < progressBar.maxProgress)
+              {
+                
+                ShowLockedVisual();
+                Debug.Log($" item {itemName} is locked {progress}");
+                //return item.itemName;
+
+
+              }
+              else if (unlockable.IsUnlocked(("Cipher1")))
+              {
+                Debug.Log($"item {itemName} is already  unlocked {progress}");
+                //return "Cipher1";
+              }
+              else
+              {
+                unlockManager.UnlockItem("Cipher1");
+                ShowUnlockedVisual();
+                Debug.Log($"item {itemName} is unlocked {progress}");
+                inventory.AddItem(item);
+                Debug.Log(itemName+"item added to inventory");
+                Destroy(gameObject);
+                return item.itemName;
+               
+              
+              }
+            //  progressManager.CheckProgressAndUnlock(item.itemName);
              // inventory.AddItem(itemData);
+           //  unlockManager.UnlockItem(itemName);
              //  Debug.Log($"Item {gameObject.name}is added to the inventory ");
                //isCipher = true;
                //  Debug.Log($"Item {gameObject.name} contains  the unlockable item  {item.itemName}");
-             return item.itemName;
+            // return item.itemName;
          }
-          /*
-            if (item.itemName.Contains("Painting"))
-                  {
-                   // ProgressManager.UnlockScene();
-                    progressManager.CheckProgressAndUnlock(itemName);
-                   // isPainting = true;
-                    Debug.Log($"Item {gameObject.name} contains the unlockable item {item.itemName}");
-                    return item.itemName; 
-                  }
-*/
-    
-        //   }
+
+          if (item.itemName == "Painting1")
+          {
+            if (progressBar.currentProgress < progressBar.maxProgress)
+            {
+              Debug.Log($" item {itemName} is locked {progress}");
+              // ProgressManager.UnlockScene();
+              // progressManager.CheckProgressAndUnlock(itemName);
+              // isPainting = true;
+              Debug.Log($"Item {gameObject.name} is now unlocked {item.itemName}");
+              // progressManager.UnlockSceneInGallery();
+             // return item.itemName;
+            }
+            else if(unlockable.IsUnlocked(("Painting1")))
+            {
+              Debug.Log(itemName+"is already unlocked");
+             // progressManager.HandleUnlockablesProgress("Cipher1","Painting1");
+            }
+            else
+            {
+             // progressManager.CheckProgressAndUnlock("Painting1");
+             progressManager.HandleUnlockablesProgress("Cipher1","Painting1");
+             // progressManager.UnlockSceneInGallery();
+            }
+          }
+
+
+          //   }
        // Debug.Log($"GameObject destroyed  {gameObject.name}, " + itemData.name);
         //   Destroy(gameObject, 0.5f);
 
@@ -257,6 +304,21 @@ public class ClickItem: MonoBehaviour
     }
     
  */
- 
-   
+    private void ShowLockedVisual()
+    {
+      // Example: Change color to red
+      if (TryGetComponent<Renderer>(out var renderer))
+      {
+        renderer.material.color = Color.red;
+      }
+    }
+
+    private void ShowUnlockedVisual()
+    {
+      // Example: Change color to green
+      if (TryGetComponent<Renderer>(out var renderer))
+      {
+        renderer.material.color = Color.green;
+      }
+    }
 }

@@ -1,4 +1,8 @@
-using System;
+/*namespace InventorySystem
+{
+    public class unlockable2
+    {
+        using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,8 +30,7 @@ namespace Narrative
 
          void Start()
         {
-          LockAllItems();
-         
+           LockItems();
         }
 
         public void InititializeItems()
@@ -88,31 +91,20 @@ namespace Narrative
             
         }
 
-        public void LockItem(string itemName)
-        {
-            foreach (var item in items)
-            {
-                if (item.itemName==itemName)
-                {
-                    item.isUnlocked = false;
-                    Debug.Log( item.itemName+"is locked");
-                }
-            }
-        }
 
-
-        public void LockAllItems()
+        public void LockItems()
         {
             foreach (var item in items)
             {
                 if (item!=null)
                 {
                     item.isUnlocked = false;
-                    
                 }
 
             }
-            Debug.Log("All Items locked");
         }
     }
 }
+    }
+}
+*/
