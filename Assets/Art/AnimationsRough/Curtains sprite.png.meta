@@ -1,0 +1,1108 @@
+fileFormatVersion: 2
+guid: 5755f74b4bb971244a74945ff09789d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1535279311468398949
+    second: Curtains sprite_0
+  - first:
+      213: 484037154231618250
+    second: Curtains sprite_1
+  - first:
+      213: -6768457042469671065
+    second: Curtains sprite_2
+  - first:
+      213: 2601051834541136924
+    second: Curtains sprite_3
+  - first:
+      213: -3297831647349133255
+    second: Curtains sprite_4
+  - first:
+      213: -7446354169510765886
+    second: Curtains sprite_5
+  - first:
+      213: 8379411953849249985
+    second: Curtains sprite_6
+  - first:
+      213: 1602144602496888829
+    second: Curtains sprite_7
+  - first:
+      213: -5670472239358017339
+    second: Curtains sprite_8
+  - first:
+      213: 8361822476775723586
+    second: Curtains sprite_9
+  - first:
+      213: 9054412853018683837
+    second: Curtains sprite_10
+  - first:
+      213: -8426360444977587100
+    second: Curtains sprite_11
+  - first:
+      213: -8599449309300429044
+    second: Curtains sprite_12
+  - first:
+      213: -5771750560735948185
+    second: Curtains sprite_13
+  - first:
+      213: 78846112264999506
+    second: Curtains sprite_14
+  - first:
+      213: -5662914874476558033
+    second: Curtains sprite_15
+  - first:
+      213: 5694321776775262738
+    second: Curtains sprite_16
+  - first:
+      213: 2663159330045998944
+    second: Curtains sprite_17
+  - first:
+      213: -3115836092721391506
+    second: Curtains sprite_18
+  - first:
+      213: 1660828687978636937
+    second: Curtains sprite_19
+  - first:
+      213: -6169377594259460515
+    second: Curtains sprite_20
+  - first:
+      213: 7092941818320667065
+    second: Curtains sprite_21
+  - first:
+      213: 770823462903497034
+    second: Curtains sprite_22
+  - first:
+      213: -3389466728569265042
+    second: Curtains sprite_23
+  - first:
+      213: 6575207100072508156
+    second: Curtains sprite_24
+  - first:
+      213: -2669672952514146957
+    second: Curtains sprite_25
+  - first:
+      213: -3275914177230815325
+    second: Curtains sprite_26
+  - first:
+      213: 1350855822511304117
+    second: Curtains sprite_27
+  - first:
+      213: 1914757462479380183
+    second: Curtains sprite_28
+  - first:
+      213: -3406962505258904
+    second: Curtains sprite_29
+  - first:
+      213: -1733204572696140533
+    second: Curtains sprite_30
+  - first:
+      213: -4764757300526354132
+    second: Curtains sprite_31
+  - first:
+      213: -15697810317429451
+    second: Curtains sprite_32
+  - first:
+      213: -462955255821754335
+    second: Curtains sprite_33
+  - first:
+      213: 8234190355704410667
+    second: Curtains sprite_34
+  - first:
+      213: 5070628100762820423
+    second: Curtains sprite_35
+  - first:
+      213: -3287534525570802384
+    second: Curtains sprite_36
+  - first:
+      213: -601135605919574548
+    second: Curtains sprite_37
+  - first:
+      213: -6415238649158033064
+    second: Curtains sprite_38
+  - first:
+      213: 5247953408942566919
+    second: Curtains sprite_39
+  - first:
+      213: -3815346781560286047
+    second: Curtains sprite_40
+  - first:
+      213: 4213518241446423268
+    second: Curtains sprite_41
+  - first:
+      213: -2212495224820240756
+    second: Curtains sprite_42
+  - first:
+      213: 6086399568009010602
+    second: Curtains sprite_43
+  - first:
+      213: -5980995710543720760
+    second: Curtains sprite_44
+  - first:
+      213: -4560276571331005281
+    second: Curtains sprite_45
+  - first:
+      213: -2480169284223374014
+    second: Curtains sprite_46
+  - first:
+      213: 8576743970634772843
+    second: Curtains sprite_47
+  - first:
+      213: 2157283038524062252
+    second: Curtains sprite_48
+  - first:
+      213: -6546859848206855062
+    second: Curtains sprite_49
+  - first:
+      213: -13552216659759926
+    second: Curtains sprite_50
+  - first:
+      213: -2789206598127786092
+    second: Curtains sprite_51
+  - first:
+      213: 6104487278256169263
+    second: Curtains sprite_52
+  - first:
+      213: -6234244597028084575
+    second: Curtains sprite_53
+  - first:
+      213: 8342769287435379099
+    second: Curtains sprite_54
+  - first:
+      213: 3981505598826367033
+    second: Curtains sprite_55
+  - first:
+      213: -5661743141403806521
+    second: Curtains sprite_56
+  - first:
+      213: -2275692484086015388
+    second: Curtains sprite_57
+  - first:
+      213: 5096258305252114577
+    second: Curtains sprite_58
+  - first:
+      213: -5198525319401442016
+    second: Curtains sprite_59
+  - first:
+      213: -2358840616692809943
+    second: Curtains sprite_60
+  - first:
+      213: 433660593645984095
+    second: Curtains sprite_61
+  - first:
+      213: 4030549346535971138
+    second: Curtains sprite_62
+  - first:
+      213: 2195825829077552942
+    second: Curtains sprite_63
+  - first:
+      213: 2109984307009049015
+    second: Curtains sprite_64
+  - first:
+      213: -4847141879404585629
+    second: Curtains sprite_65
+  - first:
+      213: -8732117699023814615
+    second: Curtains sprite_66
+  - first:
+      213: -6477748115657974790
+    second: Curtains sprite_67
+  - first:
+      213: 3671242849000559543
+    second: Curtains sprite_68
+  - first:
+      213: 2733400650528854267
+    second: Curtains sprite_69
+  - first:
+      213: -3523842235121342194
+    second: Curtains sprite_70
+  - first:
+      213: -750021802929447160
+    second: Curtains sprite_71
+  - first:
+      213: -8413956803531277090
+    second: Curtains sprite_72
+  - first:
+      213: 4848175545861932921
+    second: Curtains sprite_73
+  - first:
+      213: 1489758274278344750
+    second: Curtains sprite_74
+  - first:
+      213: -8919062860603951377
+    second: Curtains sprite_75
+  - first:
+      213: 1115668544442752154
+    second: Curtains sprite_76
+  - first:
+      213: -7558832088427467020
+    second: Curtains sprite_77
+  - first:
+      213: -6311180322251708585
+    second: Curtains sprite_78
+  - first:
+      213: -7978162387219749021
+    second: Curtains sprite_79
+  - first:
+      213: -5128962292842865008
+    second: Curtains sprite_80
+  - first:
+      213: 8595836443141035662
+    second: Curtains sprite_81
+  - first:
+      213: -1303758122992917851
+    second: Curtains sprite_82
+  - first:
+      213: -4613401024427198848
+    second: Curtains sprite_83
+  - first:
+      213: 1028078492220852766
+    second: Curtains sprite_84
+  - first:
+      213: -3925325629985664504
+    second: Curtains sprite_85
+  - first:
+      213: 6384021643406948216
+    second: Curtains sprite_86
+  - first:
+      213: -498461231399921536
+    second: Curtains sprite_87
+  - first:
+      213: 457337702816101957
+    second: Curtains sprite_88
+  - first:
+      213: 3524412243015562136
+    second: Curtains sprite_89
+  - first:
+      213: 5347181321715462999
+    second: Curtains sprite_90
+  - first:
+      213: 7494884618496644869
+    second: Curtains sprite_91
+  - first:
+      213: -2236632937348609936
+    second: Curtains sprite_92
+  - first:
+      213: -653260527072533010
+    second: Curtains sprite_93
+  - first:
+      213: 3776737527718251130
+    second: Curtains sprite_94
+  - first:
+      213: 4434029270750763488
+    second: Curtains sprite_95
+  - first:
+      213: 4733476068766478759
+    second: Curtains sprite_96
+  - first:
+      213: -4548509456680636978
+    second: Curtains sprite_97
+  - first:
+      213: -6208167912734179817
+    second: Curtains sprite_98
+  - first:
+      213: -3230666737748486757
+    second: Curtains sprite_99
+  - first:
+      213: 6703866148324666139
+    second: Curtains sprite_100
+  - first:
+      213: 3714201142743674534
+    second: Curtains sprite_101
+  - first:
+      213: -4612274001731214940
+    second: Curtains sprite_102
+  - first:
+      213: -4181791457206430085
+    second: Curtains sprite_103
+  - first:
+      213: 5077567846538489949
+    second: Curtains sprite_104
+  - first:
+      213: 4468912052432260252
+    second: Curtains sprite_105
+  - first:
+      213: -8560629888089511242
+    second: Curtains sprite_106
+  - first:
+      213: 3285972857646470829
+    second: Curtains sprite_107
+  - first:
+      213: -2335897792874311442
+    second: Curtains sprite_108
+  - first:
+      213: -1379627821151384412
+    second: Curtains sprite_109
+  - first:
+      213: -2923409509374604097
+    second: Curtains sprite_110
+  - first:
+      213: -2746453721234904034
+    second: Curtains sprite_111
+  - first:
+      213: 510509742987994173
+    second: Curtains sprite_112
+  - first:
+      213: 8674270480755441177
+    second: Curtains sprite_113
+  - first:
+      213: -281989631130428581
+    second: Curtains sprite_114
+  - first:
+      213: -2568027173812016444
+    second: Curtains sprite_115
+  - first:
+      213: 3934142202708234950
+    second: Curtains sprite_116
+  - first:
+      213: -7109498017842258465
+    second: Curtains sprite_117
+  - first:
+      213: -6017816198796676119
+    second: Curtains sprite_118
+  - first:
+      213: -7708533655374845893
+    second: Curtains sprite_119
+  - first:
+      213: -6779903348882793699
+    second: Curtains sprite_120
+  - first:
+      213: 7909665444840599578
+    second: Curtains sprite_121
+  - first:
+      213: -3763856207970427439
+    second: Curtains sprite_122
+  - first:
+      213: -2286942339130165313
+    second: Curtains sprite_123
+  - first:
+      213: 1236550814244126880
+    second: Curtains sprite_124
+  - first:
+      213: 3173852766674979655
+    second: Curtains sprite_125
+  - first:
+      213: -8715418041330345643
+    second: Curtains sprite_126
+  - first:
+      213: 2634308573109333790
+    second: Curtains sprite_127
+  - first:
+      213: 8201410188234371441
+    second: Curtains sprite_128
+  - first:
+      213: -4528286500362436249
+    second: Curtains sprite_129
+  - first:
+      213: -2455125236740915826
+    second: Curtains sprite_130
+  - first:
+      213: 6042098469426088679
+    second: Curtains sprite_131
+  - first:
+      213: 2456177945878855529
+    second: Curtains sprite_132
+  - first:
+      213: 2867247458274276981
+    second: Curtains sprite_133
+  - first:
+      213: -8783572002971560042
+    second: Curtains sprite_134
+  - first:
+      213: -8142008782995827861
+    second: Curtains sprite_135
+  - first:
+      213: 3227676685167582697
+    second: Curtains sprite_136
+  - first:
+      213: 3347692375779505993
+    second: Curtains sprite_137
+  - first:
+      213: 3512984790476217038
+    second: Curtains sprite_138
+  - first:
+      213: 960323953084867619
+    second: Curtains sprite_139
+  - first:
+      213: 3979703311390919336
+    second: Curtains sprite_140
+  - first:
+      213: -1003825964159533454
+    second: Curtains sprite_141
+  - first:
+      213: -1350662452964136516
+    second: Curtains sprite_142
+  - first:
+      213: -5518692976265647365
+    second: Curtains sprite_143
+  - first:
+      213: -8184225255483329166
+    second: Curtains sprite_144
+  - first:
+      213: 1149377543830463852
+    second: Curtains sprite_145
+  - first:
+      213: -6538739760117573177
+    second: Curtains sprite_146
+  - first:
+      213: 7927629879250833336
+    second: Curtains sprite_147
+  - first:
+      213: 722473984664943073
+    second: Curtains sprite_148
+  - first:
+      213: 746873555488285150
+    second: Curtains sprite_149
+  - first:
+      213: 3338333815429002864
+    second: Curtains sprite_150
+  - first:
+      213: -8954941319568876005
+    second: Curtains sprite_151
+  - first:
+      213: -6995248888624058668
+    second: Curtains sprite_152
+  - first:
+      213: -7153350140496029920
+    second: Curtains sprite_153
+  - first:
+      213: 6342298443260224971
+    second: Curtains sprite_154
+  - first:
+      213: 5135098330547107261
+    second: Curtains sprite_155
+  - first:
+      213: 949235525384733071
+    second: Curtains sprite_156
+  - first:
+      213: 2959018907950144664
+    second: Curtains sprite_157
+  - first:
+      213: -4440443842838871907
+    second: Curtains sprite_158
+  - first:
+      213: 8669854195936613022
+    second: Curtains sprite_159
+  - first:
+      213: 8769550790354464827
+    second: Curtains sprite_160
+  - first:
+      213: -1751160096383263463
+    second: Curtains sprite_161
+  - first:
+      213: 1013829848621115393
+    second: Curtains sprite_162
+  - first:
+      213: 5876683857907800706
+    second: Curtains sprite_163
+  - first:
+      213: 2637500606613419388
+    second: Curtains sprite_164
+  - first:
+      213: 839738937931023108
+    second: Curtains sprite_165
+  - first:
+      213: -6461738139079877758
+    second: Curtains sprite_166
+  - first:
+      213: -3320245633460939856
+    second: Curtains sprite_167
+  - first:
+      213: -1173200450062327216
+    second: Curtains sprite_168
+  - first:
+      213: -8967667320111903169
+    second: Curtains sprite_169
+  - first:
+      213: -1849076066703817262
+    second: Curtains sprite_170
+  - first:
+      213: -8029273435554313840
+    second: Curtains sprite_171
+  - first:
+      213: 8091188305654127920
+    second: Curtains sprite_172
+  - first:
+      213: -8938871920871940604
+    second: Curtains sprite_173
+  - first:
+      213: 8252407658861820247
+    second: Curtains sprite_174
+  - first:
+      213: 8114643158370184468
+    second: Curtains sprite_175
+  - first:
+      213: -5542788027215556665
+    second: Curtains sprite_176
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Curtains sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b967be8b99791bae0800000000000000
+      internalID: -1535279311468398949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 810
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca011c2a35a7b600800000000000000
+      internalID: 484037154231618250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 810
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76faa124e2c9112a0800000000000000
+      internalID: -6768457042469671065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 810
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cd330dcdac81420800000000000000
+      internalID: 2601051834541136924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 810
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930b6b2e69fbb32d0800000000000000
+      internalID: -3297831647349133255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cadf86d55c39a890800000000000000
+      internalID: -7446354169510765886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 540
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0b8d7a6c6a94470800000000000000
+      internalID: 8379411953849249985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 540
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffe2a60706fb3610800000000000000
+      internalID: 1602144602496888829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 540
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c00a50ba8f6e41b0800000000000000
+      internalID: -5670472239358017339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 540
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24218136d392b0470800000000000000
+      internalID: 8361822476775723586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9e8e9748cb7ad70800000000000000
+      internalID: 9054412853018683837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 270
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c55bfe1dd8f0b80800000000000000
+      internalID: -8426360444977587100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 270
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f6b2f3a6e98a880800000000000000
+      internalID: -8599449309300429044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 270
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7621c2fe17f96efa0800000000000000
+      internalID: -5771750560735948185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_14
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 270
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252d9711f1e181100800000000000000
+      internalID: 78846112264999506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f298c81dce84961b0800000000000000
+      internalID: -5662914874476558033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212f5757c7b460f40800000000000000
+      internalID: 5694321776775262738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067b8a7fc4175f420800000000000000
+      internalID: 2663159330045998944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_18
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e681003059352c4d0800000000000000
+      internalID: -3115836092721391506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtains sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986aebb64e27c0710800000000000000
+      internalID: 1660828687978636937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8ef5adbe29672054b9b0121795d96c10
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Curtains sprite_0: -1535279311468398949
+      Curtains sprite_1: 484037154231618250
+      Curtains sprite_10: 9054412853018683837
+      Curtains sprite_11: -8426360444977587100
+      Curtains sprite_12: -8599449309300429044
+      Curtains sprite_13: -5771750560735948185
+      Curtains sprite_14: 78846112264999506
+      Curtains sprite_15: -5662914874476558033
+      Curtains sprite_16: 5694321776775262738
+      Curtains sprite_17: 2663159330045998944
+      Curtains sprite_18: -3115836092721391506
+      Curtains sprite_19: 1660828687978636937
+      Curtains sprite_2: -6768457042469671065
+      Curtains sprite_3: 2601051834541136924
+      Curtains sprite_4: -3297831647349133255
+      Curtains sprite_5: -7446354169510765886
+      Curtains sprite_6: 8379411953849249985
+      Curtains sprite_7: 1602144602496888829
+      Curtains sprite_8: -5670472239358017339
+      Curtains sprite_9: 8361822476775723586
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

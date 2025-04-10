@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 704d021513b07f049a8e9c5a04d5b49e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3050623888936115356
+    second: candle Flame Spirte sheet_0
+  - first:
+      213: 2014322461727358103
+    second: candle Flame Spirte sheet_1
+  - first:
+      213: -5522577184225065714
+    second: candle Flame Spirte sheet_2
+  - first:
+      213: -7157149736784877038
+    second: candle Flame Spirte sheet_3
+  - first:
+      213: -1607366244934329101
+    second: candle Flame Spirte sheet_4
+  - first:
+      213: 1822873133664481266
+    second: candle Flame Spirte sheet_5
+  - first:
+      213: 5595568118665806732
+    second: candle Flame Spirte sheet_6
+  - first:
+      213: 1357236780276108161
+    second: candle Flame Spirte sheet_7
+  - first:
+      213: -6657381733408818170
+    second: candle Flame Spirte sheet_8
+  - first:
+      213: -8088061975815622558
+    second: candle Flame Spirte sheet_9
+  - first:
+      213: -4184605678497730475
+    second: candle Flame Spirte sheet_10
+  - first:
+      213: -7731883246979195290
+    second: candle Flame Spirte sheet_11
+  - first:
+      213: 5101331477405523771
+    second: candle Flame Spirte sheet_12
+  - first:
+      213: -1193468223933931565
+    second: candle Flame Spirte sheet_13
+  - first:
+      213: 6743924913904411491
+    second: candle Flame Spirte sheet_14
+  - first:
+      213: -2715721469693395895
+    second: candle Flame Spirte sheet_15
+  - first:
+      213: -7845182247493284325
+    second: candle Flame Spirte sheet_16
+  - first:
+      213: 7987984677480995427
+    second: candle Flame Spirte sheet_17
+  - first:
+      213: 3326848282988136049
+    second: candle Flame Spirte sheet_18
+  - first:
+      213: 5777844463008069778
+    second: candle Flame Spirte sheet_19
+  - first:
+      213: -5361033446662534639
+    second: candle Flame Spirte sheet_20
+  - first:
+      213: -2137258025908631599
+    second: candle Flame Spirte sheet_21
+  - first:
+      213: 5280800043167593570
+    second: candle Flame Spirte sheet_22
+  - first:
+      213: 5726393470794204230
+    second: candle Flame Spirte sheet_23
+  - first:
+      213: 6870079056461426138
+    second: candle Flame Spirte sheet_24
+  - first:
+      213: -4870432662553314550
+    second: candle Flame Spirte sheet_25
+  - first:
+      213: -762401709835466987
+    second: candle Flame Spirte sheet_26
+  - first:
+      213: 7133503753982985604
+    second: candle Flame Spirte sheet_27
+  - first:
+      213: 9127745179504657506
+    second: candle Flame Spirte sheet_28
+  - first:
+      213: -3023545600484737057
+    second: candle Flame Spirte sheet_29
+  - first:
+      213: -2594969675330812799
+    second: candle Flame Spirte sheet_30
+  - first:
+      213: -5122366089249743506
+    second: candle Flame Spirte sheet_31
+  - first:
+      213: -5975241475920793852
+    second: candle Flame Spirte sheet_32
+  - first:
+      213: -4737940359594767060
+    second: candle Flame Spirte sheet_33
+  - first:
+      213: -3737490541013338240
+    second: candle Flame Spirte sheet_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c9b5b934ef55a20800000000000000
+      internalID: 3050623888936115356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c795a4b9f44fb10800000000000000
+      internalID: 2014322461727358103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0586919f4ddb53b0800000000000000
+      internalID: -5522577184225065714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a28ae0c32bcac90800000000000000
+      internalID: -7157149736784877038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc5cba9aec71b9e0800000000000000
+      internalID: -1607366244934329101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffaca205752c4910800000000000000
+      internalID: 1822873133664481266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83839dae8377ad40800000000000000
+      internalID: 5595568118665806732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bc37429afd5d210800000000000000
+      internalID: 1357236780276108161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle Flame Spirte sheet_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c3ef5f59a3c93a0800000000000000
+      internalID: -6657381733408818170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 61b015622f984f9479762a932230a695
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      candle Flame Spirte sheet_0: 3050623888936115356
+      candle Flame Spirte sheet_1: 2014322461727358103
+      candle Flame Spirte sheet_2: -5522577184225065714
+      candle Flame Spirte sheet_3: -7157149736784877038
+      candle Flame Spirte sheet_4: -1607366244934329101
+      candle Flame Spirte sheet_5: 1822873133664481266
+      candle Flame Spirte sheet_6: 5595568118665806732
+      candle Flame Spirte sheet_7: 1357236780276108161
+      candle Flame Spirte sheet_8: -6657381733408818170
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
