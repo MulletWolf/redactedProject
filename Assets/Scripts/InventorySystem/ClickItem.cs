@@ -6,6 +6,7 @@ using UnityEngine;
 //using UnityEngine.Rendering;
 
 using Narrative;
+using Scenes;
 
 [Serializable]
 public class ClickItem: MonoBehaviour
@@ -35,6 +36,7 @@ public class ClickItem: MonoBehaviour
   [SerializeField] private Unlockable unlockable;
   [SerializeField] private ProgressManager progressManager;
   [SerializeField] private UnlockManager unlockManager;
+  [SerializeField] private LevelManager levelManager;
   
 
   
@@ -137,6 +139,26 @@ public class ClickItem: MonoBehaviour
 
       }
       //wait time here
+      if (itemName=="RightDoor")
+      {
+        Debug.Log("Dialogue door");
+      }
+
+      if (itemName == "LeftDoor")
+      {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
+
+      }
+
+      if (itemName == "RightBed" || itemName == "LeftBed")
+      {
+        Debug.Log("Dialogue bed");
+      }
+
+      if (itemName=="Mirror")
+      {
+        Debug.Log("Dialogue mirror");
+      }
     
     foreach (var item in unlockable.items)
     {
@@ -206,8 +228,11 @@ public class ClickItem: MonoBehaviour
             }
             else
             {
-             // progressManager.CheckProgressAndUnlock("Painting1");
-             progressManager.HandleUnlockablesProgress("Cipher1","Painting1");
+             progressManager.CheckProgressAndUnlock("Painting1");
+             UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
+
+             //  progressManager.HandleUnlockablesProgress(itemName, itemName);
+             // progressManager.UnlocksForCurrentScene();
              // progressManager.UnlockSceneInGallery();
             }
           }

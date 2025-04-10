@@ -42,6 +42,10 @@ public class ProgressBar : MonoBehaviour
             Debug.Log($"ProgressManager is null");
         }
         currentProgress = 0;
+        if (maxProgress==0)
+        {
+            maxProgress = 3;
+        }
     }
 
     // Update is called once per frame
@@ -64,7 +68,7 @@ public class ProgressBar : MonoBehaviour
         //puzzleProgress[0] first puzzle
         //puzzleProgress[1]-- 2nd puzzle ecetra
         //do i need to say puzzleIndex when , its my chouice to say i orpuzzleIndex
-        maxProgress = 3;
+       
 
         currentProgress++;
         if (currentProgress<=maxProgress)
@@ -92,6 +96,7 @@ public class ProgressBar : MonoBehaviour
          
           string itemName=" Cipher1";
             Debug.Log("ProgressBar full");
+            progressManager.UnlocksForCurrentScene();
            // progressManager.CheckProgressAndUnlock(itemName);
            // unlockManager.UnlockItem(itemName);
 
