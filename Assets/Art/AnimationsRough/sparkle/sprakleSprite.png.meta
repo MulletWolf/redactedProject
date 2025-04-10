@@ -1,0 +1,3567 @@
+fileFormatVersion: 2
+guid: ddd1e6edaad3c5b42ad6ea05a4b026d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3565896118686092330
+    second: sprakleSprite_0
+  - first:
+      213: -542791330810187712
+    second: sprakleSprite_1
+  - first:
+      213: 4341254186024768590
+    second: sprakleSprite_2
+  - first:
+      213: 2263955346994157793
+    second: sprakleSprite_3
+  - first:
+      213: 1062800542593872158
+    second: sprakleSprite_4
+  - first:
+      213: 2628257244350938411
+    second: sprakleSprite_5
+  - first:
+      213: 5169655256114492678
+    second: sprakleSprite_6
+  - first:
+      213: 4640897236735037235
+    second: sprakleSprite_7
+  - first:
+      213: 5960309680163930888
+    second: sprakleSprite_8
+  - first:
+      213: -6346495840283824664
+    second: sprakleSprite_9
+  - first:
+      213: 5768985465263387584
+    second: sprakleSprite_10
+  - first:
+      213: -1251212747100292584
+    second: sprakleSprite_11
+  - first:
+      213: -3005638461995425008
+    second: sprakleSprite_12
+  - first:
+      213: 625028709084564598
+    second: sprakleSprite_13
+  - first:
+      213: -3137971467507704852
+    second: sprakleSprite_14
+  - first:
+      213: 8980980363232865877
+    second: sprakleSprite_15
+  - first:
+      213: 2256443976392620018
+    second: sprakleSprite_16
+  - first:
+      213: -3094924302416918075
+    second: sprakleSprite_17
+  - first:
+      213: -8067282007854960932
+    second: sprakleSprite_18
+  - first:
+      213: 8830505508762506142
+    second: sprakleSprite_19
+  - first:
+      213: 3850248366544086089
+    second: sprakleSprite_20
+  - first:
+      213: 7529492013747409533
+    second: sprakleSprite_21
+  - first:
+      213: -731816918778978312
+    second: sprakleSprite_22
+  - first:
+      213: 9121066484765753283
+    second: sprakleSprite_23
+  - first:
+      213: -1059265570580763479
+    second: sprakleSprite_24
+  - first:
+      213: -2923634371162767495
+    second: sprakleSprite_25
+  - first:
+      213: 5345320029703372121
+    second: sprakleSprite_26
+  - first:
+      213: 6458069516405671465
+    second: sprakleSprite_27
+  - first:
+      213: -1310707402241771878
+    second: sprakleSprite_28
+  - first:
+      213: -2484573370337238517
+    second: sprakleSprite_29
+  - first:
+      213: -3894350060315566020
+    second: sprakleSprite_30
+  - first:
+      213: 6255665538541123495
+    second: sprakleSprite_31
+  - first:
+      213: 1541749361543615815
+    second: sprakleSprite_32
+  - first:
+      213: -4219579873842204659
+    second: sprakleSprite_33
+  - first:
+      213: -186492678882820636
+    second: sprakleSprite_34
+  - first:
+      213: 7832337437321573255
+    second: sprakleSprite_35
+  - first:
+      213: 2386208065424405846
+    second: sprakleSprite_36
+  - first:
+      213: 716981096981390495
+    second: sprakleSprite_37
+  - first:
+      213: -551282884641904393
+    second: sprakleSprite_38
+  - first:
+      213: 8262509839948681995
+    second: sprakleSprite_39
+  - first:
+      213: -8880205324131212608
+    second: sprakleSprite_40
+  - first:
+      213: 7543862417074634732
+    second: sprakleSprite_41
+  - first:
+      213: -4993267119510345823
+    second: sprakleSprite_42
+  - first:
+      213: -5162675360766524127
+    second: sprakleSprite_43
+  - first:
+      213: -4939211328737861616
+    second: sprakleSprite_44
+  - first:
+      213: 4241570817083075031
+    second: sprakleSprite_45
+  - first:
+      213: -947457181490056534
+    second: sprakleSprite_46
+  - first:
+      213: -1784219838771049121
+    second: sprakleSprite_47
+  - first:
+      213: -2597741617796527497
+    second: sprakleSprite_48
+  - first:
+      213: -971244309892611501
+    second: sprakleSprite_49
+  - first:
+      213: -3843634478184425098
+    second: sprakleSprite_50
+  - first:
+      213: -6327374524835016042
+    second: sprakleSprite_51
+  - first:
+      213: -3607708265690497613
+    second: sprakleSprite_52
+  - first:
+      213: -2120984086199613206
+    second: sprakleSprite_53
+  - first:
+      213: 358011770906527421
+    second: sprakleSprite_54
+  - first:
+      213: 8463907641387832223
+    second: sprakleSprite_55
+  - first:
+      213: 5605134959322268626
+    second: sprakleSprite_56
+  - first:
+      213: -3002632278550073721
+    second: sprakleSprite_57
+  - first:
+      213: 8683825231835492322
+    second: sprakleSprite_58
+  - first:
+      213: -9013412391662219266
+    second: sprakleSprite_59
+  - first:
+      213: 2706225309013977184
+    second: sprakleSprite_60
+  - first:
+      213: 8848478961010052339
+    second: sprakleSprite_61
+  - first:
+      213: -7904505005488989095
+    second: sprakleSprite_62
+  - first:
+      213: -7238484382922037257
+    second: sprakleSprite_63
+  - first:
+      213: 4385079855053709689
+    second: sprakleSprite_64
+  - first:
+      213: -2287219368459773295
+    second: sprakleSprite_65
+  - first:
+      213: 3329075159600960638
+    second: sprakleSprite_66
+  - first:
+      213: -6837323403648064427
+    second: sprakleSprite_67
+  - first:
+      213: -1376650769246993519
+    second: sprakleSprite_68
+  - first:
+      213: -513686747652919153
+    second: sprakleSprite_69
+  - first:
+      213: -1603662110002059978
+    second: sprakleSprite_70
+  - first:
+      213: 7828936791113392442
+    second: sprakleSprite_71
+  - first:
+      213: 6455970934555844033
+    second: sprakleSprite_72
+  - first:
+      213: 743219767519744156
+    second: sprakleSprite_73
+  - first:
+      213: 3157551175997269450
+    second: sprakleSprite_74
+  - first:
+      213: 2622686888022365491
+    second: sprakleSprite_75
+  - first:
+      213: -4000053361670347432
+    second: sprakleSprite_76
+  - first:
+      213: -3547167538839041528
+    second: sprakleSprite_77
+  - first:
+      213: 3805105719173018152
+    second: sprakleSprite_78
+  - first:
+      213: -1326536453974492145
+    second: sprakleSprite_79
+  - first:
+      213: 1441959720299970331
+    second: sprakleSprite_80
+  - first:
+      213: -3611288903075248528
+    second: sprakleSprite_81
+  - first:
+      213: -1664687047427174299
+    second: sprakleSprite_82
+  - first:
+      213: -3372409586585686108
+    second: sprakleSprite_83
+  - first:
+      213: 6957847609323784277
+    second: sprakleSprite_84
+  - first:
+      213: 9175875641004548158
+    second: sprakleSprite_85
+  - first:
+      213: -2199910896580272577
+    second: sprakleSprite_86
+  - first:
+      213: -7030485366787082397
+    second: sprakleSprite_87
+  - first:
+      213: 1148599773686613259
+    second: sprakleSprite_88
+  - first:
+      213: -7257674578483843234
+    second: sprakleSprite_89
+  - first:
+      213: -8128091517007176049
+    second: sprakleSprite_90
+  - first:
+      213: -5428665538070536117
+    second: sprakleSprite_91
+  - first:
+      213: -271147073921886049
+    second: sprakleSprite_92
+  - first:
+      213: -4517973234798237740
+    second: sprakleSprite_93
+  - first:
+      213: 3934510125496145759
+    second: sprakleSprite_94
+  - first:
+      213: -5510775869498479952
+    second: sprakleSprite_95
+  - first:
+      213: -4808438829301675003
+    second: sprakleSprite_96
+  - first:
+      213: 3468734719493275289
+    second: sprakleSprite_97
+  - first:
+      213: 8385966606416174019
+    second: sprakleSprite_98
+  - first:
+      213: 3287170882243400368
+    second: sprakleSprite_99
+  - first:
+      213: -8717421170946071219
+    second: sprakleSprite_100
+  - first:
+      213: 8100254394075744493
+    second: sprakleSprite_101
+  - first:
+      213: -5709929413667429203
+    second: sprakleSprite_102
+  - first:
+      213: -4564996062687042044
+    second: sprakleSprite_103
+  - first:
+      213: -3469179357256451130
+    second: sprakleSprite_104
+  - first:
+      213: 7412785543897848485
+    second: sprakleSprite_105
+  - first:
+      213: 2339833492098317114
+    second: sprakleSprite_106
+  - first:
+      213: -5575580574155677572
+    second: sprakleSprite_107
+  - first:
+      213: 8093946070970084910
+    second: sprakleSprite_108
+  - first:
+      213: -3353920765194440248
+    second: sprakleSprite_109
+  - first:
+      213: 6070776869801728152
+    second: sprakleSprite_110
+  - first:
+      213: -8603129310691264462
+    second: sprakleSprite_111
+  - first:
+      213: -1801092939884660416
+    second: sprakleSprite_112
+  - first:
+      213: -8782961421213274
+    second: sprakleSprite_113
+  - first:
+      213: -6573201501169305282
+    second: sprakleSprite_114
+  - first:
+      213: -2318526281897501694
+    second: sprakleSprite_115
+  - first:
+      213: -8814812764012975933
+    second: sprakleSprite_116
+  - first:
+      213: -3337418141413131638
+    second: sprakleSprite_117
+  - first:
+      213: -3008137045879359872
+    second: sprakleSprite_118
+  - first:
+      213: 5074499503049039590
+    second: sprakleSprite_119
+  - first:
+      213: 5374426777758078156
+    second: sprakleSprite_120
+  - first:
+      213: 5153815467868227647
+    second: sprakleSprite_121
+  - first:
+      213: -2955668889117247966
+    second: sprakleSprite_122
+  - first:
+      213: 5741655078178489701
+    second: sprakleSprite_123
+  - first:
+      213: -6629626067665203838
+    second: sprakleSprite_124
+  - first:
+      213: 1809074567344368086
+    second: sprakleSprite_125
+  - first:
+      213: 6556199375241973560
+    second: sprakleSprite_126
+  - first:
+      213: -1499801348036023390
+    second: sprakleSprite_127
+  - first:
+      213: -1967452224935814749
+    second: sprakleSprite_128
+  - first:
+      213: -4130192386634248366
+    second: sprakleSprite_129
+  - first:
+      213: -5677653615925411019
+    second: sprakleSprite_130
+  - first:
+      213: 7459939041343002311
+    second: sprakleSprite_131
+  - first:
+      213: 6862420635594106866
+    second: sprakleSprite_132
+  - first:
+      213: -7032792716433141458
+    second: sprakleSprite_133
+  - first:
+      213: 7578929281812921069
+    second: sprakleSprite_134
+  - first:
+      213: 8663362117091740950
+    second: sprakleSprite_135
+  - first:
+      213: 6804064476990373249
+    second: sprakleSprite_136
+  - first:
+      213: 4743805335502226998
+    second: sprakleSprite_137
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprakleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d375cb7f54638ec0800000000000000
+      internalID: -3565896118686092330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040b5e3192e9778f0800000000000000
+      internalID: -542791330810187712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e441fa56eab3f3c30800000000000000
+      internalID: 4341254186024768590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8dee4a46f2b6f10800000000000000
+      internalID: 2263955346994157793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1176686673dfbe00800000000000000
+      internalID: 1062800542593872158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d72e3e902797420800000000000000
+      internalID: 2628257244350938411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_6
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6057fefb01e4eb740800000000000000
+      internalID: 5169655256114492678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f0fa2c277c76040800000000000000
+      internalID: 4640897236735037235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8034e75331647b250800000000000000
+      internalID: 5960309680163930888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed636f88a7bce7a0800000000000000
+      internalID: -6346495840283824664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c37a6b17bd8f0050800000000000000
+      internalID: 5768985465263387584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a75aeb2acc2aee0800000000000000
+      internalID: -1251212747100292584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013e28d4eb3d946d0800000000000000
+      internalID: -3005638461995425008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c0863ac4c8ca800800000000000000
+      internalID: 625028709084564598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb54e3739fa374d0800000000000000
+      internalID: -3137971467507704852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ee04d9e0ad2ac70800000000000000
+      internalID: 8980980363232865877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7b37467df705f10800000000000000
+      internalID: 2256443976392620018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c947bb9ebe9c05d0800000000000000
+      internalID: -3094924302416918075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_18
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdea7e291c14b0090800000000000000
+      internalID: -8067282007854960932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_19
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e935be469f14c8a70800000000000000
+      internalID: 8830505508762506142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_20
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94463e86d74de6530800000000000000
+      internalID: 3850248366544086089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_21
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 27
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d721e82f7112e7860800000000000000
+      internalID: 7529492013747409533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_22
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 32
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffde83c36018d5f0800000000000000
+      internalID: -731816918778978312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_23
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 27
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cffe2574a9849e70800000000000000
+      internalID: 9121066484765753283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_24
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 32
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac6bb6639bbc41f0800000000000000
+      internalID: -1059265570580763479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_25
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 27
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f78bd870a2d67d0800000000000000
+      internalID: -2923634371162767495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_26
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 32
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95dff3d0f346e2a40800000000000000
+      internalID: 5345320029703372121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_27
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 27
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9268324420caf9950800000000000000
+      internalID: 6458069516405671465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_28
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 32
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9677e4ef8e6fcde0800000000000000
+      internalID: -1310707402241771878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_29
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 27
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0267aafea5058dd0800000000000000
+      internalID: -2484573370337238517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_30
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 32
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30aed7d04d74f9c0800000000000000
+      internalID: -3894350060315566020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_31
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 27
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a77562d9a690d650800000000000000
+      internalID: 6255665538541123495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_32
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7451e7330e4656510800000000000000
+      internalID: 1541749361543615815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_33
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d007f36067a0175c0800000000000000
+      internalID: -4219579873842204659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_34
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed7af985e1796df0800000000000000
+      internalID: -186492678882820636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_35
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783bb88d66d02bc60800000000000000
+      internalID: 7832337437321573255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_36
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6553bc3c7938d1120800000000000000
+      internalID: 2386208065424405846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_37
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94ee3c428a33f900800000000000000
+      internalID: 716981096981390495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_38
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8aa2223237958f0800000000000000
+      internalID: -551282884641904393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_39
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b039f4b3ce45aa270800000000000000
+      internalID: 8262509839948681995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_40
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c260aa9e4c23c480800000000000000
+      internalID: -8880205324131212608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_41
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef372436ee21b860800000000000000
+      internalID: 7543862417074634732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_42
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7a2f0a20a54bab0800000000000000
+      internalID: -4993267119510345823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_43
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12589d6cc1e7a58b0800000000000000
+      internalID: -5162675360766524127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_44
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010aeff2775647bb0800000000000000
+      internalID: -4939211328737861616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_45
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 27
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d966e17f261dda30800000000000000
+      internalID: 4241570817083075031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_46
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2746996b4f9d2f0800000000000000
+      internalID: -947457181490056534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_47
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5dc8d4828d2d37e0800000000000000
+      internalID: -1784219838771049121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_48
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a4df413c7f2fbd0800000000000000
+      internalID: -2597741617796527497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3524bbe22727582f0800000000000000
+      internalID: -971244309892611501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_50
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6799f597ecaa8aac0800000000000000
+      internalID: -3843634478184425098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_51
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6925a5eb466a038a0800000000000000
+      internalID: -6327374524835016042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_52
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdf6426278deedc0800000000000000
+      internalID: -3607708265690497613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_53
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8c0d70630c092e0800000000000000
+      internalID: -2120984086199613206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_54
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6ca4e0fc9e7f400800000000000000
+      internalID: 358011770906527421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_55
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93d2a8f727d57570800000000000000
+      internalID: 8463907641387832223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_56
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d307885c8079cd40800000000000000
+      internalID: 5605134959322268626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_57
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ea6ede9d18456d0800000000000000
+      internalID: -3002632278550073721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_58
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efe02b1a05238870800000000000000
+      internalID: 8683825231835492322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_59
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff8ed45f2de9e280800000000000000
+      internalID: -9013412391662219266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_60
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06823f194917e8520800000000000000
+      internalID: 2706225309013977184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_61
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc8589dbbc1cca70800000000000000
+      internalID: 8848478961010052339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_62
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c188ec39e8d4290800000000000000
+      internalID: -7904505005488989095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_63
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f728bb0eccbb8b90800000000000000
+      internalID: -7238484382922037257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_64
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971a23025eeeadc30800000000000000
+      internalID: 4385079855053709689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_65
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19adf834a1a2240e0800000000000000
+      internalID: -2287219368459773295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_66
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74979e2830433e20800000000000000
+      internalID: 3329075159600960638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_67
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554a71f0792fc11a0800000000000000
+      internalID: -6837323403648064427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_68
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193c34f4b6725ece0800000000000000
+      internalID: -1376650769246993519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_69
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f807258ef940fd8f0800000000000000
+      internalID: -513686747652919153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_70
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635e299bec5aeb9e0800000000000000
+      internalID: -1603662110002059978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_71
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 14
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31ec433888f5ac60800000000000000
+      internalID: 7828936791113392442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_72
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 2
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd927a1c57389950800000000000000
+      internalID: 6455970934555844033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_73
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 22
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c901019d072705a00800000000000000
+      internalID: 743219767519744156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_74
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 11
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac52f6da010e1db20800000000000000
+      internalID: 3157551175997269450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_75
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335d5ad34d7a56420800000000000000
+      internalID: 2622686888022365491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_76
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855280729a4fc78c0800000000000000
+      internalID: -4000053361670347432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_77
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 11
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ac3b8caede5cec0800000000000000
+      internalID: -3547167538839041528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_78
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8227d14cd737ec430800000000000000
+      internalID: 3805105719173018152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_79
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c7e379f12379de0800000000000000
+      internalID: -1326536453974492145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_80
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 11
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fb6ecc9bed20410800000000000000
+      internalID: 1441959720299970331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_81
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076c3e640ef12edc0800000000000000
+      internalID: -3611288903075248528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_82
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560d8e343f7d5e8e0800000000000000
+      internalID: -1664687047427174299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_83
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 11
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af207a495bc231d0800000000000000
+      internalID: -3372409586585686108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_84
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5588b03598d3f8060800000000000000
+      internalID: 6957847609323784277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_85
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e306c359742475f70800000000000000
+      internalID: 9175875641004548158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_86
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 11
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e52d7f1b85871e0800000000000000
+      internalID: -2199910896580272577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_87
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367f21adec2be6e90800000000000000
+      internalID: -7030485366787082397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_88
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 20
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b054fab9865a0ff00800000000000000
+      internalID: 1148599773686613259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_89
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f66167c6f874b90800000000000000
+      internalID: -7257674578483843234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_90
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8edbea64d7333f80800000000000000
+      internalID: -8128091517007176049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_91
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40a6e6947189a4b0800000000000000
+      internalID: -5428665538070536117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_92
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98dff04c21bc3cf0800000000000000
+      internalID: -271147073921886049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_93
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7e02bb74fec41c0800000000000000
+      internalID: -4517973234798237740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_94
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57106bfc103a9630800000000000000
+      internalID: 3934510125496145759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_95
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0baafb54b8ac583b0800000000000000
+      internalID: -5510775869498479952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_96
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c47476c5ef44db0800000000000000
+      internalID: -4808438829301675003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_97
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ef57769db632030800000000000000
+      internalID: 3468734719493275289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_98
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb59b1a230f06470800000000000000
+      internalID: 8385966606416174019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_99
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2102050806e9d20800000000000000
+      internalID: 3287170882243400368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_100
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d452a44c1af750780800000000000000
+      internalID: -8717421170946071219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_101
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de88e255472e96070800000000000000
+      internalID: 8100254394075744493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_102
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da46cc5637142c0b0800000000000000
+      internalID: -5709929413667429203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_103
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4066b727440e5a0c0800000000000000
+      internalID: -4564996062687042044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_104
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 13
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb7c9c41cffadfc0800000000000000
+      internalID: -3469179357256451130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_105
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aa9e247d218fd660800000000000000
+      internalID: 7412785543897848485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_106
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bf4120a22c87020800000000000000
+      internalID: 2339833492098317114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_107
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70e1ec220f8f92b0800000000000000
+      internalID: -5575580574155677572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_108
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e27576119735070800000000000000
+      internalID: 8093946070970084910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_109
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c177c975da7471d0800000000000000
+      internalID: -3353920765194440248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_110
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8989033166bbf3450800000000000000
+      internalID: 6070776869801728152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_111
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238fe77297b8b9880800000000000000
+      internalID: -8603129310691264462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_112
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049f5b6838b3107e0800000000000000
+      internalID: -1801092939884660416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_113
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1a96071fbc0eff0800000000000000
+      internalID: -8782961421213274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_114
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e393dbd9f0c47c4a0800000000000000
+      internalID: -6573201501169305282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_115
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c971571a0f2dfd0800000000000000
+      internalID: -2318526281897501694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_116
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 2
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c86d677e7e7ba580800000000000000
+      internalID: -8814812764012975933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_117
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a302ef1eb1fa1d0800000000000000
+      internalID: -3337418141413131638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_118
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 2
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086faa86b43f046d0800000000000000
+      internalID: -3008137045879359872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_119
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee5224896e3c6640800000000000000
+      internalID: 5074499503049039590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_120
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc41e9fedacc59a40800000000000000
+      internalID: 5374426777758078156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_121
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f380338acd7068740800000000000000
+      internalID: 5153815467868227647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_122
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2263e7e1eca5bf6d0800000000000000
+      internalID: -2955668889117247966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_123
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56585ad7fd47eaf40800000000000000
+      internalID: 5741655078178489701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_124
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 11
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d452b7736def3a0800000000000000
+      internalID: -6629626067665203838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_125
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 8
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d921ceebbf1b1910800000000000000
+      internalID: 1809074567344368086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_126
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 8
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f8fe5789c4cfa50800000000000000
+      internalID: 6556199375241973560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_127
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 8
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab29a8ce92af2be0800000000000000
+      internalID: -1499801348036023390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_128
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 8
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9162c10a432b4e0800000000000000
+      internalID: -1967452224935814749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_129
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 8
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f84a438eb9ea6c0800000000000000
+      internalID: -4130192386634248366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_130
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533cd092e1ce431b0800000000000000
+      internalID: -5677653615925411019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_131
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6515d9807078760800000000000000
+      internalID: 7459939041343002311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_132
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7a5eb95373c3f50800000000000000
+      internalID: 6862420635594106866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_133
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e215c062940866e90800000000000000
+      internalID: -7032792716433141458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_134
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deaf344e604cd2960800000000000000
+      internalID: 7578929281812921069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_135
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d44dde1f17a3870800000000000000
+      internalID: 8663362117091740950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_136
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d7dd3a794ec6e50800000000000000
+      internalID: 6804064476990373249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprakleSprite_137
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 2
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6368632a1d165d140800000000000000
+      internalID: 4743805335502226998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
