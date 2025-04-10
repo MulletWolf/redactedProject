@@ -18,8 +18,7 @@ public class ProgressBar : MonoBehaviour
     
     //ONLY FOR UPDATING PROGRESSBAR NOTHING ELSE 
    
-    public Inventory inventory;
-    public TaskTracker taskTracker;
+   
 
   
    // public ItemData itemData;
@@ -30,13 +29,18 @@ public class ProgressBar : MonoBehaviour
     //public UnlockPainting unlocked;
   //  public List<int> puzzleProgress = new List<int>();
    // public int puzzleIndex = 0;
-   public UnlockableItem itemData;
-   public InventoryItem newItem;
-   ProgressManager progressManager;
+ //  public UnlockableItem itemData;
+  // public InventoryItem newItem;
+  public ProgressManager progressManager;
+  public UnlockManager unlockManager;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (progressManager == null)
+        {
+            Debug.Log($"ProgressManager is null");
+        }
         currentProgress = 0;
     }
 
@@ -63,7 +67,7 @@ public class ProgressBar : MonoBehaviour
         maxProgress = 3;
 
         currentProgress++;
-        if (currentProgress<maxProgress)
+        if (currentProgress<=maxProgress)
         {
             //every time the progressbar is fulll user can enter painting
             //so put the progressbar.Add() at the end of each puzzle 
@@ -74,7 +78,7 @@ public class ProgressBar : MonoBehaviour
             // unlockableItem.UnlockItem("Painting");//unlock painting
             
            // Debug.Log("Item added to inventory"+itemData.itemName);
-            
+            Debug.Log($"Progress: {currentProgress}/{maxProgress}");
         }
 
         if (currentProgress>=maxProgress)
@@ -82,17 +86,21 @@ public class ProgressBar : MonoBehaviour
             //every time the progressbar is fulll user can enter painting
             //so put the progressbar.Add() at the end of each puzzle 
             //set sizefor max progress
-            //inventory.AddItem(itemData);//adding itemData into inventory
-            currentProgress=currentProgress%maxProgress;//restart progress to 0
+           // inventory.AddItem(itemData);//adding itemData into inventory
+           // currentProgress=currentProgress%maxProgress;//restart progress to 0
           //  UpdateProgress();
-          
+         
+          string itemName=" Cipher1";
             Debug.Log("ProgressBar full");
-            
+           // progressManager.CheckProgressAndUnlock(itemName);
+           // unlockManager.UnlockItem(itemName);
+
+
             //unlocked.Unlock();
-           // unlockableItem.UnlockItem("Painting");//unlock painting
-            
-           // Debug.Log("Item added to inventory"+itemData.itemName);
-            
+            // unlockableItem.UnlockItem("Painting");//unlock painting
+
+            // Debug.Log("Item added to inventory"+itemData.itemName);
+
         }
     }
 
