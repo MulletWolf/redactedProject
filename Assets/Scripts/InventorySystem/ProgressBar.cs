@@ -94,9 +94,9 @@ public class ProgressBar : MonoBehaviour
            // currentProgress=currentProgress%maxProgress;//restart progress to 0
           //  UpdateProgress();
          
-          string itemName=" Cipher1";
+         // string itemName=" Cipher1";
             Debug.Log("ProgressBar full");
-            progressManager.UnlocksForCurrentScene();
+           // progressManager.UnlocksForCurrentScene();
            // progressManager.CheckProgressAndUnlock(itemName);
            // unlockManager.UnlockItem(itemName);
 
