@@ -984,7 +984,42 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      candleFlameSpirtesheet_0: -1544771101239601730
+      candleFlameSpirtesheet_1: -5064035045347208154
+      candleFlameSpirtesheet_10: 5102805144199661637
+      candleFlameSpirtesheet_11: -7246831209858289437
+      candleFlameSpirtesheet_12: 874202121376916137
+      candleFlameSpirtesheet_13: 6912344714574571235
+      candleFlameSpirtesheet_14: -8453625861011332092
+      candleFlameSpirtesheet_15: 4066589542342450888
+      candleFlameSpirtesheet_16: -5147386481423239902
+      candleFlameSpirtesheet_17: -4909795069382833530
+      candleFlameSpirtesheet_18: -3998449074371986786
+      candleFlameSpirtesheet_19: 4843636503009126249
+      candleFlameSpirtesheet_2: -4583112627199956985
+      candleFlameSpirtesheet_20: -1753573826264913198
+      candleFlameSpirtesheet_21: 3302741675194554231
+      candleFlameSpirtesheet_22: 4896580665986559659
+      candleFlameSpirtesheet_23: 9190027405430085483
+      candleFlameSpirtesheet_24: -2666681357873172381
+      candleFlameSpirtesheet_25: -6363628938069751004
+      candleFlameSpirtesheet_26: 4476697654329682783
+      candleFlameSpirtesheet_27: 1301221983558273035
+      candleFlameSpirtesheet_28: 4125512324217504260
+      candleFlameSpirtesheet_29: -8541150272372918016
+      candleFlameSpirtesheet_3: 1539117707332920061
+      candleFlameSpirtesheet_30: -4264741837425091907
+      candleFlameSpirtesheet_31: -6018880789914755621
+      candleFlameSpirtesheet_32: -6715429784070028473
+      candleFlameSpirtesheet_33: -2628587390703663586
+      candleFlameSpirtesheet_34: 5093312527631356278
+      candleFlameSpirtesheet_4: 6806756278785991308
+      candleFlameSpirtesheet_5: -1186059396054161202
+      candleFlameSpirtesheet_6: -7438066067046940057
+      candleFlameSpirtesheet_7: -1663497165182220547
+      candleFlameSpirtesheet_8: -5279890673758312084
+      candleFlameSpirtesheet_9: -5954810618244365391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
