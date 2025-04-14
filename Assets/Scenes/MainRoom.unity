@@ -335,11 +335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 446888692029708727, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.02
+      value: -1.47
       objectReference: {fileID: 0}
     - target: {fileID: 446888692029708727, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.91
+      value: 0.889
       objectReference: {fileID: 0}
     - target: {fileID: 446888692029708727, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -373,6 +373,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2609231678465361265, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 3708085668348208674, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -389,6 +393,10 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1476871844}
+    - target: {fileID: 8746936151807323884, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8746936151807323884, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
       propertyPath: unlockable
       value: 
@@ -429,6 +437,8 @@ GameObject:
   - component: {fileID: 294039051}
   - component: {fileID: 294039052}
   - component: {fileID: 294039053}
+  - component: {fileID: 294039054}
+  - component: {fileID: 294039055}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -513,7 +523,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294039050}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -552,6 +562,61 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.05, y: 1.58}
   m_EdgeRadius: 0
+--- !u!70 &294039054
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294039050}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.05, y: 1.58}
+  m_Direction: 0
+--- !u!114 &294039055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294039050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963b87f265021984aaa14c894ae81f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1476871844}
+  progressBar: {fileID: 207195319}
+  unlockable: {fileID: 0}
+  progressManager: {fileID: 0}
+  unlockManager: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!1 &473492692
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +832,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1476871844}
     - target: {fileID: 8746936151807323884, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746936151807323884, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
       propertyPath: unlockable
       value: 
       objectReference: {fileID: 621714118}
@@ -806,6 +875,7 @@ GameObject:
   - component: {fileID: 587198565}
   - component: {fileID: 587198566}
   - component: {fileID: 587198567}
+  - component: {fileID: 587198568}
   m_Layer: 0
   m_Name: LeftDoor
   m_TagString: Untagged
@@ -929,6 +999,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.22, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &587198568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587198564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963b87f265021984aaa14c894ae81f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1476871844}
+  progressBar: {fileID: 207195319}
+  unlockable: {fileID: 0}
+  progressManager: {fileID: 0}
+  unlockManager: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!1 &621714116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,9 +1215,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1993497575
+  m_SortingLayer: 3
+  m_SortingOrder: 3
   m_Sprite: {fileID: 3522877417044025464, guid: 5a83eee9d679f864599d1ff4eb59c21c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1168,8 +1256,8 @@ Transform:
   m_GameObject: {fileID: 818584713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.31, y: 0.26, z: -0.08773377}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.3685, y: 0.2325, z: -0.08773377}
+  m_LocalScale: {x: 1.433, y: 1.1487, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1218,7 +1306,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.27, y: 0.37}
+  m_Size: {x: 0.27, y: 0.43}
   m_EdgeRadius: 0
 --- !u!1 &931282597
 GameObject:
@@ -1278,6 +1366,10 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1476871844}
+    - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
       propertyPath: unlockable
       value: 
@@ -1474,6 +1566,7 @@ GameObject:
   - component: {fileID: 1013692301}
   - component: {fileID: 1013692302}
   - component: {fileID: 1013692303}
+  - component: {fileID: 1013692304}
   m_Layer: 0
   m_Name: LeftBed
   m_TagString: Untagged
@@ -1597,6 +1690,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.24, y: 3.29}
   m_EdgeRadius: 0
+--- !u!114 &1013692304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013692300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963b87f265021984aaa14c894ae81f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1476871844}
+  progressBar: {fileID: 207195319}
+  unlockable: {fileID: 0}
+  progressManager: {fileID: 0}
+  unlockManager: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!1 &1044961420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6806203186070613188, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
@@ -1672,6 +1783,7 @@ GameObject:
   - component: {fileID: 1128916065}
   - component: {fileID: 1128916066}
   - component: {fileID: 1128916067}
+  - component: {fileID: 1128916068}
   m_Layer: 0
   m_Name: RightDoor
   m_TagString: Untagged
@@ -1795,6 +1907,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.22, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &1128916068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128916064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963b87f265021984aaa14c894ae81f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1476871844}
+  progressBar: {fileID: 207195319}
+  unlockable: {fileID: 621714118}
+  progressManager: {fileID: 1410364577}
+  unlockManager: {fileID: 68576539}
+  levelManager: {fileID: 0}
 --- !u!1001 &1201731310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1819,6 +1949,10 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1476871844}
+    - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
       propertyPath: unlockable
       value: 
@@ -1969,6 +2103,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1476871844}
     - target: {fileID: 8746936151807323884, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746936151807323884, guid: 9405f8ab446347045aabe1b072847ff6, type: 3}
       propertyPath: unlockable
       value: 
       objectReference: {fileID: 621714118}
@@ -2094,6 +2232,7 @@ GameObject:
   - component: {fileID: 1434244809}
   - component: {fileID: 1434244810}
   - component: {fileID: 1434244811}
+  - component: {fileID: 1434244812}
   m_Layer: 0
   m_Name: RightBed
   m_TagString: Untagged
@@ -2217,6 +2356,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.25, y: 3.3}
   m_EdgeRadius: 0
+--- !u!114 &1434244812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434244808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963b87f265021984aaa14c894ae81f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1476871844}
+  progressBar: {fileID: 207195319}
+  unlockable: {fileID: 0}
+  progressManager: {fileID: 0}
+  unlockManager: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!1 &1476871842
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,6 +3230,10 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1476871844}
+    - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
       propertyPath: unlockable
       value: 

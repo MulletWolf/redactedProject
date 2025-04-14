@@ -14,7 +14,10 @@ namespace Narrative
         public List<UnlockableItem> items;
 
         // public List<ItemData> ciphers;
-        private Dictionary<string, UnlockableItem> itemDictionary;
+        public Dictionary<string, UnlockableItem> itemDictionary;
+
+       
+        public UnlockableItem item;
 
 
         // public List<UnlockableItem> itemList=new List<UnlockableItemItem>();
@@ -26,7 +29,7 @@ namespace Narrative
 
          void Start()
         {
-          LockAllItems();
+         // LockAllItems();
          
         }
 
@@ -52,12 +55,15 @@ namespace Narrative
                 if (!string.IsNullOrEmpty(item.itemName))
                 {
                     itemDictionary[item.itemName] = item;
-                }
-                else
-                {
-                    Debug.Log("UnlockableItem is null");
+                    continue;
                 }
 
+                if (!itemDictionary.ContainsKey(item.itemName))
+                {
+                  //  continue;
+                      itemDictionary.Add(item.itemName, item);//assigns a key to the identifier 
+                }
+              
 
             }
 
@@ -90,13 +96,19 @@ namespace Narrative
 
         public void LockItem(string itemName)
         {
-            foreach (var item in items)
+          /*  foreach (var item in items)
             {
+                if (item == null) continue;
                 if (item.itemName==itemName)
                 {
                     item.isUnlocked = false;
+                    break;
                     Debug.Log( item.itemName+"is locked");
                 }
+            }*/
+            if(itemDictionary.TryGetValue(itemName, out var item) && item.isUnlocked)
+            {
+                item.isUnlocked = false;
             }
         }
 

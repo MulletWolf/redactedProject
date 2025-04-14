@@ -21,7 +21,7 @@ namespace InventorySystem
 
         public Unlockable unlockable;
         public FailSystem failSystem;
-        
+
         // TaskTracker task = new TaskTracker(); 
         // int completedTasks = task.getTasks();
 
@@ -43,7 +43,7 @@ namespace InventorySystem
                 Debug.LogError("UnlockManager not assigned to progressManagerr u talking about ");
             }
 
-           
+
 
 
 
@@ -57,49 +57,65 @@ namespace InventorySystem
             //UnlockSceneInGallery();
 
         }
-     /*   void Awake() 
+        /*   void Awake()
+           {
+               DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
+           }
+
+   */
+
+        public bool isProgressFull
         {
-            DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
+            get { return progressBar.currentProgress >= progressBar.maxProgress; }
         }
-        
-*/
-     
-     public bool isProgressFull
-     {
-         get { return progressBar.currentProgress >= progressBar.maxProgress; }
-     }
 
         public bool CheckProgressAndUnlock(string itemName)
         {
-           // unlockable.SetUnlockItem("Painting1") ;//automatically makes Painting1 unlocked
-           string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
-           if (!isProgressFull)
-           {
-             
-               Debug.Log($"[Progrss] {itemName} -Progress incomplete{progress}");
-               
-               return false;
-           }
-            if (unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
-            {
-                Debug.Log($"[Progrss] {itemName} -has already been unlocked{progress}");
-                return false;
-                  
-            } Debug.Log("Unlocking "+itemName);
-            unlockManager.UnlockItem(itemName);//unlock item
+            // unlockable.SetUnlockItem("Painting1") ;//automatically makes Painting1 unlocked
+            string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
 
-            return true;
+            if (string.IsNullOrEmpty(itemName)) return false;
+            
+            if (!isProgressFull) return false;
+
+
+
+            try
+            {
+                if (!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
+                {
+                    // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
+                    // return false;
+                    Debug.Log("Unlocking " + itemName);
+                    unlockManager.UnlockItem(itemName); //unlock item
+
+                    return true;
+
+
+                }
+                return false;
+            }
+            catch (System.Exception e)
+            {
+                Debug.Log($"Error checking {itemName}: {e.Message}");
+
+                return false;
+            }
+
+           
+
 
         }
+    
 
-        /*if (taskTracker!=null&&taskTracker.completedTasks>=taskTracker.tasks.Count)
-        {
+    /*if (taskTracker!=null&&taskTracker.completedTasks>=taskTracker.tasks.Count)
+    {
 
-        }*/
+    }*/
 
 
 
-      
+
 
         public void UnlockSceneInGallery()
 
@@ -111,149 +127,164 @@ namespace InventorySystem
             var clickedItem = clickItem.OnItemClick("Painting1");
 
             if (levelManager.currentSceneIndex != 6) return; //checs if teh paints r unlocked inside the gallery
-            
-                
-                if (unlockable.IsUnlocked("Painting1")) //if paintin1 isunlokable==true then do this
+
+
+            if (unlockable.IsUnlocked("Painting1")) //if paintin1 isunlokable==true then do this
+            {
+                Debug.Log($"Unlocked {unlockable.name}");
+                if (clickedItem == "Painting1") //if painting is clicked then go to gallery which is scene 6
                 {
-                    Debug.Log($"Unlocked {unlockable.name}");
-                    if (clickedItem=="Painting1") //if painting is clicked then go to gallery which is scene 6
-                    {
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
-                        Debug.Log($" Painting 1 is clicked goes to scene {levelManager.scenes[7]}.");
-                        return; //goes to end
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
+                    Debug.Log($" Painting 1 is clicked goes to scene {levelManager.scenes[7]}.");
+                    return; //goes to end
 
-                    }
                 }
-                else if (unlockable.IsUnlocked("Cipher1") &&unlockable.IsUnlocked("Painting2"))
+            }
+            else if (unlockable.IsUnlocked("Cipher1") && unlockable.IsUnlocked("Painting2"))
+            {
+                Debug.Log($"Unlocked {unlockable.name}");
+                if (clickedItem == "Painting2") //if painting is clicked then go to gallery which is scene 6
                 {
-                    Debug.Log($"Unlocked {unlockable.name}");
-                    if (clickedItem=="Painting2") //if painting is clicked then go to gallery which is scene 6
-                    {
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[8]);
-                        // Debug.Log($"{paintingName} is clicked goes to gallery.");
-                        Debug.Log($" Painting 2 is clicked goes to scene {levelManager.scenes[8]}.");
-                        return;
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[8]);
+                    // Debug.Log($"{paintingName} is clicked goes to gallery.");
+                    Debug.Log($" Painting 2 is clicked goes to scene {levelManager.scenes[8]}.");
+                    return;
 
-                    }
                 }
-                else if (unlockable.IsUnlocked("Cipher2") &&unlockable.IsUnlocked("Painting3"))
+            }
+            else if (unlockable.IsUnlocked("Cipher2") && unlockable.IsUnlocked("Painting3"))
+            {
+                Debug.Log($"Unlocked {unlockable.name}");
+                if (clickedItem == "Painting3") //if painting is clicked then go to gallery which is scene 6
                 {
-                    Debug.Log($"Unlocked {unlockable.name}");
-                    if (clickedItem=="Painting3") //if painting is clicked then go to gallery which is scene 6
-                    {
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[9]);
-                        Debug.Log($" Painting 3 is clicked goes to scene {levelManager.scenes[9]}.");
-                        return;
-                        // Debug.Log($"{paintingName} is clicked goes to gallery.");
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[9]);
+                    Debug.Log($" Painting 3 is clicked goes to scene {levelManager.scenes[9]}.");
+                    return;
+                    // Debug.Log($"{paintingName} is clicked goes to gallery.");
 
-                    }
                 }
-
             }
 
-            
-        
+        }
+
+
+
 
         public void UnlocksForCurrentScene()
         {
             switch (levelManager.currentSceneIndex)
-                        {
-            
-            
-                            // Check for unlockables for each scene
-                            case 5: // Lab → Unlock Cipher1 → Painting2
-                                HandleUnlockablesProgress("Cipher1", "Painting1");
-                                break;
-                            case 8: // Library → Unlock Cipher2 → Painting3
-                                HandleUnlockablesProgress("Cipher2", "Painting3");
-                                break;
-                            case 9: // Vault → Unlock Cipher3 → Painting4
-                                HandleUnlockablesProgress("Cipher3", "Painting4");
-                                break;
-            
-            
-                        }
+            {
+
+
+                // Check for unlockables for each scene
+                case 5: // Lab → Unlock Cipher1 → Painting2
+                    HandleUnlockablesProgress("Cipher1", "Painting1");
+                    break;
+                case 8: // Library → Unlock Cipher2 → Painting3
+                    HandleUnlockablesProgress("Cipher2", "Painting3");
+                    break;
+                case 9: // Vault → Unlock Cipher3 → Painting4
+                    HandleUnlockablesProgress("Cipher3", "Painting4");
+                    break;
+
+
+            }
         }
 
         public void HandleUnlockablesProgress(string cipherName, string paintingName)
         {
             //i wnat it to handle the scenes that have teh cipgher and painting, anythings thats not the gallery
-            string clickedItemName = clickItem.OnItemClick(cipherName);
-            paintingName = "Painting";
-            cipherName = "Cipher";
+            //string clickedItemName = clickItem.OnItemClick(cipherName);
+            //   paintingName = "Painting";
+            //  cipherName = "Cipher";
 
 
 
 
             if (!isProgressFull) return;
+
+            bool cipherUnlocked = CheckProgressAndUnlock(cipherName);
+
+            bool paintingUnlocked = CheckProgressAndUnlock(paintingName);
+
+
+            if (!string.IsNullOrEmpty(cipherName))
+            {
+                if (cipherUnlocked&&cipherName=="Cipher1") //if cipher is clicked then additem to inventory
+
+                {
+                    foreach (var item in unlockable.items)
+                    {
+
+                        inventory.AddItem(item);
+                        Debug.Log($"{cipherName} is unlocked and added to inventory.");
+                        break;
+
+                    }
+
+                }
+            }
+
+            if (!string.IsNullOrEmpty(paintingName))
+            {
             
-            CheckProgressAndUnlock(cipherName);
-            
-           CheckProgressAndUnlock(paintingName);
-           
+             if (paintingUnlocked&&paintingName=="Painting1") //if painting is clicked then go to gallery which is scene 6
+            {
 
-            if (clickedItemName.Contains(paintingName))//if painting is clicked then go to gallery which is scene 6
-              {
-                  
-                  //here is the options dialogue enter scene yes or no
-                  
-                 UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
-                  Debug.Log($"{paintingName} is clicked goes to gallery.");
-              }
+                //here is the options dialogue enter scene yes or no
 
-              else if (clickedItemName.Contains("Cipher"))//if cipher is clicked then additem to inventory
-
-              {
-                  inventory.AddItem(itemData);
-                  Debug.Log(cipherName + " has been unlocked and added to the inventory");
-              }
+                UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
+                Debug.Log($"{paintingName} is clicked goes to gallery.");
+            }
 
 
-}
 
-          
-  
+        }
+    }
 
 
-            /* public void CheckAndUnlockScene(int sceneIndex)
-             {
-                 int currentSceneIndex = 0;
-                 if (levelmanager.currentSceneIndex==sceneIndex)
+
+
+
+    /* public void CheckAndUnlockScene(int sceneIndex)
+     {
+         int currentSceneIndex = 0;
+         if (levelmanager.currentSceneIndex==sceneIndex)
+         {
+         }
+
+         switch (sceneIndex)
+         {
+
+             case 5:
+                 if (unlockManager.CheckUnlockStatus("Door1"))
                  {
+                     CheckProgressAndUnlock("Door1");
                  }
 
-                 switch (sceneIndex)
+                 break;
+             case 7:
+                 if (unlockManager.CheckUnlockStatus("Painting1"))
                  {
 
-                     case 5:
-                         if (unlockManager.CheckUnlockStatus("Door1"))
-                         {
-                             CheckProgressAndUnlock("Door1");
-                         }
+                     CheckProgressAndUnlock("Painting1");
+                 }
 
-                         break;
-                     case 7:
-                         if (unlockManager.CheckUnlockStatus("Painting1"))
-                         {
+                 break;
+             case 8:
+                 if (unlockManager.CheckUnlockStatus("Painting 2"))
+                 {
+                     CheckProgressAndUnlock("Painting 2");
+                 }
+             case 9:
+                 if (unlockManager.CheckUnlockStatus("Painting3"))
+                 {
+                     CheckProgressAndUnlock("Painting3");
+                 }
 
-                             CheckProgressAndUnlock("Painting1");
-                         }
+                 break;
 
-                         break;
-                     case 8:
-                         if (unlockManager.CheckUnlockStatus("Painting 2"))
-                         {
-                             CheckProgressAndUnlock("Painting 2");
-                         }
-                     case 9:
-                         if (unlockManager.CheckUnlockStatus("Painting3"))
-                         {
-                             CheckProgressAndUnlock("Painting3");
-                         }
-
-                         break;
-
-                 }*/
+         }*/
 
 
 

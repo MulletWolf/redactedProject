@@ -34,6 +34,7 @@ public class ClickItem: MonoBehaviour
   [SerializeField] private Inventory inventory;
   [SerializeField] private ProgressBar progressBar;
   [SerializeField] private Unlockable unlockable;
+ 
   [SerializeField] private ProgressManager progressManager;
   [SerializeField] private UnlockManager unlockManager;
   [SerializeField] private LevelManager levelManager;
@@ -115,141 +116,96 @@ public class ClickItem: MonoBehaviour
 
   public string OnItemClick(string itemName)
   {
-    string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
-   
+//    string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
+
 
     if (unlockable == null)
     {
       Debug.Log("Unlockable null");
-     // return false;
-     return null;
+      // return false;
+      return null;
     }
 
-   
 
-      if (itemName.Contains("cherry"))
-      {
-        Debug.Log($"Progress Bar currentprogress :  {progressBar.currentProgress}, ");
-        Debug.Log($"{itemName} is {gameObject.name}");
-        progressBar.AddProgress();
-        Debug.Log($"Progress Bar increased cherry {progressBar.currentProgress}, ");
-        Destroy(gameObject);
-        //return false;
-        return "cherry";
 
-      }
-      //wait time here
-      if (itemName=="RightDoor")
-      {
-        Debug.Log("Dialogue door");
-      }
-
-      if (itemName == "LeftDoor")
-      {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
-
-      }
-
-      if (itemName == "RightBed" || itemName == "LeftBed")
-      {
-        Debug.Log("Dialogue bed");
-      }
-
-      if (itemName=="Mirror")
-      {
-        Debug.Log("Dialogue mirror");
-      }
-    
-    foreach (var item in unlockable.items)
+    if (itemName.Contains("cherry"))
     {
-      //Debug.Log($"Comparing {item.itemName} with {gameObject.name}");
+      Debug.Log($"Progress Bar currentprogress :  {progressBar.currentProgress}, ");
+      Debug.Log($"{itemName} is {gameObject.name}");
+      progressBar.AddProgress();
+      Debug.Log($"Progress Bar increased cherry {progressBar.currentProgress}, ");
+      Destroy(gameObject);
+      //return false;
+      return "cherry";
+
+    }
+
+    //wait time here
+    if (gameObject.name == "RightDoor")
+    {
+      Debug.Log("Dialogue door");
+    }
+
+    if (gameObject.name == "LeftDoor")
+    {
+      UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
+
+    }
+
+    if (gameObject.name == "RightBed" || gameObject.name == "LeftBed")
+    {
+      Debug.Log("Dialogue bed");
+    }
+
+    if (gameObject.name == "Mirror")
+    {
+      Debug.Log("Dialogue mirror");
+    }
+
+    if(unlockable.itemDictionary.TryGetValue(itemName, out var item))
+    {
+
       if (item.itemName == itemName)
       {
-        
-        //Debug.Log($"Item {gameObject.name} clicked, it matches {item.itemName}");
-      
-       
-          if (item.itemName=="Cipher1")
+
+        if (progressManager.isProgressFull)
+        {
+          //progressManager.CheckProgressAndUnlock("Cipher1"); progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");#
+          if (itemName=="Cipher1")
           {
-           // string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
-              // ProgressManager.CheckProgressAndUnlock(item.itemName);
-              // progressManager.HandleUnlockablesProgress(item.itemName, item.itemName);
-              if (progressBar.currentProgress < progressBar.maxProgress)
-              {
-                
-                ShowLockedVisual();
-                Debug.Log($" item {itemName} is locked {progress}");
-                //return item.itemName;
-
-
-              }
-              else if (unlockable.IsUnlocked(("Cipher1")))
-              {
-                Debug.Log($"item {itemName} is already  unlocked {progress}");
-                //return "Cipher1";
-              }
-              else
-              {
-                unlockManager.UnlockItem("Cipher1");
-                ShowUnlockedVisual();
-                Debug.Log($"item {itemName} is unlocked {progress}");
-                inventory.AddItem(item);
-                Debug.Log(itemName+"item added to inventory");
-                Destroy(gameObject);
-                return item.itemName;
-               
-              
-              }
-            //  progressManager.CheckProgressAndUnlock(item.itemName);
-             // inventory.AddItem(itemData);
-           //  unlockManager.UnlockItem(itemName);
-             //  Debug.Log($"Item {gameObject.name}is added to the inventory ");
-               //isCipher = true;
-               //  Debug.Log($"Item {gameObject.name} contains  the unlockable item  {item.itemName}");
-            // return item.itemName;
-         }
-
-          if (item.itemName == "Painting1")
-          {
-            if (progressBar.currentProgress < progressBar.maxProgress)
-            {
-              Debug.Log($" item {itemName} is locked {progress}");
-              // ProgressManager.UnlockScene();
-              // progressManager.CheckProgressAndUnlock(itemName);
-              // isPainting = true;
-              Debug.Log($"Item {gameObject.name} is now unlocked {item.itemName}");
-              // progressManager.UnlockSceneInGallery();
-             // return item.itemName;
-            }
-            else if(unlockable.IsUnlocked(("Painting1")))
-            {
-              Debug.Log(itemName+"is already unlocked");
-             // progressManager.HandleUnlockablesProgress("Cipher1","Painting1");
-            }
-            else
-            {
-             progressManager.CheckProgressAndUnlock("Painting1");
-             UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
-
-             //  progressManager.HandleUnlockablesProgress(itemName, itemName);
-             // progressManager.UnlocksForCurrentScene();
-             // progressManager.UnlockSceneInGallery();
-            }
+            progressManager.HandleUnlockablesProgress("Cipher1",null);
+            return "Cipher1";
           }
-
-
-          //   }
-       // Debug.Log($"GameObject destroyed  {gameObject.name}, " + itemData.name);
-        //   Destroy(gameObject, 0.5f);
-
-         // return isPainting || isCipher; //returns ispainting or iscipher
-
+           if (itemName == "Painting1")
+          {
+            progressManager.HandleUnlockablesProgress(null, "Painting1");
+           
+            return "Painting1";
+           
+            
+          }
+      // progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");
+         
+        }
+        
+        
       }
-    }
-   // Debug.Log("No match found");
 
-    return null;
+    
+      //return null;
+
+
+
+
+
+    }
+
+    return itemName;
   }
+  // Debug.Log("No match found");
+
+    // return null;
+  
 
   
   //ignore the raycasting
