@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Narrative;
 using Scenes;
 using Unity.VisualScripting;
@@ -6,8 +7,16 @@ using UnityEngine;
 
 namespace InventorySystem
 {
+    public class Scenes
+    {
+        public const int Gallery = 6;
+        public const int Painting1 = 7;
+        public const int Painting2 = 8;
+        public const int Painting3 = 9;
+    }
     public class ProgressManager : MonoBehaviour
     {
+        public static ProgressManager instance;
         //use to check the progress onceconditiosn are met
         public ProgressBar progressBar;
 
@@ -16,7 +25,7 @@ namespace InventorySystem
         public LevelManager levelManager;
         public UnlockableItem itemData;
         public TaskTracker taskTracker;
-        public ClickItem clickItem;
+      //  public ClickItem clickItem;
         public Inventory inventory;
 
         public Unlockable unlockable;
@@ -48,6 +57,17 @@ namespace InventorySystem
 
 
         }
+        void Awake()
+        {
+            /*if (instance == null)
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
+            }
+            Destroy(gameObject);
+       */
+        }
+
 
         void Update()
         {
@@ -113,58 +133,38 @@ namespace InventorySystem
 
     }*/
 
+   
 
 
 
 
-        public void UnlockSceneInGallery()
+
+        public void UnlockSceneInGallery(string painting)
 
         {
             //if progressbar is full and ur ina  specific index then cipher1 is unlocked if its unlcojed then painting1 is unlokded
             //if painting 1 is unlcoked its clickable and u are trasnferred to gallery
             //string sceneName="";
             // Only check if progress is complete
-            var clickedItem = clickItem.OnItemClick("Painting1");
+           // var clickedItem = clickItem.OnItemClick("Painting1");
+           Dictionary<string,int>NextPaintingScene = new Dictionary<string, int>
+           {
+               {"Painting1_1",Scenes.Painting1},//string and its key
+               {"Painting2_1",Scenes.Painting2},
+               {"Painting3_1",Scenes.Painting3}
+               
+               
+           };
+           if (levelManager.currentSceneIndex != Scenes.Gallery) return; //checs if teh paints r unlocked inside the gallery
+           if (NextPaintingScene.TryGetValue(painting, out int sceneIndex))
+           {
+               UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);
+           }
 
-            if (levelManager.currentSceneIndex != 6) return; //checs if teh paints r unlocked inside the gallery
+            
 
 
-            if (unlockable.IsUnlocked("Painting1")) //if paintin1 isunlokable==true then do this
-            {
-                Debug.Log($"Unlocked {unlockable.name}");
-                if (clickedItem == "Painting1") //if painting is clicked then go to gallery which is scene 6
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
-                    Debug.Log($" Painting 1 is clicked goes to scene {levelManager.scenes[7]}.");
-                    return; //goes to end
-
-                }
-            }
-            else if (unlockable.IsUnlocked("Cipher1") && unlockable.IsUnlocked("Painting2"))
-            {
-                Debug.Log($"Unlocked {unlockable.name}");
-                if (clickedItem == "Painting2") //if painting is clicked then go to gallery which is scene 6
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[8]);
-                    // Debug.Log($"{paintingName} is clicked goes to gallery.");
-                    Debug.Log($" Painting 2 is clicked goes to scene {levelManager.scenes[8]}.");
-                    return;
-
-                }
-            }
-            else if (unlockable.IsUnlocked("Cipher2") && unlockable.IsUnlocked("Painting3"))
-            {
-                Debug.Log($"Unlocked {unlockable.name}");
-                if (clickedItem == "Painting3") //if painting is clicked then go to gallery which is scene 6
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[9]);
-                    Debug.Log($" Painting 3 is clicked goes to scene {levelManager.scenes[9]}.");
-                    return;
-                    // Debug.Log($"{paintingName} is clicked goes to gallery.");
-
-                }
-            }
-
+          
         }
 
 
@@ -235,6 +235,7 @@ namespace InventorySystem
 
                 UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
                 Debug.Log($"{paintingName} is clicked goes to gallery.");
+                
             }
 
 

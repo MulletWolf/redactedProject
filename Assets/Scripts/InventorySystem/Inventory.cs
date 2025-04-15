@@ -7,15 +7,22 @@ public class Inventory : MonoBehaviour
 {
     //public List<InventoryItem> inventory=new List<InventoryItem>();
     public List<UnlockableItem> items = new List<UnlockableItem>();
+    public static Inventory instance;
 
     //public InventoryItem inventoryItem;
     // public ItemData itemdata;
     // public Unlockable unlockable;
     //public UnlockableItem newItem;
 
-    void Awake()
+       void Awake()
     {
-        DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
+        /*if (instance == null)
+        {
+            instance = this;
+             DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
+        }
+        Destroy(gameObject);
+       */
     }
 
 
