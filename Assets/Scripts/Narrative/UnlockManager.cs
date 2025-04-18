@@ -22,7 +22,7 @@ namespace Narrative
                 return; // Exit if there's an issue with the progress manager.
             }
 
-            unlockableData.LockItem("Cipher1");
+           unlockableData.LockItem("Cipher1");
             unlockableData.LockItem("Painting1");
 
 

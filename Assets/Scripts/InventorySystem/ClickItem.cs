@@ -7,6 +7,7 @@ using UnityEngine;
 
 using Narrative;
 using Scenes;
+using UnityEditor;
 
 [Serializable]
 public class ClickItem: MonoBehaviour
@@ -56,6 +57,7 @@ public class ClickItem: MonoBehaviour
     }
 */
    //origcolour=myRenderer.color;
+   
   if(inventory!=null){
     inventory = inventory.GetComponent<Inventory>();
     if (inventory==null)
@@ -77,8 +79,16 @@ public class ClickItem: MonoBehaviour
     Debug.LogError("ProgressBar object not found in the scene!");
   } 
   
-
+  Debug.Log($"Unlockable exists: {unlockable != null}");
+  Debug.Log($"ProgressManager exists: {progressManager != null}");
+  Debug.Log($"LevelManager exists: {levelManager != null}");
+  
 }
+  void Awake() {
+    if (unlockable == null) unlockable =  FindFirstObjectByType<Unlockable>();
+    if (progressManager == null) progressManager = FindFirstObjectByType<ProgressManager>();
+    if (levelManager == null) levelManager =  FindFirstObjectByType<LevelManager>();
+  }
 
   public void Update()
   {
@@ -116,15 +126,17 @@ public class ClickItem: MonoBehaviour
 
   public string OnItemClick(string itemName)
   {
-//    string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
-
-
-    if (unlockable == null)
-    {
-      Debug.Log("Unlockable null");
-      // return false;
-      return null;
-    }
+    // if (unlockable == null) Debug.LogError("Unlockable not set!");
+    // if (progressBar == null) Debug.LogError("ProgressBar not set!");
+    // if (progressManager == null) Debug.LogError("ProgressManager not set!");
+    // if (levelManager == null) Debug.LogError("LevelManager not set!");
+    // if (levelManager != null && levelManager.scenes == null) Debug.LogError("LevelManager.scenes not set!");
+    //
+    // // Exit early if any are null
+    // if (unlockable == null || progressBar == null || progressManager == null || levelManager == null || levelManager.scenes == null)
+    // {
+    //   return null;
+    // }
 
 
 
@@ -161,35 +173,43 @@ public class ClickItem: MonoBehaviour
     {
       Debug.Log("Dialogue mirror");
     }
-
-    if(unlockable.itemDictionary.TryGetValue(itemName, out var item))
+ if (gameObject.name=="Painting1_1")
     {
+      UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
+      //return itemName;
+    }
+        
+    foreach(var item in unlockable.items)
+    {
+      if(itemName==item.name)
 
-      if (item.itemName == itemName)
-      {
 
-        if (progressManager.isProgressFull)
-        {
+
+      if (!progressManager.isProgressFull) return null;
+        
           //progressManager.CheckProgressAndUnlock("Cipher1"); progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");#
-          if (itemName=="Cipher1")
+          if (item.itemName.Contains("Cipher"))
           {
-            progressManager.HandleUnlockablesProgress("Cipher1",null);
-            return "Cipher1";
+            progressManager.HandleUnlockablesProgress(itemName,null);
+            return itemName;
           }
-           if (itemName == "Painting1")
+           if (item.itemName.Contains("Painting"))
           {
-            progressManager.HandleUnlockablesProgress(null, "Painting1");
+           // string paintingName = itemName;
+            progressManager.HandleUnlockablesProgress(null, itemName);
+           // unlockManager.UnlockItem("Painting1_1");
            
-            return "Painting1";
+
+            return itemName;
            
             
-          }
-      // progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");
-         
-        }
+          } 
+          
+    }
+
+   
         
-        
-      }
+      
 
     
       //return null;
@@ -198,7 +218,7 @@ public class ClickItem: MonoBehaviour
 
 
 
-    }
+    
 
     return itemName;
   }
@@ -275,9 +295,20 @@ public class ClickItem: MonoBehaviour
   
     public void OnMouseDown(){//when u click mouse what happens
      // myRenderer.color=Color.red;
+     if (unlockable == null) unlockable =  FindFirstObjectByType<Unlockable>();
+     if (progressManager == null) progressManager =  FindFirstObjectByType<ProgressManager>();
+     if (levelManager == null) levelManager = FindFirstObjectByType<LevelManager>();
+     //string itemName = OnItemClick(unlockable.name);
+    
+
+    
+     // progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");
+
+    
      OnItemClick(gameObject.name);
 
     }
+
     /*
     public void OnMouseExit(){ //remove mouse what happens
       myRenderer.color=origcolour;

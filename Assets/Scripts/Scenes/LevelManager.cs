@@ -2,6 +2,8 @@ using System.Collections;
 //using System.ComponentModel.Design.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+
 //using System.Linq;
 //using UnityEngine.UI;
 
@@ -40,6 +42,14 @@ namespace Scenes{
                 Destroy(gameObject);
                 Debug.Log("SceneLoader destroyed");
             }
+
+            if (scenes.Length == 0 || scenes==null)
+            {
+                Debug.Log("Scene not found");
+                scenes = new string[10];
+             //   return;
+            }
+           
         }
 
         void Update()
