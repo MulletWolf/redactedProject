@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 9aa96b3c6de98df468f37d3781bb63ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -909307351593541284
+    second: Table glasses & dishes_0
+  - first:
+      213: -8966921467327488341
+    second: Table glasses & dishes_1
+  - first:
+      213: -1223999133809571729
+    second: Table glasses & dishes_2
+  - first:
+      213: 7000665868598928620
+    second: Table glasses & dishes_3
+  - first:
+      213: 7450270261142165669
+    second: Table glasses & dishes_4
+  - first:
+      213: 6893007432888085427
+    second: Table glasses & dishes_5
+  - first:
+      213: -84108898857239708
+    second: Table glasses & dishes_6
+  - first:
+      213: -7162053754106829258
+    second: Table glasses & dishes_7
+  - first:
+      213: 428238700179519171
+    second: Table glasses & dishes_8
+  - first:
+      213: 4267279699420704142
+    second: Table glasses & dishes_9
+  - first:
+      213: -8099932190918445814
+    second: Table glasses & dishes_10
+  - first:
+      213: 4703028858574899858
+    second: Table glasses & dishes_11
+  - first:
+      213: 4716000523767074475
+    second: Table glasses & dishes_12
+  - first:
+      213: 317425315535895121
+    second: Table glasses & dishes_13
+  - first:
+      213: -6880194191193200939
+    second: Table glasses & dishes_14
+  - first:
+      213: -1992616634421077143
+    second: Table glasses & dishes_15
+  - first:
+      213: 1699664539554309788
+    second: Table glasses & dishes_16
+  - first:
+      213: -6131471247771389577
+    second: Table glasses & dishes_17
+  - first:
+      213: 1870780904912240415
+    second: Table glasses & dishes_18
+  - first:
+      213: 15529734854160238
+    second: Table glasses & dishes_19
+  - first:
+      213: 3431308885250170991
+    second: Table glasses & dishes_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Table glasses & dishes_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 79
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51ad9c08cd7163f0800000000000000
+      internalID: -909307351593541284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 65
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baede1b2f681f8380800000000000000
+      internalID: -8966921467327488341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 76
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6805e7d54b730fe0800000000000000
+      internalID: -1223999133809571729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 62
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce46a01348c572160800000000000000
+      internalID: 7000665868598928620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 48
+        width: 113
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8190c445da46760800000000000000
+      internalID: 7450270261142165669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 64
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbeb6f4db1e8af50800000000000000
+      internalID: 6893007432888085427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_6
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 48
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b3a21f66f25def0800000000000000
+      internalID: -84108898857239708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_7
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 62
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636a53c8e064b9c90800000000000000
+      internalID: -7162053754106829258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_8
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 49
+        width: 39
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6764334d861f500800000000000000
+      internalID: 428238700179519171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_9
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 46
+        width: 137
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8de431174c683b30800000000000000
+      internalID: 4267279699420704142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 77
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05fd8f6692479f80800000000000000
+      internalID: -8099932190918445814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_11
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 62
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a84c344d3844140800000000000000
+      internalID: 4703028858574899858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_12
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 64
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae41bb6d79927140800000000000000
+      internalID: 4716000523767074475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_13
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 77
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15abb3784a8b76400800000000000000
+      internalID: 317425315535895121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_14
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 49
+        width: 37
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6293006d3a480a0800000000000000
+      internalID: -6880194191193200939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 53
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b1cc37abdc854e0800000000000000
+      internalID: -1992616634421077143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 50
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96667db4eb669710800000000000000
+      internalID: 1699664539554309788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_17
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 51
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771b016d263a8eaa0800000000000000
+      internalID: -6131471247771389577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_18
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 64
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fb0e9325956f910800000000000000
+      internalID: 1870780904912240415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_19
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 53
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f2079263c273000800000000000000
+      internalID: 15529734854160238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table glasses & dishes_20
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 50
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f606af350457e9f20800000000000000
+      internalID: 3431308885250170991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Table glasses & dishes_0: -909307351593541284
+      Table glasses & dishes_1: -8966921467327488341
+      Table glasses & dishes_10: -8099932190918445814
+      Table glasses & dishes_11: 4703028858574899858
+      Table glasses & dishes_12: 4716000523767074475
+      Table glasses & dishes_13: 317425315535895121
+      Table glasses & dishes_14: -6880194191193200939
+      Table glasses & dishes_15: -1992616634421077143
+      Table glasses & dishes_16: 1699664539554309788
+      Table glasses & dishes_17: -6131471247771389577
+      Table glasses & dishes_18: 1870780904912240415
+      Table glasses & dishes_19: 15529734854160238
+      Table glasses & dishes_2: -1223999133809571729
+      Table glasses & dishes_20: 3431308885250170991
+      Table glasses & dishes_3: 7000665868598928620
+      Table glasses & dishes_4: 7450270261142165669
+      Table glasses & dishes_5: 6893007432888085427
+      Table glasses & dishes_6: -84108898857239708
+      Table glasses & dishes_7: -7162053754106829258
+      Table glasses & dishes_8: 428238700179519171
+      Table glasses & dishes_9: 4267279699420704142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
