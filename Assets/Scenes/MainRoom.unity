@@ -666,7 +666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2786315636018261872, guid: f8192aba1c55f0f4e85679ddf1185f9f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4628513481255344202, guid: f8192aba1c55f0f4e85679ddf1185f9f, type: 3}
       propertyPath: Cipher1
@@ -910,10 +910,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1476871844}
   progressBar: {fileID: 207195319}
-  unlockable: {fileID: 0}
-  progressManager: {fileID: 0}
-  unlockManager: {fileID: 0}
-  levelManager: {fileID: 0}
+  unlockable: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
+  progressManager: {fileID: 7041528922349228220, guid: bbe4e22c3cb34d343bc0b75da563a18c, type: 3}
+  unlockManager: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
+  levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
 --- !u!1 &684903456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1046,10 @@ PrefabInstance:
     - target: {fileID: 5375136582424594564, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
       propertyPath: m_Name
       value: cherry3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375136582424594564, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
       propertyPath: Cipher1
@@ -1561,10 +1565,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1476871844}
   progressBar: {fileID: 207195319}
-  unlockable: {fileID: 0}
+  unlockable: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
   progressManager: {fileID: 1410364577}
   unlockManager: {fileID: 68576539}
-  levelManager: {fileID: 0}
+  levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
 --- !u!1001 &1201731310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1576,6 +1580,10 @@ PrefabInstance:
     - target: {fileID: 5375136582424594564, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
       propertyPath: m_Name
       value: cherry2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375136582424594564, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7526283890412002665, guid: d987648afec1a57479a4dff1fdb3e3a5, type: 3}
       propertyPath: Cipher1
@@ -1855,41 +1863,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1476871844}
   progressBar: {fileID: 207195319}
-  unlockable: {fileID: 0}
-  progressManager: {fileID: 0}
-  unlockManager: {fileID: 0}
-  levelManager: {fileID: 0}
---- !u!1 &1462423153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1462423154}
-  m_Layer: 0
-  m_Name: Managers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1462423154
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462423153}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.97265035, y: -0.14989313, z: -0.080586016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  unlockable: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
+  progressManager: {fileID: 7041528922349228220, guid: bbe4e22c3cb34d343bc0b75da563a18c, type: 3}
+  unlockManager: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
+  levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
 --- !u!114 &1476871844 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2018979975834553237, guid: 4a5c021695ee9db4388cc221dc2838a9, type: 3}
@@ -2350,6 +2327,7 @@ GameObject:
   - component: {fileID: 1897095160}
   - component: {fileID: 1897095159}
   - component: {fileID: 1897095158}
+  - component: {fileID: 1897095162}
   m_Layer: 0
   m_Name: 'Main Camera '
   m_TagString: MainCamera
@@ -2475,6 +2453,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897095162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897095157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ecfd2c49cc77946a93fe08fc47f1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camspeed: 7
 --- !u!1 &1978887722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,6 +2596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry1
       objectReference: {fileID: 0}
+    - target: {fileID: 2786315636018261872, guid: f8192aba1c55f0f4e85679ddf1185f9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4628513481255344202, guid: f8192aba1c55f0f4e85679ddf1185f9f, type: 3}
       propertyPath: Cipher1
       value: 
@@ -2702,6 +2697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting1
       objectReference: {fileID: 0}
+    - target: {fileID: 1282832516380875490, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2788413741781570936, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
       propertyPath: inventory
       value: 
@@ -2782,6 +2781,10 @@ PrefabInstance:
     - target: {fileID: 2786315636018261872, guid: f8192aba1c55f0f4e85679ddf1185f9f, type: 3}
       propertyPath: m_Name
       value: Cipher1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786315636018261872, guid: f8192aba1c55f0f4e85679ddf1185f9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4628513481255344202, guid: f8192aba1c55f0f4e85679ddf1185f9f, type: 3}
       propertyPath: inventory
@@ -3282,7 +3285,6 @@ SceneRoots:
   - {fileID: 1201731310}
   - {fileID: 981793972}
   - {fileID: 1903715480831215275}
-  - {fileID: 1462423154}
   - {fileID: 3811612922161896009}
   - {fileID: 8218238921649522281}
   - {fileID: 8102699765608231891}

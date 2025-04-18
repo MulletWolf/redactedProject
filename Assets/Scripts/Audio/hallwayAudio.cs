@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class galleryAudio : MonoBehaviour
+public class clasgalleryAudio : MonoBehaviour
 {
     public AudioClip mainMusic;
     public AudioClip stoneFootsteps;

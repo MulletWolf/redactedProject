@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1282832516380875490, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
       propertyPath: m_Name
-      value: Painting1
+      value: Painting1_1
       objectReference: {fileID: 0}
     - target: {fileID: 4449868810648382230, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
       propertyPath: m_LocalScale.x
@@ -259,7 +259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &288600910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1282832516380875490, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
       propertyPath: m_Name
-      value: Painting3
+      value: Painting3_!
       objectReference: {fileID: 0}
     - target: {fileID: 4449868810648382230, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
       propertyPath: m_LocalScale.x
@@ -408,6 +408,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
+--- !u!1001 &552070558
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4887783069437076769, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_Name
+      value: Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.43586844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9288704
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.083594255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645512944612189845, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
 --- !u!1 &654029414
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &654029415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -571,7 +628,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1282832516380875490, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
       propertyPath: m_Name
-      value: Painting2
+      value: Painting2_1
       objectReference: {fileID: 0}
     - target: {fileID: 4449868810648382230, guid: 8ac9f0f002054774683571abdfe35119, type: 3}
       propertyPath: m_LocalScale.x
@@ -1161,3 +1218,4 @@ SceneRoots:
   - {fileID: 138351795}
   - {fileID: 1067674006}
   - {fileID: 654029416}
+  - {fileID: 552070558}

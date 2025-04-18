@@ -40,6 +40,7 @@ public class towerRoomAudio : MonoBehaviour
             // Initialize and play audio
             PlayAllAudio();
         }
+        
     }
 
     // set up audioSources links to properties

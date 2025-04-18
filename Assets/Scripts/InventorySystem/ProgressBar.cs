@@ -63,12 +63,7 @@ public class ProgressBar : MonoBehaviour
 
    public void AddProgress()
    {
-      // SetProgress();
-        //each index is a puzzle
-        //puzzleProgress[0] first puzzle
-        //puzzleProgress[1]-- 2nd puzzle ecetra
-        //do i need to say puzzleIndex when , its my chouice to say i orpuzzleIndex
-       
+     
 
         currentProgress++;
         if (currentProgress<=maxProgress)

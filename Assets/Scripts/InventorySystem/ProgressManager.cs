@@ -93,6 +93,7 @@ namespace InventorySystem
         {
             // unlockable.SetUnlockItem("Painting1") ;//automatically makes Painting1 unlocked
             string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
+           // unlockManager.UnlockItem("Painting1_1"); 
 
             if (string.IsNullOrEmpty(itemName)) return false;
             
@@ -147,22 +148,42 @@ namespace InventorySystem
             //string sceneName="";
             // Only check if progress is complete
            // var clickedItem = clickItem.OnItemClick("Painting1");
-           Dictionary<string,int>NextPaintingScene = new Dictionary<string, int>
+           
+           //painting1_1 is automatically unlocked 
+           //painting2_1 is unlocked once painting1 is
+           //painting3_1 is unlocked once painting2 is unlcoked
+           bool paintingUnlock = CheckProgressAndUnlock(painting);
+           if (!paintingUnlock) return;
+
+
+           if (levelManager.currentSceneIndex != 6) return;
+           
+           if (painting=="Painting1_1"&&CheckProgressAndUnlock("Painting1_1"))
            {
-               {"Painting1_1",Scenes.Painting1},//string and its key
-               {"Painting2_1",Scenes.Painting2},
-               {"Painting3_1",Scenes.Painting3}
-               
-               
+               UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
+           }
+           else if (paintingUnlock.Equals("Painting2_1")&&painting=="Painting2_1")
+           {
+               UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[8]);
+           }
+           
+          /* Dictionary<string, int> NextPaintingScene = new Dictionary<string, int>//this basically laods scene once the painting is clicked 
+           {
+               { "Painting1_1", Scenes.Painting1 }, //string and its key
+               { "Painting2_1", Scenes.Painting2 },
+               { "Painting3_1", Scenes.Painting3 }
+
+
            };
            if (levelManager.currentSceneIndex != Scenes.Gallery) return; //checs if teh paints r unlocked inside the gallery
            if (NextPaintingScene.TryGetValue(painting, out int sceneIndex))
            {
                UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);
            }
-
+           
+*/
             
-
+  
 
           
         }
@@ -177,7 +198,7 @@ namespace InventorySystem
 
 
                 // Check for unlockables for each scene
-                case 5: // Lab → Unlock Cipher1 → Painting2
+                case 7: // Lab → Unlock Cipher1 → Painting2
                     HandleUnlockablesProgress("Cipher1", "Painting1");
                     break;
                 case 8: // Library → Unlock Cipher2 → Painting3
@@ -210,7 +231,7 @@ namespace InventorySystem
 
             if (!string.IsNullOrEmpty(cipherName))
             {
-                if (cipherUnlocked&&cipherName=="Cipher1") //if cipher is clicked then additem to inventory
+                if (cipherUnlocked&&cipherName.Contains(cipherName)) //if cipher is clicked then additem to inventory
 
                 {
                     foreach (var item in unlockable.items)

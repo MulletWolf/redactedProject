@@ -40,8 +40,8 @@ namespace Narrative
       */
         public void OnEnable()
         {
-            if(items==null)
-                InititializeItems();
+            /*if(items==null)
+                InititializeItems();*/
         }
    void Start()
         {
@@ -113,10 +113,10 @@ namespace Narrative
 
             if (!unlockeditem.isUnlocked)
             {
-                 unlockeditem.isUnlocked=true;
+                // =true;
 
                 // Debug.Log($"{itemName} unlocked!");
-                return true;
+                return unlockeditem.isUnlocked;
             }
         }
         // else{
@@ -137,7 +137,8 @@ namespace Narrative
             {
                 if (item.name == itemName)
                 {
-                    return item.isUnlocked;
+                    item.isUnlocked=true;
+                    return true;
                 }
             }
 

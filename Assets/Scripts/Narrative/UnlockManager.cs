@@ -23,7 +23,7 @@ namespace Narrative
             }
 
            unlockableData.LockItem("Cipher1");
-            unlockableData.LockItem("Painting1");
+            unlockableData.LockItem("Painting1_1");
 
 
 

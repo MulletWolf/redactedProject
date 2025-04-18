@@ -30,14 +30,14 @@ public class CameraControl : MonoBehaviour
        // moveX=0;
       //  moveY=0;
         
-        if(Input.GetKey(KeyCode.A)){
+        if(Input.GetKey(KeyCode.LeftArrow)){
             move=move+new Vector2(-camspeed,0);
            
            // moveX=-1f;
            // transform.Translate(Vector2.left*camspeed*Time.deltaTime);
 
         }
-        if(Input.GetKey(KeyCode.D)){
+        if(Input.GetKey(KeyCode.RightArrow)){
              move=move+new Vector2(camspeed,0);
              
             // moveX=1f;
@@ -45,13 +45,13 @@ public class CameraControl : MonoBehaviour
 
 
         }
-         if(Input.GetKey(KeyCode.W)){
+         if(Input.GetKey(KeyCode.UpArrow)){
             move=move+new Vector2(0,camspeed);
             
           //  transform.Translate(Vector2.up*camspeed*Time.deltaTime);
 
         }
-        if(Input.GetKey(KeyCode.S)){
+        if(Input.GetKey(KeyCode.DownArrow)){
              move=move+new Vector2(0,-camspeed);
             
            // transform.Translate(Vector2.down*camspeed*Time.deltaTime);

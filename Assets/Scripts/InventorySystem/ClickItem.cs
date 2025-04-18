@@ -79,17 +79,10 @@ public class ClickItem: MonoBehaviour
     Debug.LogError("ProgressBar object not found in the scene!");
   } 
   
-  Debug.Log($"Unlockable exists: {unlockable != null}");
-  Debug.Log($"ProgressManager exists: {progressManager != null}");
-  Debug.Log($"LevelManager exists: {levelManager != null}");
+
   
 }
-  void Awake() {
-    if (unlockable == null) unlockable =  FindFirstObjectByType<Unlockable>();
-    if (progressManager == null) progressManager = FindFirstObjectByType<ProgressManager>();
-    if (levelManager == null) levelManager =  FindFirstObjectByType<LevelManager>();
-  }
-
+ 
   public void Update()
   {
    // if (wasClicked) return;
@@ -123,6 +116,52 @@ public class ClickItem: MonoBehaviour
   //          
   //       }
 
+  /*public string Mainroom(string itemName)
+  {
+      if (itemName.Contains("cherry"))//replace with taskname
+        {
+          Debug.Log($"Progress Bar currentprogress :  {progressBar.currentProgress}, ");
+          Debug.Log($"{itemName} is {gameObject.name}");
+          progressBar.AddProgress();
+          Debug.Log($"Progress Bar increased cherry {progressBar.currentProgress}, ");
+          Destroy(gameObject);
+          //return false;
+          return "cherry";
+    
+        }
+    
+        //wait time here
+        if (gameObject.name == "RightDoor")
+        {
+          Debug.Log("Dialogue door");
+        }
+    
+        if (gameObject.name == "LeftDoor")
+        {
+          UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
+          if (!unlockable.IsUnlocked("Painting1_1"))
+          {
+            Debug.Log($"wowwww Painting1_1 is unlockingggg");
+             unlockManager.UnlockItem("Painting1_1");
+          }
+         
+    
+        }
+    
+        if (gameObject.name == "RightBed" || gameObject.name == "LeftBed")
+        {
+          Debug.Log("Dialogue bed");
+        }
+    
+        if (gameObject.name == "Mirror")
+        {
+          Debug.Log("Dialogue mirror");
+        }
+
+        return null;
+
+  }
+*/
 
   public string OnItemClick(string itemName)
   {
@@ -137,10 +176,8 @@ public class ClickItem: MonoBehaviour
     // {
     //   return null;
     // }
-
-
-
-    if (itemName.Contains("cherry"))
+   // Mainroom(itemName);
+    if (itemName.Contains("cherry"))//replace with taskname
     {
       Debug.Log($"Progress Bar currentprogress :  {progressBar.currentProgress}, ");
       Debug.Log($"{itemName} is {gameObject.name}");
@@ -149,62 +186,82 @@ public class ClickItem: MonoBehaviour
       Destroy(gameObject);
       //return false;
       return "cherry";
-
+    
     }
-
+    
     //wait time here
     if (gameObject.name == "RightDoor")
     {
       Debug.Log("Dialogue door");
     }
-
+    
     if (gameObject.name == "LeftDoor")
     {
       UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
-
+      if (!unlockable.IsUnlocked("Painting1_1"))
+      {
+        Debug.Log($"wowwww Painting1_1 is unlockingggg");
+        unlockManager.UnlockItem("Painting1_1");
+      }
+         
+    
     }
-
+    
     if (gameObject.name == "RightBed" || gameObject.name == "LeftBed")
     {
       Debug.Log("Dialogue bed");
     }
-
+    
     if (gameObject.name == "Mirror")
     {
       Debug.Log("Dialogue mirror");
     }
- if (gameObject.name=="Painting1_1")
-    {
-      UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
-      //return itemName;
-    }
-        
+
+
     foreach(var item in unlockable.items)
     {
-      if(itemName==item.name)
-
-
-
-      if (!progressManager.isProgressFull) return null;
-        
-          //progressManager.CheckProgressAndUnlock("Cipher1"); progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");#
-          if (item.itemName.Contains("Cipher"))
-          {
-            progressManager.HandleUnlockablesProgress(itemName,null);
-            return itemName;
-          }
-           if (item.itemName.Contains("Painting"))
-          {
-           // string paintingName = itemName;
-            progressManager.HandleUnlockablesProgress(null, itemName);
-           // unlockManager.UnlockItem("Painting1_1");
-           
-
-            return itemName;
-           
-            
-          } 
+      if (item.itemName==itemName)
+      {
+         if (item.itemName=="Painting1_1")
+         {
+           //UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
+           // progressManager.UnlockSceneInGallery(itemName);
+           if ( unlockable.IsUnlocked(item.itemName))
+           {
+             Debug.Log($" {itemName} is unlocked =true");
+             UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
+           }
           
+        
+           return itemName;
+         }
+
+
+
+        if (!progressManager.isProgressFull) return null;
+
+        //progressManager.CheckProgressAndUnlock("Cipher1"); progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");#
+        if (item.itemName.Contains("Cipher"))
+        {
+          progressManager.HandleUnlockablesProgress("Cipher1", null);
+          return itemName;
+        }
+
+        if (item.itemName.Contains("Painting"))
+        {
+          // string paintingName = itemName;
+          progressManager.HandleUnlockablesProgress(null, itemName);
+          // unlockManager.UnlockItem("Painting1_1");
+
+
+          return itemName;
+
+
+        }
+       
+        
+        
+      }
     }
 
    
@@ -295,9 +352,9 @@ public class ClickItem: MonoBehaviour
   
     public void OnMouseDown(){//when u click mouse what happens
      // myRenderer.color=Color.red;
-     if (unlockable == null) unlockable =  FindFirstObjectByType<Unlockable>();
+    /* if (unlockable == null) unlockable =  FindFirstObjectByType<Unlockable>();
      if (progressManager == null) progressManager =  FindFirstObjectByType<ProgressManager>();
-     if (levelManager == null) levelManager = FindFirstObjectByType<LevelManager>();
+     if (levelManager == null) levelManager = FindFirstObjectByType<LevelManager>();*/
      //string itemName = OnItemClick(unlockable.name);
     
 
