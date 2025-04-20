@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Inventory
   - gem
+  - cherryy
   layers:
   - Default
   - TransparentFX

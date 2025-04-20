@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 //using System.Linq;
 //using UnityEngine.UI;
 
-namespace Scenes{
+namespace InventorySystem{
 //{// transition.SetTrigger("Start");
 
     public class LevelManager : MonoBehaviour

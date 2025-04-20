@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Net.Mime;
 using InventorySystem;
 using Narrative;
 using NUnit.Framework;
+using Scenes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,8 +24,9 @@ public class ProgressBar : MonoBehaviour
 
   
    // public ItemData itemData;
-    public int maxProgress;
-    public int currentProgress;
+   [Header("Progress Settings")]
+    [SerializeField] private int maxProgress;
+    [SerializeField] private  int currentProgress;
     public float fillAmount;
     public Image fillmask;
     //public UnlockPainting unlocked;
@@ -32,20 +35,47 @@ public class ProgressBar : MonoBehaviour
  //  public UnlockableItem itemData;
   // public InventoryItem newItem;
   public ProgressManager progressManager;
-  public UnlockManager unlockManager;
+  private bool isComplete;
+  public ClickItem clickItem;
+  public ProgressBar instance;
+ 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int CurrentProgress
+    {
+        get
+        {
+            return currentProgress;
+        }
+        set
+        {
+            currentProgress = value;
+        }
+    }
+    public int MaxProgress
+    {
+        get { return maxProgress; }
+        set { maxProgress = value; }
+    }
+
+    /*public void IncrementProgress()
+    {
+        currentProgress += 1;
+    }
+    */
     void Start()
     {
         if (progressManager == null)
         {
             Debug.Log($"ProgressManager is null");
         }
-        currentProgress = 0;
-        if (maxProgress==0)
-        {
-            maxProgress = 3;
-        }
+        if(isComplete)  ResetProgress();
+      
+       
+    //   currentProgress = 0;
+        
+        
+    //  maxProgress = 3;
     }
 
     // Update is called once per frame
@@ -55,62 +85,115 @@ public class ProgressBar : MonoBehaviour
 
 
         //current progress--is the count
-        //each puuzzleIndex is the index inside puzzleProgress list
+        //each puuzzleIndex is the index inside puzzleProgress 
         //every time a gem is clicked the puzzelprogres sincreases
 
 
     }
+    // void OnEnable() => Debug.Log("ProgressBar enabled");
+    // void OnDisable() => Debug.Log("ProgressBar disabled");
+    // void OnDestroy() => Debug.Log("ProgressBar destroyed");
 
-   public void AddProgress()
-   {
+    /*void Awake()
+    {
      
 
-        currentProgress++;
-        if (currentProgress<=maxProgress)
+        if (instance != this&&instance!=null)
         {
-            //every time the progressbar is fulll user can enter painting
-            //so put the progressbar.Add() at the end of each puzzle 
-            //set sizefor max progress
-            //inventory.inventory.Add(newItem);//adding itemData into inventory
-            
-            //unlocked.Unlock();
-            // unlockableItem.UnlockItem("Painting");//unlock painting
-            
-           // Debug.Log("Item added to inventory"+itemData.itemName);
+          
+            Destroy(gameObject);
+            return;
+        }
+       
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        
+        
+          if (maxProgress == 0)
+               { Debug.Log($"ProgressBar max: {maxProgress}"); 
+                   maxProgress = 3;
+                      ResetProgress();
+               }
+      
+    }
+*/
+    private void ResetProgress()
+    {
+        if (maxProgress == 0)
+        {
+            maxProgress = 3;
+            currentProgress = 0;
+            isComplete = false;
+            //  Debug.Log($"ResetProgress");
+            Debug.Log($"Progress reset to {currentProgress}/{maxProgress}");
+        }
+    }
+    #if UNITY_EDITOR
+    private void OnValidate()
+    {
+
+        if (maxProgress <= 0) maxProgress = 3;
+    }
+    #endif
+
+    public void AddProgress()
+   {
+      // if (currentProgress > maxProgress) return;
+     
+      //currentProgress = Mathf.Min(currentProgress, maxProgress); // Prevent overflow
+      //UpdateProgressBar();
+    //  if (currentProgress >= maxProgress) return;
+   /* if (maxProgress == 0) maxProgress = 3;
+   
+   
+    
+    maxProgress = 3;
+   // currentProgress = Mathf.Clamp( currentProgress + 1, 0, maxProgress);
+      currentProgress++;
+      string progress = $"{currentProgress}/{maxProgress}";
+      Debug.Log($" AddedProgress: {progress}");
+
+      if (maxProgress == 0)
+      {
+          maxProgress = 3;
+          
+          */
+   currentProgress++;
+  
+
+  
+
+   if (currentProgress >= maxProgress)
+          {
+             // maxProgress = 3;
+              //  Debug.Log($"Progress: {progress}");
+            //isComplete = true;
+
+
+              Debug.Log("Progress complete, all cherries collectd!");
+              // Add your custom logic here (e.g., unlock a painting)
+          }
+      //}
+/*
+        currentProgress++;
+        if (currentProgress<maxProgress)
+        {
+
             Debug.Log($"Progress: {currentProgress}/{maxProgress}");
         }
 
         if (currentProgress>=maxProgress)
         {
-            //every time the progressbar is fulll user can enter painting
-            //so put the progressbar.Add() at the end of each puzzle 
-            //set sizefor max progress
-           // inventory.AddItem(itemData);//adding itemData into inventory
-           // currentProgress=currentProgress%maxProgress;//restart progress to 0
-          //  UpdateProgress();
-         
-         // string itemName=" Cipher1";
+
             Debug.Log("ProgressBar full");
-           // progressManager.UnlocksForCurrentScene();
-           // progressManager.CheckProgressAndUnlock(itemName);
-           // unlockManager.UnlockItem(itemName);
 
 
-            //unlocked.Unlock();
-            // unlockableItem.UnlockItem("Painting");//unlock painting
-
-            // Debug.Log("Item added to inventory"+itemData.itemName);
-
-        }
+        }*/
     }
 
  
 
-    // public void SetProgress()
-    // {
-    //           // currentProgress = puzzleProgress[puzzleIndex];
-    //             maxProgress = puzzleProgress.Count - 1;
-    // }
+  
     public void UpdateProgress(){//to show ithe ui of it being filled
         if (fillmask!=null)
         { 
@@ -126,5 +209,5 @@ public class ProgressBar : MonoBehaviour
        
 
     }
-    
-}
+    /*public int CurrentProgress => currentProgress; // Expression-bodied property (C# 6+)
+*/}

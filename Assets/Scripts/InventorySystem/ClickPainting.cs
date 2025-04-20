@@ -35,7 +35,7 @@ namespace InventorySystem
 
       if (Input.GetMouseButtonDown(0))
       {
-        ClickP("");
+       // ClickP("");
 
       }
     }

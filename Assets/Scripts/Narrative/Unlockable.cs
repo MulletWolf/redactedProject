@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using InventorySystem;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 
@@ -19,40 +20,35 @@ namespace Narrative
        
       //  public UnlockableItem item;
         private bool isInitialized = false;
+        public static Unlockable instance;
+        public ProgressBar2 progressBar;
 
-        /*public Dictionary<string, UnlockableItem> iItemDictionary
-        {
-            get
-            {
-                if(!isInitialized)InititializeItems();
-                return itemDictionary;
-            }
-        }
-*/
-
-        // public List<UnlockableItem> itemList=new List<UnlockableItemItem>();
-
-      /*  public void Awake()
-        {
-            InititializeItems();
-        }
-
-      */
-        public void OnEnable()
-        {
-            /*if(items==null)
-                InititializeItems();*/
-        }
+       
    void Start()
         {
-          LockAllItems();
+         
          
         }
+   
+        void Awake()
+        {
+             LockAllItems();
+            if (instance != null && instance != this)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject); // Make this object persistent
+            }
+        }
+
 
         public void InititializeItems()
         {
-           //  itemDictionary = new Dictionary<string, UnlockableItem>();
-            
+            //  itemDictionary = new Dictionary<string, UnlockableItem>();
+
             if (items == null || items.Count == 0)
             {
                 // Debug.Log("Unlockable items not found");
@@ -62,39 +58,14 @@ namespace Narrative
                 return;
             }
 
-            if (items!=null)
+            if (items != null)
             {
-                Debug.Log("list not null, size is "+items.Count);
+                Debug.Log("list not null, size is " + items.Count);
 
             }
-
-          /*  foreach (var item in items)
-            {
-                if (item == null)
-                    Debug.Log("item is null");
-                Debug.Log("item shoudlnt be null");
-                // item.isUnlocked = false;
-                // item.isUnlocked = false;
-
-              
-
-                if (string.IsNullOrEmpty(item.itemName)) return;
-                itemDictionary[item.itemName] = item;
-            }
-            isInitialized = true;
-            
-             if (itemDictionary == null)
-                        {
-                            Debug.Log("item dictionary is null, size is " + itemDictionary.Count);
-                        }
-            else if (itemDictionary != null)
-            {
-                Debug.Log("itemdictionary is not null, size is " + itemDictionary.Count);
-            }
-*/
-           
-
         }
+
+
 
         public bool SetUnlockItem(string itemName) //unlockingitem when ....
         {
@@ -148,17 +119,22 @@ namespace Narrative
 
         public void LockItem(string itemName)
         {
-            foreach (var item in items)
+            if (progressBar.currentProgress<progressBar.maxProgress)
             {
-                if (item == null) continue;
-                if (item.itemName==itemName)
+                foreach (var item in items)
                 {
-                    item.isUnlocked = false;
-                   // break;
-                    Debug.Log( item.itemName+"is locked");
+
+                    if (item == null) continue;
+                    if (item.itemName == itemName)
+                    {
+                        item.isUnlocked = false;
+                        // break;
+                        Debug.Log(item.itemName + "is locked");
+                    }
                 }
             }
-          if (!isInitialized)
+
+            if (!isInitialized)
           {
               InititializeItems();
           }

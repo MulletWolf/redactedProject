@@ -7,18 +7,12 @@ using UnityEngine;
 
 namespace InventorySystem
 {
-    public class Scenes
-    {
-        public const int Gallery = 6;
-        public const int Painting1 = 7;
-        public const int Painting2 = 8;
-        public const int Painting3 = 9;
-    }
+   
     public class ProgressManager : MonoBehaviour
     {
-        public static ProgressManager instance;
+        //public static ProgressManager instance;
         //use to check the progress onceconditiosn are met
-        public ProgressBar progressBar;
+        public ProgressBar2 progressBar;
 
         //public UnlockableItem unlockableIData;
         public UnlockManager unlockManager;
@@ -33,6 +27,7 @@ namespace InventorySystem
 
         // TaskTracker task = new TaskTracker(); 
         // int completedTasks = task.getTasks();
+        public static ProgressManager instance;
 
 
 
@@ -59,13 +54,15 @@ namespace InventorySystem
         }
         void Awake()
         {
-            /*if (instance == null)
-            {
-                instance = this;
-                DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
-            }
-            Destroy(gameObject);
-       */
+            // if (instance != null && instance != this)
+            // {
+            //     Destroy(gameObject);
+            // }
+            // else
+            // {
+            //     instance = this;
+            //     DontDestroyOnLoad(gameObject); // Make this object persistent
+            // }
         }
 
 
@@ -84,24 +81,47 @@ namespace InventorySystem
 
    */
 
-        public bool isProgressFull
+        public bool isProgressFull()
         {
-            get { return progressBar.currentProgress >= progressBar.maxProgress; }
+            return progressBar.currentProgress >= progressBar.maxProgress; 
         }
 
         public bool CheckProgressAndUnlock(string itemName)
         {
+            Debug.Log($"Attempting to check progress and unlock {itemName}");
             // unlockable.SetUnlockItem("Painting1") ;//automatically makes Painting1 unlocked
             string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
            // unlockManager.UnlockItem("Painting1_1"); 
 
-            if (string.IsNullOrEmpty(itemName)) return false;
+           if (string.IsNullOrEmpty(itemName))
+           {
+               Debug.LogError($"{itemData} is not a valid item name");
+               return false;
+           }
+
+           if (unlockManager == null)
+           {
+               Debug.LogError($"{unlockManager} is not assigned to progressManager");
+               return false;
+           }
             
-            if (!isProgressFull) return false;
+            if (!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
+            {
+                // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
+                // return false;
+                Debug.Log("Unlocking " + itemName);
+                unlockManager.UnlockItem(itemName); //unlock item
+
+                return true;
 
 
+            }
+                
+            return false;
+        
 
-            try
+
+           /* try
             {
                 if (!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
                 {
@@ -114,6 +134,7 @@ namespace InventorySystem
 
 
                 }
+                
                 return false;
             }
             catch (System.Exception e)
@@ -122,7 +143,7 @@ namespace InventorySystem
 
                 return false;
             }
-
+*/
            
 
 
@@ -222,19 +243,19 @@ namespace InventorySystem
 
 
 
-            if (!isProgressFull) return;
+            if (!isProgressFull()) return;
 
             bool cipherUnlocked = CheckProgressAndUnlock(cipherName);
 
             bool paintingUnlocked = CheckProgressAndUnlock(paintingName);
 
 
-            if (!string.IsNullOrEmpty(cipherName))
+            if (!string.IsNullOrEmpty(cipherName)&&cipherUnlocked)
             {
-                if (cipherUnlocked&&cipherName.Contains(cipherName)) //if cipher is clicked then additem to inventory
 
+                foreach (var item in unlockable.items)
                 {
-                    foreach (var item in unlockable.items)
+                    if (item.itemName.Equals(cipherName))
                     {
 
                         inventory.AddItem(item);
@@ -242,8 +263,9 @@ namespace InventorySystem
                         break;
 
                     }
-
                 }
+
+
             }
 
             if (!string.IsNullOrEmpty(paintingName))

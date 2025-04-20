@@ -44,9 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6dcaa327047bd45a3c59ccc6a5146c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxProgress: 0
-  currentProgress: 0
+  maxProgress: 3
+  currentProgress: 4
   fillAmount: 0
   fillmask: {fileID: 0}
   progressManager: {fileID: 7041528922349228220, guid: bbe4e22c3cb34d343bc0b75da563a18c, type: 3}
-  unlockManager: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
+  ClickItem: {fileID: 8696683271902146369, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
+  instance: {fileID: 5828521270338659636}

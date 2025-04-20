@@ -6,8 +6,9 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     //public List<InventoryItem> inventory=new List<InventoryItem>();
-    public List<UnlockableItem> items = new List<UnlockableItem>();
+    public List<string> invitems = new List<string>();
     public static Inventory instance;
+    public Unlockable unlockable;
 
     //public InventoryItem inventoryItem;
     // public ItemData itemdata;
@@ -22,8 +23,20 @@ public class Inventory : MonoBehaviour
              DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
         }
         Destroy(gameObject);
-       */
+        */
+        
+        if (instance != null )
+        {
+            Destroy(gameObject);
+            return;
+        }
+   
+            instance = this;
+            DontDestroyOnLoad(gameObject); // Make this object persistent
+        
+       
     }
+       
 
 
     public void AddItem(UnlockableItem newItem)
@@ -32,24 +45,31 @@ public class Inventory : MonoBehaviour
         
         //if lsit already ahs an item then add item
 
-        if (!items.Contains(newItem))
+        foreach (var item in unlockable.items)
         {
-            items.Add(newItem);
-            Debug.Log(newItem + "Added mto inventory yayy");
-           // Debug.Log($"Added {newItem}");
-        }
-        else
-        {
-            Debug.Log($"[Inventory] {newItem.itemName} already exists in inventory");
+            if (item == newItem)
+            {
+
+                if (!invitems.Contains(item.itemName))
+                {
+                    invitems.Add(item.itemName);
+                    Debug.Log(item.itemName + "Added mto inventory yayy");
+                    // Debug.Log($"Added {newItem}");
+                }
+                else
+                {
+                    Debug.Log($"[Inventory] {item.itemName} already exists in inventory");
+                }
+            }
         }
 
     }
 
-    public void Remove(UnlockableItem newItem)
+    public void Remove(string newItem)
     {
-        if (items.Contains(newItem))
+        if (invitems.Contains(newItem))
         {
-            items.Remove(newItem);
+            invitems.Remove(newItem);
             Debug.Log(newItem + "Removed from inventory");
         }
 

@@ -7,8 +7,11 @@ namespace Narrative
     public class UnlockManager : MonoBehaviour
     {
         public Unlockable unlockableData;
-        private ProgressBar progressBar;
+       
         public ProgressManager progressManager;
+        public ProgressBar2 progressBar;
+
+        public static  UnlockManager instance;
         //a  public UnlockManager instance;
 
 
@@ -22,8 +25,7 @@ namespace Narrative
                 return; // Exit if there's an issue with the progress manager.
             }
 
-           unlockableData.LockItem("Cipher1");
-            unlockableData.LockItem("Painting1_1");
+        
 
 
 
@@ -33,46 +35,66 @@ namespace Narrative
 
 
         }
+        void Awake()
+        {
+               unlockableData.LockItem("Cipher1");
+               unlockableData.LockItem("Cipher2");
+               unlockableData.LockItem("Painting1_1");
+            
+            if (instance != null && instance != this)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject); // Make this object persistent
+            }
+        }
+
 
 
         public void UnlockItem(string itemName)
         {
-
-            if (unlockableData.IsUnlocked(itemName))
+            if (progressBar.currentProgress>=progressBar.maxProgress)
             {
-                Debug.Log(itemName + " is already unlocked");
-                return;
-            }
 
-            unlockableData.SetUnlockItem(itemName);
-            Debug.Log(itemName + " is unlocked");
+                if (unlockableData.IsUnlocked(itemName))
+                {
+                    Debug.Log(itemName + " is already unlocked");
+                    return;
+                }
+
+                unlockableData.SetUnlockItem(itemName);
+                Debug.Log(itemName + " is unlocked");
 
 
 
 
 
-            //string progress = $"{progressManager.progressBar.currentProgress}/{progressManager.progressBar.maxProgress}";
-            /* if (isUnlock==false)
-             {
-                 if (!progressManager.isProgressFull)
+                //string progress = $"{progressManager.progressBar.currentProgress}/{progressManager.progressBar.maxProgress}";
+                /* if (isUnlock==false)
                  {
-                     Debug.Log($"[Unlock] {itemName} is locked (Progress: {progress})");
+                     if (!progressManager.isProgressFull)
+                     {
+                         Debug.Log($"[Unlock] {itemName} is locked (Progress: {progress})");
+                     }
                  }
-             }
 
-             if (progressManager.isProgressFull&&!isUnlock)///and not already unlocked then
-               {
+                 if (progressManager.isProgressFull&&!isUnlock)///and not already unlocked then
+                   {
 
-                   unlockableData.SetUnlockItem(itemName);//make itemname unlocked
-                  // Debug.Log("Unlocked item: " + itemName);
-                   Debug.Log($"[Unlock] {itemName} unlocked (Progress:  {progress})");
+                       unlockableData.SetUnlockItem(itemName);//make itemname unlocked
+                      // Debug.Log("Unlocked item: " + itemName);
+                       Debug.Log($"[Unlock] {itemName} unlocked (Progress:  {progress})");
 
-                   SaveUnlockData();
-               }
+                       SaveUnlockData();
+                   }
 
 
-             */
+                 */
 
+            }
         }
 
         public bool CheckUnlockStatus(string itemName) => unlockableData.IsUnlocked(itemName);
