@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 3089a84b49b9c1a49a148b0159cbfc7d
+guid: 3322007c006540a4ebeb9fc725955d2d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2357969547866903667
-    second: Front maid (Main) smile_0
+      213: -2250423879934191355
+    second: womenUpDown_0
+  - first:
+      213: -1976557766272334520
+    second: womenUpDown_1
+  - first:
+      213: 8899195845556736675
+    second: womenUpDown_2
+  - first:
+      213: -3456117225327511011
+    second: womenUpDown_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +61,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 1263, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front maid (Main) smile_0
+      name: womenUpDown_0
       rect:
         serializedVersion: 2
-        x: 186
-        y: 0
-        width: 106
-        height: 176
+        x: 283
+        y: 87
+        width: 81
+        height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8b6434703fc64fd0800000000000000
-      internalID: -2357969547866903667
+      spriteID: 509577a8763e4c0e0800000000000000
+      internalID: -2250423879934191355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womenUpDown_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 86
+        width: 76
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8454c4f0f2bd194e0800000000000000
+      internalID: -1976557766272334520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womenUpDown_2
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 87
+        width: 81
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a29a09b87b408b70800000000000000
+      internalID: 8899195845556736675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womenUpDown_3
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 88
+        width: 76
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1abe32e1b76900d0800000000000000
+      internalID: -3456117225327511011
       vertices: []
       indices: 
       edges: []
@@ -126,7 +201,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Front maid (Main) smile_0: -2357969547866903667
+      womenUpDown_0: -2250423879934191355
+      womenUpDown_1: -1976557766272334520
+      womenUpDown_2: 8899195845556736675
+      womenUpDown_3: -3456117225327511011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

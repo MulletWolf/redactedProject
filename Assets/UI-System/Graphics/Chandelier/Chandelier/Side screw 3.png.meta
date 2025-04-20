@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3089a84b49b9c1a49a148b0159cbfc7d
+guid: f6c58957c21de994ab4d36d334a30b4f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2357969547866903667
-    second: Front maid (Main) smile_0
+      213: -760170341768282782
+    second: Side screw 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Front maid (Main) smile_0
+      name: Side screw 3_0
       rect:
         serializedVersion: 2
-        x: 186
-        y: 0
-        width: 106
-        height: 176
+        x: 342
+        y: 131
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8b6434703fc64fd0800000000000000
-      internalID: -2357969547866903667
+      spriteID: 26d3d1a0a155375f0800000000000000
+      internalID: -760170341768282782
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Front maid (Main) smile_0: -2357969547866903667
+      Side screw 3_0: -760170341768282782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
