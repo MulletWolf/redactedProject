@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Glass piece #1_0: 7005581716436733921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

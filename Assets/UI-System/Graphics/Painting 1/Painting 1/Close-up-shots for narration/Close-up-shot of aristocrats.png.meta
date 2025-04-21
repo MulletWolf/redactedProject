@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Close-up-shot of aristocrats_0: 49862078188354003
+      Close-up-shot of aristocrats_1: -6772125891334444463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blackout triumvirate_0: 7626751349027299522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
