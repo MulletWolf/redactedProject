@@ -99,22 +99,41 @@ namespace Narrative
         public bool IsUnlocked(string itemName) //if isUnlocked==true then 
         {
             // return itemDictionary.TryGetValue(itemName, out UnlockableItem item) && item.isUnlocked;
-          
-
-
-                foreach (var item in items)
-                {
-                    if (item.name == itemName)
-                    {
-                        item.isUnlocked = true;
-                        return true;
-                    }
-                }
-
+            if (progressBar==null||levelManager==null||items==null)
+            {
+                Debug.LogError("Error refernces is empty");
                 return false;
 
-            
-           
+            }
+
+            bool inUnlockableScene = levelManager.currentSceneIndex != 8 || levelManager.currentSceneIndex != 9;
+            if (progressBar.currentProgress>=progressBar.maxProgress||inUnlockableScene)
+                {
+
+
+
+                    foreach (var item in items)
+                    {
+                        if (item.name == itemName)
+                        {
+                            if (!item.isUnlocked)
+                            {
+                                item.isUnlocked = true;
+                                Debug.Log("Unlocked item: " + item.name);
+                            }
+
+                            return item.isUnlocked;
+                        }
+                        
+                    }
+                    Debug.Log($"Item {itemName} not found in items");
+
+                    return false;
+
+                    //  return true;
+                }
+
+            return false;
         }
 
         public void LockItem(string itemName)

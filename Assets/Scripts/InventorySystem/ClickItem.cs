@@ -160,7 +160,8 @@ public class ClickItem : MonoBehaviour
       if (!unlockable.IsUnlocked("Painting1_1"))
       {
         Debug.Log($"wowwww Painting1_1 is unlockingggg");
-        unlockManager.UnlockItem("Painting1_1");
+        //unlockManager.UnlockItem("Painting1_1");
+        unlockable.SetUnlockItem(itemName);
       }
 
 

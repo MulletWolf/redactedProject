@@ -47,3 +47,4 @@ MonoBehaviour:
   unlockableData: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
   progressManager: {fileID: 7041528922349228220, guid: bbe4e22c3cb34d343bc0b75da563a18c, type: 3}
   progressBar: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
+  levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
