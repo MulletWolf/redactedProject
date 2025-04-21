@@ -25,8 +25,8 @@ public class ProgressBar : MonoBehaviour
   
    // public ItemData itemData;
    [Header("Progress Settings")]
-    [SerializeField] private int maxProgress;
-    [SerializeField] private  int currentProgress;
+    [SerializeField] private int maxProgress=3;
+    [SerializeField] private  int currentProgress=0;
     public float fillAmount;
     public Image fillmask;
     //public UnlockPainting unlocked;

@@ -107,7 +107,7 @@ namespace Narrative
             }
 
             bool inUnlockableScene = levelManager.currentSceneIndex != 8 || levelManager.currentSceneIndex != 9;
-            if (progressBar.currentProgress>=progressBar.maxProgress||inUnlockableScene)
+            if (progressBar.currentProgress==3||inUnlockableScene)
                 {
 
 

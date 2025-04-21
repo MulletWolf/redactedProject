@@ -184,7 +184,7 @@ public class ClickItem : MonoBehaviour
       if (unlockable.IsUnlocked(itemName))
       {
         Debug.Log($" {itemName} is unlocked =true");
-        UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
+    SceneManager.LoadScene(levelManager.scenes[7]);
       }
 
 
@@ -244,18 +244,20 @@ public class ClickItem : MonoBehaviour
           {
             Debug.Log("progressbar not full retrn null");
             return null;
-          };
+          }
+
+          ;
 
 
-          if (progressBar.currentProgress >= progressBar.maxProgress)
+          if (progressBar.currentProgress >= 3)
           {
             //
             //  bool unlocked = progressManager.CheckProgressAndUnlock(item.itemName);
-            if (itemlocked)
-            {
-
-              Debug.Log($"{itemName} is locked nooooooooooooooo");
-            }
+            // if (itemlocked)
+            // {
+            //
+            //   Debug.Log($"{itemName} is locked nooooooooooooooo");
+            // }
 
 
 
@@ -265,8 +267,8 @@ public class ClickItem : MonoBehaviour
 
 
 
-            Debug.Log($" {itemName} is locked =false");
-            bool unlock = unlockManager.CheckUnlockStatus(item.itemName);
+         //   Debug.Log($" {itemName} is locked =false");
+            bool unlock = unlockable.IsUnlocked(item.itemName);
             if (!unlock)
             {
               Debug.Log($"{itemName}Hasnt been unlocked yet");
@@ -274,7 +276,7 @@ public class ClickItem : MonoBehaviour
             }
             else
             {
-              Debug.Log($"{itemName}Has beeeeeeen unlocked yet");
+              Debug.Log($"{itemName}Has already been unlocked");
             }
 
 
@@ -300,48 +302,51 @@ public class ClickItem : MonoBehaviour
 
         if (item.itemName == "Painting1")
         {
-          bool cipherUnlocked = unlockable.IsUnlocked("Cipher1");
-          if (!cipherUnlocked)
+          if (progressBar.currentProgress<=3)
           {
-            Debug.Log($" Cannot unlock painting1, cipher1 is locked");
-          }
-  
-                Debug.Log($" cipher1 is unlocked now i can unlock Painting1");
-                bool paintingUnlockedk = unlockable.IsUnlocked("Painting1");
-                if (! paintingUnlockedk)
-                {
-                  Debug.Log($"{itemName}Unlocking {item.itemName} since Cipher  is unlocked");
-                  unlockManager.UnlockItem("Painting1");
-                  Debug.Log($"{itemName} unlocked now in clickitem  been unlocked yet");
-                  progressManager.HandleUnlockablesProgress("Cipher1","Painting1");
-                  //Debug.Log("Going to gallery unlock");
-                //  SceneManager.LoadScene(levelManager.scenes[6]);
-                }
-              
-
-                Debug.Log($" {itemName} has already been unlocked =true");
-                SceneManager.LoadScene(levelManager.scenes[6]);
-                return itemName;
-              }
-              // string paintingName = itemName;
-              //   progressManager.HandleUnlockablesProgress("Cipher1", itemName);
-              // unlockManager.UnlockItem("Painting1_1");
-
-
-             // return itemName;
-
-
+            bool cipherUnlocked = unlockable.IsUnlocked("Cipher1");
+            if (!cipherUnlocked)
+            {
+              Debug.Log($" Cannot unlock painting1, cipher1 is locked");
             }
-          
+
+            Debug.Log($" cipher1 is unlocked now i can unlock Painting1");
+            bool paintingUnlockedk = unlockable.IsUnlocked("Painting1");
+            if (!paintingUnlockedk)
+            {
+              Debug.Log($"{itemName}Unlocking {item.itemName} since Cipher  is unlocked");
+              unlockManager.UnlockItem("Painting1");
+              Debug.Log($"{itemName} unlocked now in clickitem  been unlocked yet");
+              progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");
+              //Debug.Log("Going to gallery unlock");
+              //  SceneManager.LoadScene(levelManager.scenes[6]);
+            }
+
+
+            Debug.Log($" {itemName} has already been unlocked =true");
+            SceneManager.LoadScene(levelManager.scenes[6]);
+            return itemName;
+          }
+          // string paintingName = itemName;
+          //   progressManager.HandleUnlockablesProgress("Cipher1", itemName);
+          // unlockManager.UnlockItem("Painting1_1");
+
+
+          // return itemName;
+
+
+        }
+      }
 
 
 
-        
-      
 
 
 
-     // return itemName;
+
+
+
+      // return itemName;
     }
 
     return itemName;

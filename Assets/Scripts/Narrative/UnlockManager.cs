@@ -59,7 +59,7 @@ namespace Narrative
 
         public void UnlockItem(string itemName)
         {
-            if (progressBar.currentProgress>=progressBar.maxProgress||levelManager.currentSceneIndex!=8||levelManager.currentSceneIndex!=9)
+            if (progressBar.currentProgress>=3||levelManager.currentSceneIndex!=8||levelManager.currentSceneIndex!=9)
             {
 
                 if (unlockableData.IsUnlocked(itemName))
