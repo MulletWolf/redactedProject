@@ -896,6 +896,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
+      propertyPath: instance
+      value: 
+      objectReference: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
+    - target: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
       propertyPath: currentProgress
       value: 0
       objectReference: {fileID: 0}
@@ -2454,7 +2458,7 @@ PrefabInstance:
     - target: {fileID: 8696683271902146369, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8901211925929523054, guid: 10af718a6faf69a47831b2ddf688a856, type: 3}
     - target: {fileID: 8696683271902146369, guid: ecc977a2859aa0b4f802f73e57afdf19, type: 3}
       propertyPath: unlockable
       value: 
@@ -2488,6 +2492,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
+      propertyPath: progressBar
+      value: 
+      objectReference: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
     - target: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
       propertyPath: unlockableData
       value: 

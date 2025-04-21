@@ -24,6 +24,14 @@ MonoBehaviour:
     m_path: Assets/UI-System/Scenes/InrtoSequence.unity
   - m_enabled: 1
     m_path: Assets/UI-System/Scenes/TitleScreen.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/UI_Overlay.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/TowerZoomIn.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/DoorShutScene.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/EyesOpenScene.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []

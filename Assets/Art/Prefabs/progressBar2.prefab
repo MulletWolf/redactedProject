@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentProgress: 0
   maxProgress: 3
+  instance: {fileID: 2412708590486797323}
