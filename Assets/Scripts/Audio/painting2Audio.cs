@@ -110,4 +110,8 @@ public class painting2Audio : MonoBehaviour
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 074408d944c46cb9b0b586fd063542ead3f2c53c
