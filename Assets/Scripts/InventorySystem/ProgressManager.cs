@@ -17,13 +17,12 @@ namespace InventorySystem
         //public UnlockableItem unlockableIData;
         public UnlockManager unlockManager;
         public LevelManager levelManager;
-        public UnlockableItem itemData;
-        public TaskTracker taskTracker;
+       
       //  public ClickItem clickItem;
         public Inventory inventory;
 
         public Unlockable unlockable;
-        public FailSystem failSystem;
+       // public FailSystem failSystem;
 
         // TaskTracker task = new TaskTracker(); 
         // int completedTasks = task.getTasks();
@@ -54,15 +53,15 @@ namespace InventorySystem
         }
         void Awake()
         {
-            // if (instance != null && instance != this)
-            // {
-            //     Destroy(gameObject);
-            // }
-            // else
-            // {
-            //     instance = this;
-            //     DontDestroyOnLoad(gameObject); // Make this object persistent
-            // }
+             if (instance != null )
+            {
+                 Destroy(gameObject);
+                 return;
+            }
+           
+                instance = this;
+                 DontDestroyOnLoad(gameObject); // Make this object persistent
+             
         }
 
 
@@ -93,7 +92,7 @@ namespace InventorySystem
             string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
            // unlockManager.UnlockItem("Painting1_1"); 
 
-           if (string.IsNullOrEmpty(itemName))
+         /*  if (string.IsNullOrEmpty(itemName))
            {
                Debug.LogError($"{itemData} is not a valid item name");
                return false;
@@ -104,47 +103,60 @@ namespace InventorySystem
                Debug.LogError($"{unlockManager} is not assigned to progressManager");
                return false;
            }
+            */
+         if (progressBar.currentProgress >= progressBar.maxProgress)
             
-            if (!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
-            {
-                // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
-                // return false;
-                Debug.Log("Unlocking " + itemName);
-                unlockManager.UnlockItem(itemName); //unlock item
+         
+         {
+              Debug.Log($"Progress requirement met - checking unlock status{progress}");
+              bool unlocked = unlockManager.CheckUnlockStatus(itemName);
+             
+             if (!unlocked) //if item hasnt been unlocked by unlockkmanager then
+             {
+                 // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
+                 // return false;
+                 Debug.Log("Unlocking " + itemName);
+                 unlockManager.UnlockItem(itemName); //unlock item
 
-                return true;
-
-
-            }
-                
-            return false;
-        
-
-
-           /* try
-            {
-                if (!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
-                {
-                    // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
-                    // return false;
-                    Debug.Log("Unlocking " + itemName);
-                    unlockManager.UnlockItem(itemName); //unlock item
-
-                    return true;
+                 return true;
 
 
-                }
-                
-                return false;
-            }
-            catch (System.Exception e)
-            {
-                Debug.Log($"Error checking {itemName}: {e.Message}");
+             }
 
-                return false;
-            }
+            
+         }else
+         {
+             Debug.Log("progressbar not fullllll in progressmanaher");
+         }
+
+
+
+         /* try
+          {
+              if (!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
+              {
+                  // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
+                  // return false;
+                  Debug.Log("Unlocking " + itemName);
+                  unlockManager.UnlockItem(itemName); //unlock item
+
+                  return true;
+
+
+              }
+
+              return false;
+          }
+          catch (System.Exception e)
+          {
+              Debug.Log($"Error checking {itemName}: {e.Message}");
+
+              return false;
+          }
+         
 */
-           
+         return false;
+
 
 
         }

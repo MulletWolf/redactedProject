@@ -24,6 +24,8 @@ public class Inventory : MonoBehaviour
         }
         Destroy(gameObject);
         */
+        invitems.Clear();
+        Debug.Log($"Inventory s: {invitems.Count} has been cleared");
         
         if (instance != null )
         {

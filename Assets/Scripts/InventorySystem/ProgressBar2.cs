@@ -24,7 +24,12 @@ namespace InventorySystem
            
         }
        void Awake()
-        {
+       {
+           currentProgress = 0;
+           if (currentProgress >= maxProgress||currentProgress!=0)
+           {
+               currentProgress = 0;
+           }
      
 
             if (instance != null && instance != this)

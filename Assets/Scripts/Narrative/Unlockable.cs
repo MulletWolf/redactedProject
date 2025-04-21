@@ -22,6 +22,7 @@ namespace Narrative
         private bool isInitialized = false;
         public static Unlockable instance;
         public ProgressBar2 progressBar;
+        public LevelManager levelManager;
 
        
    void Start()
@@ -58,11 +59,7 @@ namespace Narrative
                 return;
             }
 
-            if (items != null)
-            {
-                Debug.Log("list not null, size is " + items.Count);
-
-            }
+            
         }
 
 
@@ -101,20 +98,23 @@ namespace Narrative
 
         public bool IsUnlocked(string itemName) //if isUnlocked==true then 
         {
-           // return itemDictionary.TryGetValue(itemName, out UnlockableItem item) && item.isUnlocked;
+            // return itemDictionary.TryGetValue(itemName, out UnlockableItem item) && item.isUnlocked;
+          
 
 
-            foreach (var item in items)
-            {
-                if (item.name == itemName)
+                foreach (var item in items)
                 {
-                    item.isUnlocked=true;
-                    return true;
+                    if (item.name == itemName)
+                    {
+                        item.isUnlocked = true;
+                        return true;
+                    }
                 }
-            }
 
-            return false;
+                return false;
 
+            
+           
         }
 
         public void LockItem(string itemName)

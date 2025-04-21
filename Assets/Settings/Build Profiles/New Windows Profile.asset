@@ -30,7 +30,7 @@ MonoBehaviour:
   - Fall_Transition
   - BlackScreen
   - Main_Menu
-  - Hub_Scene
+  - MainRoom
   - Gallery
   - Banquet
   - Library

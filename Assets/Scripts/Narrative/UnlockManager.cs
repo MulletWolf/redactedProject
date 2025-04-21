@@ -10,6 +10,7 @@ namespace Narrative
        
         public ProgressManager progressManager;
         public ProgressBar2 progressBar;
+        public LevelManager levelManager;
 
         public static  UnlockManager instance;
         //a  public UnlockManager instance;
@@ -40,6 +41,8 @@ namespace Narrative
                unlockableData.LockItem("Cipher1");
                unlockableData.LockItem("Cipher2");
                unlockableData.LockItem("Painting1_1");
+               unlockableData.LockItem("Painting1");
+               unlockableData.LockItem("Painting2");
             
             if (instance != null && instance != this)
             {
@@ -56,7 +59,7 @@ namespace Narrative
 
         public void UnlockItem(string itemName)
         {
-            if (progressBar.currentProgress>=progressBar.maxProgress)
+            if (progressBar.currentProgress>=progressBar.maxProgress||levelManager.currentSceneIndex!=8||levelManager.currentSceneIndex!=9)
             {
 
                 if (unlockableData.IsUnlocked(itemName))

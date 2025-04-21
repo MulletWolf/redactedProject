@@ -139,6 +139,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
+    - target: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
       propertyPath: items.Array.size
       value: 9
       objectReference: {fileID: 0}
@@ -2496,6 +2500,10 @@ PrefabInstance:
       propertyPath: progressBar
       value: 
       objectReference: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
+    - target: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
     - target: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
       propertyPath: unlockableData
       value: 
