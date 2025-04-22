@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 using UnityEngine.UI;
 using UnityEngine.Audio;
+
 
 
 
@@ -24,7 +26,10 @@ public class painting2Audio : MonoBehaviour
 
 
     // insert name of scene here
-    private string targetSceneName = "";  
+
+   
+    private string targetSceneName = "Library";  
+
 
     void OnEnable()
     {
@@ -83,10 +88,17 @@ public class painting2Audio : MonoBehaviour
         SetupAudioSource(bookNoise3Source, bookNoise3, 0.08f, false); 
        
         // play !
+
         mainMusicSource.Play();
         bookNoise1Source.Play();
         bookNoise2Source.Play();
        bookNoise3Source.Play();
+
+        //mainMusicSource.Play();
+        //bookNoise1.Play();
+        //bookNoise2.Play();
+       //bookNoise3.Play();
+
     }
 
     
@@ -95,6 +107,7 @@ public class painting2Audio : MonoBehaviour
     ////
     ///
     //Input this segmengt of code in 
+
     private  void bookTask()
 	{ 
 		//Random rnd = new Random(); errors 
@@ -132,4 +145,9 @@ public class painting2Audio : MonoBehaviour
 
 
 
+
+
 }
+
+
+

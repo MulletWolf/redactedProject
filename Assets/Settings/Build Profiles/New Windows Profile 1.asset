@@ -32,6 +32,12 @@ MonoBehaviour:
     m_path: Assets/UI-System/Scenes/DoorShutScene.unity
   - m_enabled: 1
     m_path: Assets/UI-System/Scenes/EyesOpenScene.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/MainRoomScene.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/GalleryScene.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/TheBanquet.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []
