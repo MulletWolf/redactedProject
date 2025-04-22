@@ -254,35 +254,13 @@ public class ClickItem : MonoBehaviour
               Debug.Log($" {itemName} hasn't been unlocked yet: status {item.isUnlocked}");
               unlockManager.UnlockItem(itemName);
               Debug.Log($" {itemName} is unlocked : status {item.isUnlocked}");
-              SceneManager.LoadScene(levelManager.scenes[7]);
+              SceneManager.LoadScene("TheBanquet");
               return itemName;
             }
           }
         }
 
-        /*if (item.itemName=="Painting1_1")
-        {
-          //UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
-          // progressManager.UnlockSceneInGallery(itemName);
-          bool setUnlock = unlockable.IsUnlocked(itemName);
-
-          if (setUnlock==false)//item.isUnlcok=true
-          {
-            Debug.Log($" {itemName}hanstbeen unlocked yet: status  {item.isUnlocked}");
-            unlockManager.UnlockItem(itemName);
-            Debug.Log($" {itemName}is  unlocked : status  {item.isUnlocked}");
-
-            //Debug.Log($" {itemName} is unlocked =true");
-            SceneManager.LoadScene(levelManager.scenes[7]);
-          }
-          SceneManager.LoadScene(levelManager.scenes[7]);
-
-
-
-          return itemName;
-        }
-*/
-
+      
 
 
 
@@ -326,56 +304,6 @@ public class ClickItem : MonoBehaviour
 
 
 
-        /* if (progressBar.currentProgress >= progressBar.maxProgress)
-         {
-           //
-           //  bool unlocked = progressManager.CheckProgressAndUnlock(item.itemName);
-           // if (itemlocked)
-           // {
-           //
-           //   Debug.Log($"{itemName} is locked nooooooooooooooo");
-           // }
-
-
-
-
-
-           //unlockManager.UnlockItem(item.itemName);
-
-
-
-        //   Debug.Log($" {itemName} is locked =false");
-           bool unlock = unlockable.IsUnlocked(item.itemName);
-           if (!unlock)
-           {
-             Debug.Log($"{itemName}Hasnt been unlocked yet");
-             unlockManager.UnlockItem(item.itemName);
-           }
-           else
-           {
-             Debug.Log($"{itemName}Has already been unlocked");
-           }
-
-
-           Debug.Log($" {itemName} is unlocked ==true");
-           // progressManager.HandleUnlockablesProgress(itemName, null);
-           inventory.AddItem(item);
-           // Debug.Log($" {itemName} is added to inv=true");
-           Destroy(gameObject);
-
-
-
-
-
-         }
-
-         else
-         {
-           Debug.Log($" ProgressBar not full{progress}");
-         }
-       }
-
-*/
 
         if (item.itemName == "Painting1")
         {
@@ -397,7 +325,7 @@ public class ClickItem : MonoBehaviour
 
            // progressManager.HandleUnlockablesProgress(null,itemName);
           
-            SceneManager.LoadScene(levelManager.scenes[6]);
+            SceneManager.LoadScene("GalleryScene");
             return itemName;
 
           }
@@ -415,7 +343,7 @@ public class ClickItem : MonoBehaviour
       bool painting2Unlocked = unlockable.IsUnlocked("Painting2_1");
 
 
-      if (cipherUnlocked && paintingUnlocked &&  !levelManager.scenes.Equals("Gallery"))
+      if (cipherUnlocked && paintingUnlocked &&  !levelManager.scenes.Equals("GalleryScene"))
       {
         if (!painting2Unlocked)
         {
@@ -447,7 +375,7 @@ public class ClickItem : MonoBehaviour
           Debug.Log("Unlock conditions not met. Requires:");
           Debug.Log($"- Cipher1 unlocked: {cipherUnlocked},{unlockable.IsUnlocked("Cipher1")}");
           Debug.Log($"- Painting1 unlocked: {paintingUnlocked},{unlockable.IsUnlocked("Painting1")}");
-          Debug.Log($"- Current scene index 6: {levelManager.currentSceneIndex == 6}");
+          Debug.Log($"- Current scene index 6: {levelManager.currentSceneIndex == 7}");
         }
       
 
