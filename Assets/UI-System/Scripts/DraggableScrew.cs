@@ -3,42 +3,104 @@ using UnityEngine.EventSystems;
 
 public class DraggableScrew : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public RectTransform targetHole; // The hole it's supposed to go to
-    public GameObject topViewVersion; // The "correct" top view PNG to switch to
-    public float snapDistance = 50f; // distance in px or units
-
     private RectTransform rectTransform;
     private Canvas canvas;
+    private Vector3 originalPosition;
+
+    public string correctHoleTag;
+    public GameObject topViewScrewPrefab;
+    private GameObject overlappingHole;
+    private float overlapTimer = 0f;
+    private bool isOverWrongHole = false;
+    private bool timerRunning = false;
+
+    public float failDelay = 2.5f;
 
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
+        originalPosition = rectTransform.anchoredPosition;
     }
 
-    public void OnBeginDrag(PointerEventData eventData) { }
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        isOverWrongHole = false;
+        overlapTimer = 0f;
+        timerRunning = false;
+        Debug.Log("Begin Drag!");
+    }
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        Vector2 localPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            canvas.transform as RectTransform,
+            eventData.position,
+            canvas.worldCamera,
+            out localPoint
+        );
+        rectTransform.localPosition = localPoint;
+        Debug.Log("Dragging...");
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        float dist = Vector2.Distance(rectTransform.position, targetHole.position);
-        if (dist <= snapDistance)
+        if (overlappingHole != null && overlappingHole.CompareTag(correctHoleTag))
         {
-            // Snap to target
-            rectTransform.position = targetHole.position;
+            // Instantiate top-view screw at this position and destroy current
+            Instantiate(topViewScrewPrefab, rectTransform.position, Quaternion.identity, canvas.transform);
+            Destroy(gameObject);
 
-            // Show top view
-            topViewVersion.SetActive(true);
-            gameObject.SetActive(false);
+            ChandelierGameController controller = FindFirstObjectByType<ChandelierGameController>();
         }
         else
         {
-            // Start fail timer
-            GetComponent<ScrewFailHandler>().StartFailCountdown();
+            // Return to original position if dropped wrong
+            rectTransform.anchoredPosition = originalPosition;
+        }
+        Debug.Log("End Drag!");
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        overlappingHole = other.gameObject;
+        Debug.Log("Entered trigger with: " + other.gameObject.name);
+        Debug.Log("Trigger entered: " + overlappingHole.name);
+
+        if (!other.CompareTag(correctHoleTag))
+        {
+            Debug.Log("Wrong hole detected");
+            isOverWrongHole = true;
+            timerRunning = true;
+        }
+        else
+        {
+            Debug.Log("Correct hole detected");
+        }
+    }
+
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject == overlappingHole)
+        {
+            isOverWrongHole = false;
+            timerRunning = false;
+            overlapTimer = 0f;
+        }
+    }
+
+    void Update()
+    {
+        if (timerRunning && isOverWrongHole)
+        {
+            overlapTimer += Time.deltaTime;
+            if (overlapTimer >= failDelay)
+            {
+                GetComponent<ScrewFailHandler>().StartFailCountdown();
+                timerRunning = false;
+            }
         }
     }
 }

@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Inventory
   - gem
+  - ScrewHole_TR
+  - ScrewHole_TL
+  - ScrewHole_BR
+  - ScrewHole_BL
   layers:
   - Default
   - TransparentFX
