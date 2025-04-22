@@ -5,11 +5,12 @@ public class CircularPan : MonoBehaviour
     public Transform[] layers; // Assign your layered PNGs in inspector
     public float[] layerSpeeds; // Speed multipliers for parallax effect
     public float panSpeed = 5f;
-    
     private float totalWidth; // Width of your room panorama
+    public DialogueLine firstDialogueLine;
 
     void Start()
     {
+        StartCoroutine(FindObjectOfType<DialoguesManager>().StartDialogueDelayed(firstDialogueLine, 2f));
         // Calculate total width based on your background image
         totalWidth = 96;
     }

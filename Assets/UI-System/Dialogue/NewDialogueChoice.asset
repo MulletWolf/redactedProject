@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: NewDialogueChoice
   m_EditorClassIdentifier: 
   questionText: 
-  choices: []
+  choices:
+  - choiceText: 
+    nextLine: {fileID: 0}
+  - choiceText: 
+    nextLine: {fileID: 0}

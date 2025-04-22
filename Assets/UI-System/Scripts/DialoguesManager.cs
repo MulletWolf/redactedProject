@@ -16,6 +16,32 @@ public class DialoguesManager : MonoBehaviour {
     private Coroutine typingCoroutine;
     public string choiceText;
     public int nextLineIndex;
+    void Awake()
+    {
+        HideDialogueUIInstant(); // Hide at start of ANY scene
+    }
+
+    public void HideDialogueUIInstant()
+    {
+        StopAllCoroutines(); // cancel fades/typing
+        dialoguePanel.alpha = 0;
+        dialoguePanel.gameObject.SetActive(false);
+        choicePanel.SetActive(false);
+    }
+
+    public void ShowDialogueUIInstant()
+    {
+        dialoguePanel.alpha = 1;
+        dialoguePanel.gameObject.SetActive(true);
+    }
+
+    public IEnumerator StartDialogueDelayed(DialogueLine line, float delay = 2f)
+    {
+        HideDialogueUIInstant();
+        yield return new WaitForSeconds(delay);
+        StartDialogue(line); // will fade in automatically
+    }
+
     public void StartDialogue(DialogueLine line) {
         StopAllCoroutines();
         StartCoroutine(FadeInPanel());
@@ -79,4 +105,6 @@ public class DialoguesManager : MonoBehaviour {
     public void EndDialogue() {
         StartCoroutine(FadeOutPanel());
     }
+
+
 }

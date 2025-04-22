@@ -13,4 +13,19 @@ public class DialogueLine : ScriptableObject
     // Optional: speaker name, portrait, etc.
     public string speakerName;
     public Sprite speakerPortrait;
+    public DialogueLine nextLine;
+    public DialogueChoice nextChoice;
+
+    public void ContinueDialogue(DialogueLine nextLine)
+{
+    if (nextLine != null)
+    {
+        StartDialogue(nextLine);
+    }
+    else
+    {
+        EndDialogue();
+    }
+}
+
 }
