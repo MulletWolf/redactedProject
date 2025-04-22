@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: fd1a5d43b453de6479f0e145d22716ff
+guid: 6e8409e4434a67849a6951bbd8c09981
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2014110016751530511
-    second: Bottom left screw_0
-  - first:
-      213: -5827435448249728515
-    second: Bottom left screw_1
-  - first:
-      213: -222656213461446145
-    second: Bottom left screw_2
+      213: 5387752218224442810
+    second: Background maid 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bottom left screw_0
+      name: Background maid 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 13
-        height: 14
+        x: 1
+        y: 3
+        width: 84
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f02f707936e83fb10800000000000000
-      internalID: 2014110016751530511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bottom left screw_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 5
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df14e8bb55ac02fa0800000000000000
-      internalID: -5827435448249728515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bottom left screw_2
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 0
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff1d8918a57f8ecf0800000000000000
-      internalID: -222656213461446145
+      spriteID: abd3711d81425ca40800000000000000
+      internalID: 5387752218224442810
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -184,10 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bottom left screw_0: 2014110016751530511
-      Bottom left screw_1: -5827435448249728515
-      Bottom left screw_2: -222656213461446145
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

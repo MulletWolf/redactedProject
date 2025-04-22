@@ -78,10 +78,10 @@ public class painting2Audio : MonoBehaviour
         SetupAudioSource(bookNoise3Source, bookNoise3, 0.08f, false); 
        
         // play !
-        mainMusicSource.Play();
-        bookNoise1.Play();
-        bookNoise2.Play();
-       bookNoise3.Play();
+        //mainMusicSource.Play();
+        //bookNoise1.Play();
+        //bookNoise2.Play();
+       //bookNoise3.Play();
     }
 
     
@@ -90,22 +90,6 @@ public class painting2Audio : MonoBehaviour
     ////
     ///
     //Input this segmengt of code in 
-    private void bookTask()
-	{ 
-		Random rnd = new Random();
-        int num  = rnd.Next(1, 4);
-        
-        if (num == 1){
-            //play bookNoise1 
-        }
-        if (num == 2){
-            //you get the idea
-        }
-        if (num == 3){
-            //im so sleep deprived
-        }
-
-	} 
 
 
 
