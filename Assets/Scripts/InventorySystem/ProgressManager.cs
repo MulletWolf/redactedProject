@@ -3,6 +3,8 @@ using Narrative;
 using Scenes;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 //using UnityEngine.SceneManagement;
 
 namespace InventorySystem
@@ -92,70 +94,36 @@ namespace InventorySystem
             string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
            // unlockManager.UnlockItem("Painting1_1"); 
 
-         /*  if (string.IsNullOrEmpty(itemName))
-           {
-               Debug.LogError($"{itemData} is not a valid item name");
-               return false;
-           }
-
-           if (unlockManager == null)
-           {
-               Debug.LogError($"{unlockManager} is not assigned to progressManager");
-               return false;
-           }
-            */
+        
+         if (progressBar.currentProgress <progressBar.maxProgress) return false;
          if (progressBar.currentProgress >= progressBar.maxProgress)
             
          
          {
-              Debug.Log($"Progress requirement met - checking unlock status{progress}");
-              bool unlocked = unlockManager.CheckUnlockStatus(itemName);
+              Debug.Log($"Progress (progressbar full)requirement met - checking unlock status{progress}");
+              
+              
+              bool unlocked = unlockable.IsUnlocked(itemName);
              
              if (!unlocked) //if item hasnt been unlocked by unlockkmanager then
              {
-                 // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
-                 // return false;
-                 Debug.Log("Unlocking " + itemName);
+              
                  unlockManager.UnlockItem(itemName); //unlock item
 
                  return true;
 
 
              }
+             Debug.Log($"{itemName } was already unlcoked ");
 
-            
-         }else
-         {
-             Debug.Log("progressbar not fullllll in progressmanaher");
+             return false;
+
+
          }
-
-
-
-         /* try
-          {
-              if (!unlockManager.CheckUnlockStatus(itemName)) //if item hasnt been unlocked by unlockkmanager then
-              {
-                  // Debug.Log($"[Progress] {itemName} -has already been unlocked{progress}");
-                  // return false;
-                  Debug.Log("Unlocking " + itemName);
-                  unlockManager.UnlockItem(itemName); //unlock item
-
-                  return true;
-
-
-              }
-
-              return false;
-          }
-          catch (System.Exception e)
-          {
-              Debug.Log($"Error checking {itemName}: {e.Message}");
-
-              return false;
-          }
-         
-*/
+      
+         Debug.Log($"ProgressBr not full - checking unlock status{progress}");
          return false;
+         
 
 
 
@@ -189,15 +157,12 @@ namespace InventorySystem
            if (!paintingUnlock) return;
 
 
-           if (levelManager.currentSceneIndex != 6) return;
+           if (!levelManager.scenes.Equals("Gallery")) return;
            
-           if (painting=="Painting1_1"&&CheckProgressAndUnlock("Painting1_1"))
+           
+            if (paintingUnlock&&painting=="Painting2_1")
            {
-               UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[7]);
-           }
-           else if (paintingUnlock.Equals("Painting2_1")&&painting=="Painting2_1")
-           {
-               UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[8]);
+               UnityEngine.SceneManagement.SceneManager.LoadScene("Library");
            }
            
           /* Dictionary<string, int> NextPaintingScene = new Dictionary<string, int>//this basically laods scene once the painting is clicked 
@@ -255,19 +220,19 @@ namespace InventorySystem
 
 
 
-            if (!isProgressFull()) return;
+            if (progressBar.currentProgress<progressBar.maxProgress) return;
 
-            bool cipherUnlocked = CheckProgressAndUnlock(cipherName);
+           
 
-            bool paintingUnlocked = CheckProgressAndUnlock(paintingName);
+            
 
-
+                    bool cipherUnlocked = CheckProgressAndUnlock(cipherName);
             if (!string.IsNullOrEmpty(cipherName)&&cipherUnlocked)
             {
 
                 foreach (var item in unlockable.items)
                 {
-                    if (item.itemName.Equals(cipherName))
+                    if (item.itemName==cipherName)
                     {
 
                         inventory.AddItem(item);
@@ -275,22 +240,34 @@ namespace InventorySystem
                         break;
 
                     }
+                    Debug.Log($"{cipherName} is not equal to {item.itemName}");
                 }
 
 
             }
-
+                bool paintingUnlocked = CheckProgressAndUnlock(paintingName);
             if (!string.IsNullOrEmpty(paintingName))
             {
             
              if (paintingUnlocked&&paintingName=="Painting1") //if painting is clicked then go to gallery which is scene 6
             {
+                foreach (var item in unlockable.items)
+                {
+                    if (item.itemName == cipherName)
+                    {
 
-                //here is the options dialogue enter scene yes or no
+                        //here is the options dialogue enter scene yes or no
+                        Debug.Log($"{paintingName} is clicked goes to gallery.");
 
-                UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
-                Debug.Log($"{paintingName} is clicked goes to gallery.");
-                
+                        if (levelManager != null)
+                        {
+                            SceneManager.LoadScene(levelManager.scenes[6]);
+                        }
+                    }
+                }
+
+
+
             }
 
 

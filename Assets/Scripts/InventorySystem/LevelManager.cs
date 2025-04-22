@@ -27,6 +27,8 @@ namespace InventorySystem{
         //   public Slider progressBar;
         public int currentSceneIndex = 0; 
         public bool isdebug = true;
+
+        public string sceneName;
        // int currentSceneIndex = 0;
 
         private void Awake()
@@ -50,6 +52,11 @@ namespace InventorySystem{
              //   return;
             }
            
+        }
+
+        void Start()
+        {
+            sceneName = scenes[currentSceneIndex];
         }
 
         void Update()
@@ -108,7 +115,7 @@ namespace InventorySystem{
           // Debug.Log("Fade Out");
           yield return new WaitForSeconds(fadeDuration);
           // currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
-                string sceneName = scenes[currentSceneIndex];
+                 sceneName = scenes[currentSceneIndex];
                 Debug.Log("Loading next scene..."+sceneName);
 
                 AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);

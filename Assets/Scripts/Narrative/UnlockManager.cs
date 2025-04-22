@@ -38,12 +38,13 @@ namespace Narrative
         }
         void Awake()
         {
-               unlockableData.LockItem("Cipher1");
+              /* unlockableData.LockItem("Cipher1");
                unlockableData.LockItem("Cipher2");
                unlockableData.LockItem("Painting1_1");
+               unlockableData.LockItem("Painting2_1");
                unlockableData.LockItem("Painting1");
                unlockableData.LockItem("Painting2");
-            
+            */
             if (instance != null && instance != this)
             {
                 Destroy(gameObject);
@@ -59,45 +60,19 @@ namespace Narrative
 
         public void UnlockItem(string itemName)
         {
-            if (progressBar.currentProgress>=3||levelManager.currentSceneIndex!=8||levelManager.currentSceneIndex!=9)
-            {
+           
 
-                if (unlockableData.IsUnlocked(itemName))
+                if (unlockableData.IsUnlocked(itemName))//if item  (item.isUnlock =true) is unlocked
                 {
                     Debug.Log(itemName + " is already unlocked");
+                    Debug.Log($"{itemName }is unlocked(was locked), state: {  unlockableData.SetUnlockItem(itemName)} ");
                     return;
                 }
+              //  unlockableData.SetUnlockItem(itemName);
 
-                unlockableData.SetUnlockItem(itemName);
-                Debug.Log(itemName + " is unlocked");
+                unlockableData.SetUnlockItem(itemName);//make it unlocked
+                Debug.Log($"{itemName }is unlocked(was locked), state: {  unlockableData.SetUnlockItem(itemName)} ");
 
-
-
-
-
-                //string progress = $"{progressManager.progressBar.currentProgress}/{progressManager.progressBar.maxProgress}";
-                /* if (isUnlock==false)
-                 {
-                     if (!progressManager.isProgressFull)
-                     {
-                         Debug.Log($"[Unlock] {itemName} is locked (Progress: {progress})");
-                     }
-                 }
-
-                 if (progressManager.isProgressFull&&!isUnlock)///and not already unlocked then
-                   {
-
-                       unlockableData.SetUnlockItem(itemName);//make itemname unlocked
-                      // Debug.Log("Unlocked item: " + itemName);
-                       Debug.Log($"[Unlock] {itemName} unlocked (Progress:  {progress})");
-
-                       SaveUnlockData();
-                   }
-
-
-                 */
-
-            }
         }
 
         public bool CheckUnlockStatus(string itemName) => unlockableData.IsUnlocked(itemName);

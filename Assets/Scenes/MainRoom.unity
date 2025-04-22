@@ -138,22 +138,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
-      propertyPath: levelManager
-      value: 
-      objectReference: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
-    - target: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
-      propertyPath: items.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
-      propertyPath: 'items.Array.data[6]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 7a81ed0a2fb6b4948945add26ea674b7, type: 2}
-    - target: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
-      propertyPath: 'items.Array.data[7]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 7c90bcd731de2fc4f9cbd5c184b27422, type: 2}
     - target: {fileID: 6692321085792389563, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
       propertyPath: m_Name
       value: 'Unlockable '

@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 using InventorySystem;
 using NUnit.Framework.Constraints;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 namespace Narrative
@@ -27,36 +30,56 @@ namespace Narrative
        
    void Start()
         {
-         
-         
+           // LockAllItems();
+           DebugPrintAllItems();
+
         }
    
         void Awake()
         {
-             LockAllItems();
-            if (instance != null && instance != this)
+          
+            if (instance != null )
             {
                 Destroy(gameObject);
+                return;
             }
-            else
-            {
+          
                 instance = this;
                 DontDestroyOnLoad(gameObject); // Make this object persistent
-            }
+            //  LoadItemsFromUnlocakbleList();
+                       InititializeItems();
+                        ClearNull();
+                        //LockItem("Cipher1");
+                         LockAllItems();
         }
+        void LoadItemsFromUnlocakbleList()//automatic laoding
+        { 
+           items = new List<UnlockableItem>(Resources.LoadAll<UnlockableItem>("ScriptableObjects"));
+           Debug.Log($"Loaded {items.Count} unlockable items");
+           foreach (var item in items)
+           {
+               Debug.Log($"Loaded item: {item.name}");
+           }
+        }
+
 
 
         public void InititializeItems()
         {
             //  itemDictionary = new Dictionary<string, UnlockableItem>();
 
-            if (items == null || items.Count == 0)
+            if (items == null )
             {
                 // Debug.Log("Unlockable items not found");
                 //add each item ton
                 items = new List<UnlockableItem>();
                 Debug.Log("Created new list of items");
-                return;
+               // return;
+            }
+
+            if (items.Count==0)
+            {
+                LoadItemsFromUnlocakbleList();
             }
 
             
@@ -66,80 +89,92 @@ namespace Narrative
 
         public bool SetUnlockItem(string itemName) //unlockingitem when ....
         {
-            /*if (itemDictionary.TryGetValue(itemName, out var item) && !item.isUnlocked)
-            {
-                item.isUnlocked = true;
-
-                // Debug.Log($"{itemName} unlocked!");
-                return true;
-
-            }
-*/
+           
             foreach (var unlockeditem in items)
             {
-            
-
-            if (!unlockeditem.isUnlocked)
-            {
-                // =true;
-
-                // Debug.Log($"{itemName} unlocked!");
-                return unlockeditem.isUnlocked;
+                if (unlockeditem.name == itemName)
+                {
+                    if (!unlockeditem.isUnlocked) //if false make it true
+                    {
+                        unlockeditem.isUnlocked = true;
+                        return true;
+                    }
+                }
             }
-        }
-        // else{
-        //     Debug.Log($"{itemName} is already unlocked/doesnt exist!");
-        //     return false;
-        //     }
-
+            
         return false;
 
     }
-
-        public bool IsUnlocked(string itemName) //if isUnlocked==true then 
+        public void ClearNull()
         {
-            // return itemDictionary.TryGetValue(itemName, out UnlockableItem item) && item.isUnlocked;
+            items.RemoveAll(item => item == null);
+        }
+        void DebugPrintAllItems()
+        {
+            StringBuilder sb = new StringBuilder("ALL ITEMS:\n");
+            foreach (var item in items)
+            {
+                sb.AppendLine($"- '{item?.name ?? "NULL"}' (Type: {item?.GetType().Name})");
+            }
+            Debug.Log(sb.ToString());
+        }
+        public bool IsUnlocked(string itemName) //if isUnlocked==true then //checker not unlocker
+        {
+           
             if (progressBar==null||levelManager==null||items==null)
             {
                 Debug.LogError("Error refernces is empty");
                 return false;
 
             }
-
-            bool inUnlockableScene = levelManager.currentSceneIndex != 8 || levelManager.currentSceneIndex != 9;
-            if (progressBar.currentProgress==3||inUnlockableScene)
+            Debug.Log($"Searching for item {itemName} (among {items.Count} items)" );
+            bool itemExists = false;
+          
+                foreach (var item in items)
                 {
+                       //itemExists = false;
+                    if (item == null) continue;
+          
 
-
-
-                    foreach (var item in items)
-                    {
-                        if (item.name == itemName)
-                        {
-                            if (!item.isUnlocked)
-                            {
-                                item.isUnlocked = true;
-                                Debug.Log("Unlocked item: " + item.name);
-                            }
-
+                       if (item.itemName == itemName)
+                       {
+                           itemExists = true;
+                            Debug.Log($"item {itemName}, current unlock status:{item.isUnlocked}");
                             return item.isUnlocked;
-                        }
+
                         
-                    }
-                    Debug.Log($"Item {itemName} not found in items");
 
-                    return false;
+                        }
+                       //  Debug.Log($"item {itemName} not found");
+                           // return false;
+                    
 
-                    //  return true;
+                
                 }
 
-            return false;
+                if (!itemExists)
+                {
+                    Debug.Log($"item {itemName} not found");
+                    return false;
+                }
+               
+            
+        
+
+
+
+           
+
+                    //  return true;
+               /* }
+
+            return false;*/
+               return false;
         }
 
         public void LockItem(string itemName)
         {
-            if (progressBar.currentProgress<progressBar.maxProgress)
-            {
+            
                 foreach (var item in items)
                 {
 
@@ -150,30 +185,16 @@ namespace Narrative
                         // break;
                         Debug.Log(item.itemName + "is locked");
                     }
-                }
+                
             }
 
-            if (!isInitialized)
+           /* if (!isInitialized)
           {
               InititializeItems();
           }
-         /* if (itemDictionary == null)
-          {
-              Debug.Log("Item dictionary is null");
-          }
-            if(itemDictionary.TryGetValue(itemName, out var unlockeditem))
-            {
-                unlockeditem.isUnlocked = false;
-                Debug.Log("Locked item: " + unlockeditem.itemName);
-            }
-            else
-            {
-                Debug.Log($"item {itemName} not founf in item dictionary " );
-            }*/
-           
+*/
            
         }
-
 
         public void LockAllItems()
         {
