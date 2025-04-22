@@ -22,7 +22,7 @@ namespace Narrative
        /* public  Dictionary<string, UnlockableItem> itemDictionary;*/
        
       //  public UnlockableItem item;
-        private bool isInitialized = false;
+       // private bool isInitialized = false;
         public static Unlockable instance;
         public ProgressBar2 progressBar;
         public LevelManager levelManager;
