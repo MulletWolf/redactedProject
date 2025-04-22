@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Front maid frown_0: 1152132469117402897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

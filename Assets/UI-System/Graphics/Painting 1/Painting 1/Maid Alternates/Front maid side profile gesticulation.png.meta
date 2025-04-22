@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Front maid side profile gesticulation_0: -4852776481511429565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

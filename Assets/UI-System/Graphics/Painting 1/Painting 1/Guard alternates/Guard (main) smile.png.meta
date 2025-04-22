@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Guard (main) smile_0: 4999088618775259408
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

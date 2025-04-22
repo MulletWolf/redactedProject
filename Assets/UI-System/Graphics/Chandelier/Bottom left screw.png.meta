@@ -185,9 +185,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD:Assets/UI-System/Graphics/Chandelier/Bottom left screw.png.meta
       Bottom left screw_0: 2014110016751530511
       Bottom left screw_1: -5827435448249728515
       Bottom left screw_2: -222656213461446145
+=======
+      Hand Lineart_0: -2123993606952443935
+      Hand Lineart_1: 9115669954908933136
+      Hand Lineart_2: -7532867234966143604
+>>>>>>> d06f3e1128299567f0d959d12876cf47a26eb3a3:Assets/UI-System/Graphics/Hand-top-shot-20250414T190438Z-001/Hand-top-shot/Hand Lineart.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

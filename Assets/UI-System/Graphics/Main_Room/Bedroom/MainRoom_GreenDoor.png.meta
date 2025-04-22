@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MainRoom_GreenDoor_0: 2906656986446340838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
