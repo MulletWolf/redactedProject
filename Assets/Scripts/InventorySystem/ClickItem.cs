@@ -36,7 +36,7 @@ public class ClickItem : MonoBehaviour
 
   [SerializeField] private Inventory inventory;
  // [SerializeField] private ProgressBar progressBar;
- public PrgressManager progressBar;
+ [SerializeField] private  PrgressManager progressBar;
   [SerializeField] private Unlockable unlockable;
 
   [SerializeField] private ProgressManager progressManager;
@@ -223,7 +223,7 @@ public class ClickItem : MonoBehaviour
 
 */
 
-    if (itemName.Contains("cherry")) //replace with taskname
+    /*if (itemName.Contains("cherry")) //replace with taskname
     {
       //int curr = progressBar.CurrentProgress;
       string progress = $"{progressBar.completedTasks}/{progressBar.TotalTasks}";
@@ -237,7 +237,7 @@ public class ClickItem : MonoBehaviour
 
     }
 
-    
+    */
 
     foreach (var item in unlockable.items)
     {
@@ -300,6 +300,35 @@ public class ClickItem : MonoBehaviour
 
           // return itemName;
         }
+        if (item.itemName == "Painting2")
+        {
+          // bool cipherunlocked = progressManager.CheckProgressAndUnlock("Cipher1");
+          bool cipherunlocked = unlockable.IsUnlocked("Cipher2");
+          // bool paintingunlocked = progressManager.CheckProgressAndUnlock("Painting1");
+          Debug.Log($" {itemName}is  unlocked : status  {item.isUnlocked}");
+          if (!isPrgressComplete())
+          {
+            Debug.Log("progressbar not full retrn null");
+            return null;
+          }
+          if (cipherunlocked )
+          {
+            progressManager.CheckProgressAndUnlock(itemName);
+            Debug.Log($" {itemName}is  unlocked : status  {item.isUnlocked}");
+            Debug.Log($"Succesfully unlocked cipher1 for {item.itemName} ");
+            progressManager.UnlockSceneInGallery(itemName);
+
+            // progressManager.HandleUnlockablesProgress(null,itemName);
+          
+            SceneManager.LoadScene("GalleryScene");
+            return itemName;
+
+          }
+          Debug.LogWarning($"Failed to unlock cipher for {item.itemName} despite meeting requirements");
+
+          return null;
+
+        }
 
 
 
@@ -355,14 +384,14 @@ public class ClickItem : MonoBehaviour
           
           Debug.Log($" {itemName}is  unlocked : status  {item.isUnlocked}");
           Debug.Log($" Going to library");
-           SceneManager.LoadScene("Library");
+           SceneManager.LoadScene("LibrarysSene");
          
         }
         else
         {
           Debug.Log($" {itemName} already  been unlocked ");
           Debug.Log($" Going to library");
-          SceneManager.LoadScene("Library");
+          SceneManager.LoadScene("LibraryScene");
         }
       
          
