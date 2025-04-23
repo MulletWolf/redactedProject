@@ -14,7 +14,7 @@ namespace InventorySystem
     {
         //public static ProgressManager instance;
         //use to check the progress onceconditiosn are met
-        public ProgressBar2 progressBar;
+        public PrgressManager progressBar;
 
         //public UnlockableItem unlockableIData;
         public UnlockManager unlockManager;
@@ -84,19 +84,19 @@ namespace InventorySystem
 
         public bool isProgressFull()
         {
-            return progressBar.currentProgress >= progressBar.maxProgress; 
+            return progressBar.completedTasks >= progressBar.TotalTasks; 
         }
 
         public bool CheckProgressAndUnlock(string itemName)
         {
             Debug.Log($"Attempting to check progress and unlock {itemName}");
             // unlockable.SetUnlockItem("Painting1") ;//automatically makes Painting1 unlocked
-            string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
+            string progress = $"{progressBar.completedTasks}/{progressBar.TotalTasks}";
            // unlockManager.UnlockItem("Painting1_1"); 
 
         
-         if (progressBar.currentProgress <progressBar.maxProgress) return false;
-         if (progressBar.currentProgress >= progressBar.maxProgress)
+         if (progressBar.completedTasks <progressBar.TotalTasks) return false;
+         if (progressBar.completedTasks >= progressBar.TotalTasks)
             
          
          {
@@ -157,12 +157,12 @@ namespace InventorySystem
            if (!paintingUnlock) return;
 
 
-           if (!levelManager.scenes.Equals("Gallery")) return;
+           if (!levelManager.scenes.Equals("GalleryScene")) return;
            
            
             if (paintingUnlock&&painting=="Painting2_1")
            {
-               UnityEngine.SceneManagement.SceneManager.LoadScene("Library");
+              SceneManager.LoadScene("Library");
            }
            
           /* Dictionary<string, int> NextPaintingScene = new Dictionary<string, int>//this basically laods scene once the painting is clicked 
@@ -220,7 +220,7 @@ namespace InventorySystem
 
 
 
-            if (progressBar.currentProgress<progressBar.maxProgress) return;
+            if (progressBar.completedTasks<progressBar.TotalTasks) return;
 
            
 
@@ -261,8 +261,9 @@ namespace InventorySystem
 
                         if (levelManager != null)
                         {
-                            SceneManager.LoadScene(levelManager.scenes[6]);
+                            SceneManager.LoadScene("GalleryScene");
                         }
+                        
                     }
                 }
 

@@ -18,7 +18,7 @@ public class galleryAudio : MonoBehaviour
 
 
     // insert name of scene here
-    private string targetSceneName = "testScene";  
+    private string targetSceneName = "GalleryScene";  
 
     void OnEnable()
     {

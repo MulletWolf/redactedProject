@@ -148,17 +148,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6dcaa327047bd45a3c59ccc6a5146c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 245063444}
-  taskTracker: {fileID: 0}
-  maxProgress: 0
+  maxProgress: 3
   currentProgress: 0
   fillAmount: 0
   fillmask: {fileID: 0}
-  itemData: {fileID: 11400000, guid: 4d43806f0d2cb2d4ba64e79780169d84, type: 2}
-  newItem:
-    itemData: {fileID: 0}
-    image: {fileID: 0}
-    quantity: 0
+  progressManager: {fileID: 0}
+  clickItem: {fileID: 0}
+  instance: {fileID: 0}
 --- !u!4 &61925157
 Transform:
   m_ObjectHideFlags: 0
@@ -370,8 +366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9870a20d5acc2d94b9eb439ff5e42dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: []
-  itemData: {fileID: 11400000, guid: 4d43806f0d2cb2d4ba64e79780169d84, type: 2}
+  invitems: []
+  unlockable: {fileID: 0}
 --- !u!4 &245063445
 Transform:
   m_ObjectHideFlags: 0
@@ -680,6 +676,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d9d7264221e30454597eabe02a05c07a, type: 2}
   - {fileID: 11400000, guid: 62f90db892902c745b0b40402b4c0d68, type: 2}
   - {fileID: 11400000, guid: af32ce73a94d3dc4c93117ff015ed5e3, type: 2}
+  progressBar: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!1 &561729575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,11 +1274,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 963b87f265021984aaa14c894ae81f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: af32ce73a94d3dc4c93117ff015ed5e3, type: 2}
   inventory: {fileID: 245063444}
-  progressBar: {fileID: 61925156}
+  progressBar: {fileID: 0}
   unlockable: {fileID: 545816642}
-  wasClicked: 0
+  progressManager: {fileID: 0}
+  unlockManager: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!4 &1187295492
 Transform:
   m_ObjectHideFlags: 0

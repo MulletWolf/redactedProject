@@ -36,7 +36,7 @@ public class ClickItem : MonoBehaviour
 
   [SerializeField] private Inventory inventory;
  // [SerializeField] private ProgressBar progressBar;
- public ProgressBar2 progressBar;
+ public PrgressManager progressBar;
   [SerializeField] private Unlockable unlockable;
 
   [SerializeField] private ProgressManager progressManager;
@@ -72,7 +72,7 @@ public class ClickItem : MonoBehaviour
 
    if (progressBar == null)
    {
-     progressBar = FindAnyObjectByType<ProgressBar2>(FindObjectsInactive.Include);
+     progressBar = FindAnyObjectByType<PrgressManager>(FindObjectsInactive.Include);
      if (progressBar == null)
      {
        Debug.LogError("ProgressBar object not found in the scene!");
@@ -146,7 +146,7 @@ public class ClickItem : MonoBehaviour
 */
   private bool isPrgressComplete()
   {
-    return progressBar!=null&&progressBar.currentProgress >= progressBar.maxProgress;
+    return progressBar!=null&&progressBar.completedTasks >= progressBar.TotalTasks;
   }
 
 
@@ -226,7 +226,7 @@ public class ClickItem : MonoBehaviour
     if (itemName.Contains("cherry")) //replace with taskname
     {
       //int curr = progressBar.CurrentProgress;
-      string progress = $"{progressBar.currentProgress}/{progressBar.maxProgress}";
+      string progress = $"{progressBar.completedTasks}/{progressBar.TotalTasks}";
       Debug.Log($" {itemName} is clicked {progress}");
       progressBar.AddProgress();
 
@@ -269,7 +269,7 @@ public class ClickItem : MonoBehaviour
         {
          
           Debug.Log($" {itemName} is unlocked status: {item.isUnlocked}  (click item)");
-          string progress = $"progress {progressBar.currentProgress}/{progressBar.maxProgress}";
+          string progress = $"progress {progressBar.completedTasks}/{progressBar.TotalTasks}";
          
 
           if (!isPrgressComplete())

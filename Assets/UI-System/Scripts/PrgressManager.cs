@@ -9,6 +9,14 @@ public class PrgressManager : MonoBehaviour
     public int completedTasks = 0;
 
     private int totalTasks = 3;
+    //public int totalTasks { get; private set; } = 3;
+    public int TotalTasks 
+    {
+        get => totalTasks;
+        private set => totalTasks = value; // 'value' is the new value being set
+    }
+    
+    
 
     public void AddProgress()
     {
