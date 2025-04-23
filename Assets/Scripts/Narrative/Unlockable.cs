@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Narrative
 {
-    // [CreateAssetMenu(fileName = "NewUnlockable", menuName = "Unlockable/Create New Unlockable")]
+   
 
     public class Unlockable : MonoBehaviour
 
@@ -24,7 +24,7 @@ namespace Narrative
       //  public UnlockableItem item;
        // private bool isInitialized = false;
         public static Unlockable instance;
-        public ProgressBar2 progressBar;
+        public PrgressManager progressBar;
         public LevelManager levelManager;
 
        

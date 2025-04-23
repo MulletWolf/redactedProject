@@ -9,8 +9,6 @@ namespace Narrative
         public Unlockable unlockableData;
        
         public ProgressManager progressManager;
-        public ProgressBar2 progressBar;
-        public LevelManager levelManager;
 
         public static  UnlockManager instance;
         //a  public UnlockManager instance;

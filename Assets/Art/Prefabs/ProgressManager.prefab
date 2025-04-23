@@ -47,9 +47,5 @@ MonoBehaviour:
   progressBar: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
   unlockManager: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
   levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
-  itemData: {fileID: 11400000, guid: 4d43806f0d2cb2d4ba64e79780169d84, type: 2}
-  taskTracker: {fileID: 0}
   inventory: {fileID: 8901211925929523054, guid: 10af718a6faf69a47831b2ddf688a856, type: 3}
   unlockable: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}
-  failSystem: {fileID: 0}
-  instance: {fileID: 7041528922349228220}
