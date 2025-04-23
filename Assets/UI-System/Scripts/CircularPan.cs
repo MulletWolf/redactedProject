@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class CircularPan : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class CircularPan : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(FindObjectOfType<DialoguesManager>().StartDialogueDelayed(firstDialogueLine, 2f));
+        //StartCoroutine(FindFirstObjectByType<DialoguesManager>().StartDialogue(firstDialogueLine));
+
         // Calculate total width based on your background image
         totalWidth = 96;
     }
