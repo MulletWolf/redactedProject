@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      library_gameofchairs_03_0: 1721646830110554019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

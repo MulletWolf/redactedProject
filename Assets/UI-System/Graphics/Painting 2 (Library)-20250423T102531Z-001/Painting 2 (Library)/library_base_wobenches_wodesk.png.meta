@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      library_base_wobenches_wodesk_0: 1472347477009943031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

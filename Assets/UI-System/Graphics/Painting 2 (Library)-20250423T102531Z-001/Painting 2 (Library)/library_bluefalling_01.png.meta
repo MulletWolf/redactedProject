@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      library_bluefalling_01_0: -4883601993191963609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

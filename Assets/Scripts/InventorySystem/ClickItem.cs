@@ -87,12 +87,12 @@ public class ClickItem : MonoBehaviour
  }
  private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
  {
-   if (scene.name == "Banquet")
+ /*  if (scene.name == "Banquet")
    {
      Debug.Log("Entered Banquet scene!");
      // Call your Banquet-specific logic here.
      InitializeBanquet();
-   }
+   }*/
  }
 
  private void InitializeBanquet()

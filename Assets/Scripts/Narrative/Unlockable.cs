@@ -17,6 +17,7 @@ namespace Narrative
         // public UnlockableItem unlockableItem;
 
         public List<UnlockableItem> items;
+        //public List<GameObject> items;
 
         // public List<ItemData> ciphers;
        /* public  Dictionary<string, UnlockableItem> itemDictionary;*/
@@ -52,16 +53,16 @@ namespace Narrative
                         //LockItem("Cipher1");
                          LockAllItems();
         }
-        void LoadItemsFromUnlocakbleList()//automatic laoding
+        /*void LoadItemsFromUnlocakbleList()//automatic laoding
         { 
-           items = new List<UnlockableItem>(Resources.LoadAll<UnlockableItem>("ScriptableObjects"));
+        //   items = new List<UnlockableItem>(Resources.LoadAll<UnlockableItem>("ScriptableObjects"));
            Debug.Log($"Loaded {items.Count} unlockable items");
            foreach (var item in items)
            {
                Debug.Log($"Loaded item: {item.name}");
            }
         }
-
+*/
 
 
         public void InititializeItems()
@@ -72,6 +73,7 @@ namespace Narrative
             {
                 // Debug.Log("Unlockable items not found");
                 //add each item ton
+                
                 items = new List<UnlockableItem>();
                 Debug.Log("Created new list of items");
                // return;
@@ -79,7 +81,7 @@ namespace Narrative
 
             if (items.Count==0)
             {
-                LoadItemsFromUnlocakbleList();
+               // LoadItemsFromUnlocakbleList();
             }
 
             

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      library_theprioryoftheclementinetree_02_0: -5784175393256320917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

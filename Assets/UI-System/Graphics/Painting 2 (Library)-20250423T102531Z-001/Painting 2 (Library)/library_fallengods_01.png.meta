@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      library_fallengods_01_0: -7184979766894192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

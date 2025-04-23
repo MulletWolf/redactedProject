@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      library_forgottenqueens_03_0: -3171814961018588231
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
