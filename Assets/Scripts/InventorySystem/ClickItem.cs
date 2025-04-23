@@ -117,52 +117,13 @@ public class ClickItem : MonoBehaviour
   //          
   //       }
 
-  /*public string Mainroom(string itemName)
+  public void BanquetScene(string itemName)
   {
-      if (itemName.Contains("cherry"))//replace with taskname
-        {
-          Debug.Log($"Progress Bar currentprogress :  {progressBar.currentProgress}, ");
-          Debug.Log($"{itemName} is {gameObject.name}");
-          progressBar.AddProgress();
-          Debug.Log($"Progress Bar increased cherry {progressBar.currentProgress}, ");
-          Destroy(gameObject);
-          //return false;
-          return "cherry";
-
-        }
-
-        //wait time here
-        if (gameObject.name == "RightDoor")
-        {
-          Debug.Log("Dialogue door");
-        }
-
-        if (gameObject.name == "LeftDoor")
-        {
-          UnityEngine.SceneManagement.SceneManager.LoadScene(levelManager.scenes[6]);
-          if (!unlockable.IsUnlocked("Painting1_1"))
-          {
-            Debug.Log($"wowwww Painting1_1 is unlockingggg");
-             unlockManager.UnlockItem("Painting1_1");
-          }
-
-
-        }
-
-        if (gameObject.name == "RightBed" || gameObject.name == "LeftBed")
-        {
-          Debug.Log("Dialogue bed");
-        }
-
-        if (gameObject.name == "Mirror")
-        {
-          Debug.Log("Dialogue mirror");
-        }
-
-        return null;
-
+    if (itemName=="maid_blackedout")
+    {
+      Debug.Log("maid_blackedout clicked");
+    }
   }
-*/
   private bool isPrgressComplete()
   {
     return progressBar!=null&&progressBar.completedTasks >= progressBar.TotalTasks;
@@ -457,16 +418,8 @@ public class ClickItem : MonoBehaviour
   
 
   
-    public void OnMouseDown(){//when u click mouse what happens
-     // myRenderer.color=Color.red;
-    /* if (unlockable == null) unlockable =  FindFirstObjectByType<Unlockable>();
-     if (progressManager == null) progressManager =  FindFirstObjectByType<ProgressManager>();
-     if (levelManager == null) levelManager = FindFirstObjectByType<LevelManager>();*/
-     //string itemName = OnItemClick(unlockable.name);
-    
-
-    
-     // progressManager.HandleUnlockablesProgress("Cipher1", "Painting1");
+    public void OnMouseDown(){
+      BanquetScene(gameObject.name);
 
     
      OnItemClick(gameObject.name);
