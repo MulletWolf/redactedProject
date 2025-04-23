@@ -36,7 +36,7 @@ public class ClickItem : MonoBehaviour
 
   [SerializeField] private Inventory inventory;
  // [SerializeField] private ProgressBar progressBar;
- [SerializeField] private  PrgressManager progressBar;
+ [SerializeField] private  ProgressBar2 progressBar;
   [SerializeField] private Unlockable unlockable;
 
   [SerializeField] private ProgressManager progressManager;
@@ -72,7 +72,7 @@ public class ClickItem : MonoBehaviour
 
    if (progressBar == null)
    {
-     progressBar = FindAnyObjectByType<PrgressManager>(FindObjectsInactive.Include);
+     progressBar = FindAnyObjectByType<ProgressBar2>(FindObjectsInactive.Include);
      if (progressBar == null)
      {
        Debug.LogError("ProgressBar object not found in the scene!");
@@ -81,6 +81,25 @@ public class ClickItem : MonoBehaviour
 
 
  }
+ private void OnEnable()
+ {
+   SceneManager.sceneLoaded += OnSceneLoaded;
+ }
+ private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+ {
+   if (scene.name == "Banquet")
+   {
+     Debug.Log("Entered Banquet scene!");
+     // Call your Banquet-specific logic here.
+     InitializeBanquet();
+   }
+ }
+
+ private void InitializeBanquet()
+ {
+   // Your one-time setup code for Banquet.
+ }
+
 
  void Awake()
  {
@@ -238,6 +257,8 @@ public class ClickItem : MonoBehaviour
     }
 
     */
+   
+
 
     foreach (var item in unlockable.items)
     {

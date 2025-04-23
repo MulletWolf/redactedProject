@@ -28,7 +28,7 @@ public class painting2Audio : MonoBehaviour
     // insert name of scene here
 
    
-    private string targetSceneName = "Library";  
+    private string targetSceneName = "LibraryScene";  
 
 
     void OnEnable()

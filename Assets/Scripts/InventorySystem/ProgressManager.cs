@@ -14,7 +14,7 @@ namespace InventorySystem
     {
         //public static ProgressManager instance;
         //use to check the progress onceconditiosn are met
-        public PrgressManager progressBar;
+        public ProgressBar2 progressBar;
 
         //public UnlockableItem unlockableIData;
         public UnlockManager unlockManager;

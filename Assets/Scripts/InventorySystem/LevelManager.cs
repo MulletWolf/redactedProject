@@ -15,7 +15,7 @@ namespace InventorySystem{
         private static LevelManager instance;
         //public GameObject transitionsContainer;
         //  private SceneTransition[] transitions;
-        public string[] scenes = { "IntroSequence", "TitleScreen",  "UI_Overlay", "TowerZoomIn", "DoorShutScene", "EyesOpenScene", "MainRoomScene","GalleryScene" ,"TheBanquet","Library"};
+        public string[] scenes = { "IntroSequence", "TitleScreen",  "UI_Overlay", "TowerZoomIn", "DoorShutScene", "EyesOpenScene", "MainRoomScene","GalleryScene" ,"TheBanquet","LibraryScene"};
         public float fadeDuration = 1f;
        // public AsyncOperation asyncload;
        public CrossFade crossFade;
