@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
+using UnityEngine.UI;
+using UnityEngine.Audio;
+
+
+
+
+
 public class painting2Audio : MonoBehaviour
 {
     public AudioClip mainMusic;
@@ -19,7 +26,10 @@ public class painting2Audio : MonoBehaviour
 
 
     // insert name of scene here
-    private string targetSceneName = "testScene";  
+
+   
+    private string targetSceneName = "Library";  
+
 
     void OnEnable()
     {
@@ -78,10 +88,17 @@ public class painting2Audio : MonoBehaviour
         SetupAudioSource(bookNoise3Source, bookNoise3, 0.08f, false); 
        
         // play !
+
+        mainMusicSource.Play();
+        bookNoise1Source.Play();
+        bookNoise2Source.Play();
+       bookNoise3Source.Play();
+
         //mainMusicSource.Play();
         //bookNoise1.Play();
         //bookNoise2.Play();
        //bookNoise3.Play();
+
     }
 
     
@@ -91,7 +108,46 @@ public class painting2Audio : MonoBehaviour
     ///
     //Input this segmengt of code in 
 
+    private  void bookTask()
+	{ 
+		//Random rnd = new Random(); errors 
+        int num  = Random.Range(1, 4);
+
+        switch (num)
+        {
+            case 1:
+                //booknoise1
+                bookNoise1Source.Play();
+                break;
+            case 2:
+                bookNoise2Source.Play();
+                break;
+            case 3:
+                bookNoise3Source.Play();
+                break;
+            default:
+                Debug.Log("no other book noise accepted");
+                break;
+        }
+        
+      /*  if (num == 1){
+            //play bookNoise1 
+        }
+        if (num == 2){
+            //you get the idea
+        }
+        if (num == 3){
+            //im so sleep deprived
+        }
+*/
+	} 
+
+
+
 
 
 
 }
+
+
+

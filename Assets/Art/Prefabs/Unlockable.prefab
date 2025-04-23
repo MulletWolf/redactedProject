@@ -54,3 +54,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7a81ed0a2fb6b4948945add26ea674b7, type: 2}
   - {fileID: 11400000, guid: 7c90bcd731de2fc4f9cbd5c184b27422, type: 2}
   - {fileID: 11400000, guid: 519841e816edf0a4892dd7960b72768f, type: 2}
+  progressBar: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
+  levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}

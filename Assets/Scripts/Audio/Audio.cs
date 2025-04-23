@@ -14,7 +14,7 @@ public class towerRoomAudio : MonoBehaviour
 
 
     // insert name of scene here
-    private string targetSceneName = "testScene";  
+    private string targetSceneName = "MainRoomScene";  
 
     void OnEnable()
     {
@@ -40,6 +40,7 @@ public class towerRoomAudio : MonoBehaviour
             // Initialize and play audio
             PlayAllAudio();
         }
+        
     }
 
     // set up audioSources links to properties

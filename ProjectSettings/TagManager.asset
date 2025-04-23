@@ -6,10 +6,14 @@ TagManager:
   tags:
   - Inventory
   - gem
+<<<<<<< HEAD
+  - cherryy
+=======
   - ScrewHole_TR
   - ScrewHole_TL
   - ScrewHole_BR
   - ScrewHole_BL
+>>>>>>> 70e5f72ea30bf5f2fbec53e748b9b2abbeaa5a24
   layers:
   - Default
   - TransparentFX

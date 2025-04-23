@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8901211925929523054}
   m_Layer: 0
   m_Name: Inventory
-  m_TagString: Untagged
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9870a20d5acc2d94b9eb439ff5e42dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: []
-  itemData: {fileID: 11400000, guid: 4d43806f0d2cb2d4ba64e79780169d84, type: 2}
+  invitems: []
+  unlockable: {fileID: 4527957747738710308, guid: 32af0bf2cdd208a4fba63f7f4b3e60cb, type: 3}

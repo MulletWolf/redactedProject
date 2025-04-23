@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      curtain1Animation_0008_0: -1736164316564525227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

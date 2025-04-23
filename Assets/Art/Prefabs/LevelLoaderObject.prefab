@@ -44,12 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb7ce62bf0cf3b4b9fb978182ab15e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenes:
-  - ActualScene
-  - DoorFocus
-  - Fall_Transition
-  - Main_Menu
-  - Hub_Scene
   instance: {fileID: 0}
   currentSceneIndex: 0
+  transition: {fileID: 0}
   secondsDelay: 2
+  sceneProgressManager: {fileID: 0}

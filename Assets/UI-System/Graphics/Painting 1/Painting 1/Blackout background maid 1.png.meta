@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blackout background maid 1_0: 446688739806674939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

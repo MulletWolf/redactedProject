@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Curtain1Desaturated_0052_0: 6091911913546590136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

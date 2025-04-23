@@ -22,14 +22,18 @@ MonoBehaviour:
   m_Scenes:
   - m_enabled: 1
     m_path: Assets/Scenes/towerScene.unity
+  - m_enabled: 0
+    m_path: Assets/UI-System/Scenes/InrtoSequence.unity
   m_ScriptingDefines:
   - towerScene
   - DoorFocus
   - Fall_Transition
   - BlackScreen
   - Main_Menu
-  - Hub_Scene
+  - MainRoom
   - Gallery
+  - Banquet
+  - Library
   m_PlayerSettingsYaml:
     m_Settings:
     - line: '| PlayerSettings:'
