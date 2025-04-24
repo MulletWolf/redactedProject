@@ -16,6 +16,7 @@ public class ArchivesDialogueController : MonoBehaviour
     public GameObject objectivePanel;
     public TextMeshProUGUI objectiveText;
     public GameObject librarian;
+    public GameObject fadeImage;
 
 
     private void Awake()
@@ -71,6 +72,10 @@ public class ArchivesDialogueController : MonoBehaviour
         yield return DialogueLine("Player", "What?");
         yield return DialogueLine("Narrator", "I said that's enough for now!");
         
+        dialoguePanel.SetActive(false);
+        fadeImage.SetActive(true);
+        Object.FindAnyObjectByType<LibrarySceneEnd>().TriggerEndCredits();
+
     }
 
     private IEnumerator DialogueLine(string speaker, string line)
@@ -80,7 +85,7 @@ public class ArchivesDialogueController : MonoBehaviour
         foreach (char c in line)
         {
             dialogueText.text += c;
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(.015f);
         }
 
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));

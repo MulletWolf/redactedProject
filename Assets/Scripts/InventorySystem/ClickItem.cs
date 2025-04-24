@@ -222,7 +222,7 @@ public class ClickItem : MonoBehaviour
         if (item.itemName.ToLower() == itemName.ToLower()) // Make case-insensitive comparison
         {
           if (item.itemName == "Painting1_1")
-          {
+          {git
             bool setUnlock = unlockable.IsUnlocked(itemName);
 
             if (setUnlock == false)

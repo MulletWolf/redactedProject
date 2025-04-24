@@ -104,6 +104,11 @@ public class GallerySceneController : MonoBehaviour
         StartCoroutine(TransitionToBanquet());
     }
 
+    public void OnSecondMiniaturePaintingClicked()
+    {
+        StartCoroutine(TransitionToArchives());
+    }
+
     IEnumerator TransitionToBanquet()
     {
         // Fade to black
@@ -116,5 +121,19 @@ public class GallerySceneController : MonoBehaviour
         }
         
         SceneManager.LoadScene("TheBanquet");
+    }
+
+    IEnumerator TransitionToArchives()
+    {
+        // Fade to black
+        float elapsed = 0;
+        while (elapsed < fadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            fadeOverlay.color = new Color(0, 0, 0, Mathf.Lerp(0, 1, elapsed/fadeDuration));
+            yield return null;
+        }
+        
+        SceneManager.LoadScene("LibraryScene");
     }
 }

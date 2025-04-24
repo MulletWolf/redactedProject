@@ -27,7 +27,7 @@ public class ChandelierGameController : MonoBehaviour
         // 1. Update progress
         progressManager.AddProgress();
 
-        // 2. Fade out chandelier game (optional coroutine for smooth fade)
+        // 2. Fade out chandelier game 
         StartCoroutine(FadeOutChandelierPanel());
 
         // 3. Stop sparkles 2 seconds after fade
@@ -58,6 +58,11 @@ public class ChandelierGameController : MonoBehaviour
         }
     }
 
+    public void OnCloseChandelier()
+    {
+        chandelierGamePanel.SetActive(false);
+        maidSparkleFX.SetActive(true);
+    }
     void StopChandelierSparkles()
     {
         if (chandelierSparkles != null)
