@@ -45,14 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 11400000, guid: 4d43806f0d2cb2d4ba64e79780169d84, type: 2}
-  - {fileID: 11400000, guid: b8103f54ce08a364e91fed421430d623, type: 2}
-  - {fileID: 11400000, guid: 6682a5229e8d364439cce7bbf1fc66f7, type: 2}
   - {fileID: 11400000, guid: d9d7264221e30454597eabe02a05c07a, type: 2}
   - {fileID: 11400000, guid: 62f90db892902c745b0b40402b4c0d68, type: 2}
   - {fileID: 11400000, guid: af32ce73a94d3dc4c93117ff015ed5e3, type: 2}
   - {fileID: 11400000, guid: 7a81ed0a2fb6b4948945add26ea674b7, type: 2}
   - {fileID: 11400000, guid: 7c90bcd731de2fc4f9cbd5c184b27422, type: 2}
   - {fileID: 11400000, guid: 519841e816edf0a4892dd7960b72768f, type: 2}
-  progressBar: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
+  progressBar: {fileID: 8102560438411596994, guid: 0db89df4ef288164da8609290164fe3d, type: 3}
   levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
