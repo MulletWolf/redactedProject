@@ -117,13 +117,7 @@ public class ClickItem : MonoBehaviour
   //          
   //       }
 
-  public void BanquetScene(string itemName)
-  {
-    if (itemName=="maid_blackedout")
-    {
-      Debug.Log("maid_blackedout clicked");
-    }
-  }
+  
   private bool isPrgressComplete()
   {
     return progressBar!=null&&progressBar.completedTasks >= progressBar.TotalTasks;
@@ -140,7 +134,7 @@ public class ClickItem : MonoBehaviour
 
     if (gameObject.name == "LeftDoor")
     {
-      UnityEngine.SceneManagement.SceneManager.LoadScene("Gallery");
+      UnityEngine.SceneManagement.SceneManager.LoadScene("GalleryScene");
       // if (!unlockable.IsUnlocked("Painting1_1"))
       // {
       //   Debug.Log($"wowwww Painting1_1 is unlockingggg");
@@ -153,15 +147,15 @@ public class ClickItem : MonoBehaviour
 
     }
 
-    if (gameObject.name == "RightBed" || gameObject.name == "LeftBed")
-    {
-      Debug.Log("Dialogue bed");
-    }
-
-    if (gameObject.name == "Mirror")
-    {
-      Debug.Log("Dialogue mirror");
-    }
+    // if (gameObject.name == "RightBed" || gameObject.name == "LeftBed")
+    // {
+    //   Debug.Log("Dialogue bed");
+    // }
+    //
+    // if (gameObject.name == "Mirror")
+    // {
+    //   Debug.Log("Dialogue mirror");
+    // }
 
     /*if (itemName == "Painting1_1")
     {
@@ -419,7 +413,7 @@ public class ClickItem : MonoBehaviour
 
   
     public void OnMouseDown(){
-      BanquetScene(gameObject.name);
+      //BanquetScene(gameObject.name);
 
     
      OnItemClick(gameObject.name);
