@@ -7,9 +7,7 @@ namespace Narrative
     public class UnlockManager : MonoBehaviour
     {
         public Unlockable unlockableData;
-       
         public ProgressManager progressManager;
-
         public static  UnlockManager instance;
         //a  public UnlockManager instance;
 

@@ -15,6 +15,11 @@ public class PrgressManager : MonoBehaviour
         get => totalTasks;
         private set => totalTasks = value; // 'value' is the new value being set
     }
+
+    public bool isProgressFull()
+    {
+        return completedTasks==totalTasks;
+    }
     
     
 

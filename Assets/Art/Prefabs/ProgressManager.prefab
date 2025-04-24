@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d54f8192154601ad55382a2824005b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 2412708590486797323, guid: 4ae00deda3de8d74daf1dba00b837032, type: 3}
+  progressBar: {fileID: 8102560438411596994, guid: 0db89df4ef288164da8609290164fe3d, type: 3}
   unlockManager: {fileID: 5796114177566021917, guid: 7ae7a0c60c5ef764aa691e90f2662c3e, type: 3}
   levelManager: {fileID: 2981378913849935220, guid: a00c997e10253fc49926f4971022377d, type: 3}
   inventory: {fileID: 8901211925929523054, guid: 10af718a6faf69a47831b2ddf688a856, type: 3}

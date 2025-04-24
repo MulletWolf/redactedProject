@@ -14,7 +14,7 @@ namespace InventorySystem
     {
         //public static ProgressManager instance;
         //use to check the progress onceconditiosn are met
-        public ProgressBar2 progressBar;
+        public PrgressManager progressBar;
 
         //public UnlockableItem unlockableIData;
         public UnlockManager unlockManager;
@@ -165,21 +165,7 @@ namespace InventorySystem
               SceneManager.LoadScene("Library");
            }
            
-          /* Dictionary<string, int> NextPaintingScene = new Dictionary<string, int>//this basically laods scene once the painting is clicked 
-           {
-               { "Painting1_1", Scenes.Painting1 }, //string and its key
-               { "Painting2_1", Scenes.Painting2 },
-               { "Painting3_1", Scenes.Painting3 }
-
-
-           };
-           if (levelManager.currentSceneIndex != Scenes.Gallery) return; //checs if teh paints r unlocked inside the gallery
-           if (NextPaintingScene.TryGetValue(painting, out int sceneIndex))
-           {
-               UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);
-           }
-           
-*/
+        
             
   
 
@@ -189,7 +175,7 @@ namespace InventorySystem
 
 
 
-        public void UnlocksForCurrentScene()
+       /* public void UnlocksForCurrentScene()
         {
             switch (levelManager.currentSceneIndex)
             {
@@ -209,8 +195,8 @@ namespace InventorySystem
 
             }
         }
-
-        public void HandleUnlockablesProgress(string cipherName, string paintingName)
+*/
+        public void HandleUnlockablesProgress( string paintingName)
         {
             //i wnat it to handle the scenes that have teh cipgher and painting, anythings thats not the gallery
             //string clickedItemName = clickItem.OnItemClick(cipherName);
@@ -226,7 +212,7 @@ namespace InventorySystem
 
             
 
-                    bool cipherUnlocked = CheckProgressAndUnlock(cipherName);
+            /*        bool cipherUnlocked = CheckProgressAndUnlock(cipherName);
             if (!string.IsNullOrEmpty(cipherName)&&cipherUnlocked)
             {
 
@@ -235,16 +221,17 @@ namespace InventorySystem
                     if (item.itemName==cipherName)
                     {
 
-                        inventory.AddItem(item);
+                        inventory.AddItem(game);
                         Debug.Log($"{cipherName} is unlocked and added to inventory.");
                         break;
 
                     }
                     Debug.Log($"{cipherName} is not equal to {item.itemName}");
                 }
+                */
 
 
-            }
+            
                 bool paintingUnlocked = CheckProgressAndUnlock(paintingName);
             if (!string.IsNullOrEmpty(paintingName))
             {
@@ -253,8 +240,8 @@ namespace InventorySystem
             {
                 foreach (var item in unlockable.items)
                 {
-                    if (item.itemName == cipherName)
-                    {
+                   /* if (item.itemName == cipherName)
+                    {*/
 
                         //here is the options dialogue enter scene yes or no
                         Debug.Log($"{paintingName} is clicked goes to gallery.");
@@ -264,7 +251,7 @@ namespace InventorySystem
                             SceneManager.LoadScene("GalleryScene");
                         }
                         
-                    }
+                   // }
                 }
 
 

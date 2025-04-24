@@ -6,26 +6,13 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     //public List<InventoryItem> inventory=new List<InventoryItem>();
-    public List<string> invitems = new List<string>();
+    public List<Sprite> inventorySprites = new List<Sprite>();
     public static Inventory instance;
-    public Unlockable unlockable;
-
-    //public InventoryItem inventoryItem;
-    // public ItemData itemdata;
-    // public Unlockable unlockable;
-    //public UnlockableItem newItem;
 
        void Awake()
     {
-        /*if (instance == null)
-        {
-            instance = this;
-             DontDestroyOnLoad(gameObject); // For Inventory/ProgressManager
-        }
-        Destroy(gameObject);
-        */
-        invitems.Clear();
-        Debug.Log($"Inventory s: {invitems.Count} has been cleared");
+        
+        
         
         if (instance != null )
         {
@@ -35,44 +22,46 @@ public class Inventory : MonoBehaviour
    
             instance = this;
             DontDestroyOnLoad(gameObject); // Make this object persistent
+            //clear before game starts
+            inventorySprites.Clear();
+            Debug.Log($"Inventory s: {inventorySprites.Count} has been cleared");
         
        
     }
-       
 
 
-    public void AddItem(UnlockableItem newItem)
+
+    public void AddItem(GameObject newItem)
     {
         //focusing on
-        
+
         //if lsit already ahs an item then add item
-
-        foreach (var item in unlockable.items)
+        Sprite itemSprite = newItem.GetComponent<SpriteRenderer>().sprite;
+        if (itemSprite == null)
         {
-            if (item == newItem)
-            {
-
-                if (!invitems.Contains(item.itemName))
-                {
-                    invitems.Add(item.itemName);
-                    Debug.Log(item.itemName + "Added mto inventory yayy");
-                    // Debug.Log($"Added {newItem}");
-                }
-                else
-                {
-                    Debug.Log($"[Inventory] {item.itemName} already exists in inventory");
-                }
-            }
+            Debug.Log($"Item sprite is null");
         }
 
+
+        if (newItem.name.Contains("Cipher"))
+        {
+            inventorySprites.Add(itemSprite);
+            Debug.Log($"Item sprite of: {newItem.name} added to inventory");
+        }
+        else
+        {
+            Debug.Log($"{newItem.name} doesn't contain Cipher");
+
+        }
     }
 
-    public void Remove(string newItem)
+    public void Remove(GameObject newItem)
     {
-        if (invitems.Contains(newItem))
+        Sprite itemSprite = newItem.GetComponent<SpriteRenderer>().sprite;
+        if (inventorySprites.Contains(itemSprite))
         {
-            invitems.Remove(newItem);
-            Debug.Log(newItem + "Removed from inventory");
+            inventorySprites.Remove(itemSprite);
+            Debug.Log($"{newItem.name} has been removed from inventory");
         }
 
         
