@@ -38,6 +38,12 @@ MonoBehaviour:
     m_path: Assets/UI-System/Scenes/GalleryScene.unity
   - m_enabled: 1
     m_path: Assets/UI-System/Scenes/TheBanquet.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/GalleryScene2.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/LibraryScene.unity
+  - m_enabled: 1
+    m_path: Assets/UI-System/Scenes/EndCreditsScene.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []

@@ -5,6 +5,8 @@ using System.Collections;
 
 
 public class TypewriterEffect : MonoBehaviour {
+    public bool IsFinished { get; private set; }
+
     [SerializeField] private float typingSpeed = 0.05f; // Delay between characters
     private TMP_Text prologueText;
     private string fullText;
