@@ -16,7 +16,7 @@ public class CircularPan : MonoBehaviour
 
     void Update()
     {
-        float moveInput = Input.GetAxis("Horizontal");
+        float moveInput = -Input.GetAxis("Horizontal");
         
         if (moveInput != 0)
         {
