@@ -16,20 +16,34 @@ public class PrgressManager : MonoBehaviour
         private set => totalTasks = value; // 'value' is the new value being set
     }
 
+    void Awake()
+    {
+        //completedTasks = 0;
+    }
+
     public bool isProgressFull()
     {
-        return completedTasks==totalTasks;
+       // string progress=$"{completedTasks}/{totalTasks}";
+       // Debug.Log($"Progress is full{progress}");
+        return completedTasks>=totalTasks;
     }
     
     
 
     public void AddProgress()
     {
-        completedTasks = Mathf.Clamp(completedTasks + 1, 0, totalTasks);
-        UpdateProgressBar();
+        if (completedTasks<totalTasks) 
+        {
+            Debug.Log($"current progress increasing from : {completedTasks}/{totalTasks}");
+            completedTasks = Mathf.Clamp(completedTasks + 1, 0, totalTasks);
+            Debug.Log($" To: Adding progress increasing: {completedTasks}/{totalTasks}");
+        }
+       
+      //  UpdateProgressBar();
 
         if (completedTasks == totalTasks)
         {
+            Debug.Log($"progress full bitchess kawaiiii: {completedTasks}/{totalTasks}");
             TriggerFinalDialogue();
         }
     }

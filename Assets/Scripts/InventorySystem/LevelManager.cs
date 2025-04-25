@@ -13,45 +13,99 @@ namespace InventorySystem{
     public class LevelManager : MonoBehaviour
     {
         private static LevelManager instance;
-        //public GameObject transitionsContainer;
-        //  private SceneTransition[] transitions;
-        public string[] scenes = { "IntroSequence", "TitleScreen",  "UI_Overlay", "TowerZoomIn", "DoorShutScene", "EyesOpenScene", "MainRoomScene","GalleryScene" ,"TheBanquet","GalleryScene2","LibraryScene","EndCreditsScene"};
+        
+        private readonly string[] scenes = { "IntroSequence", "TitleScreen",  "UI_Overlay", "TowerZoomIn", "DoorShutScene", "EyesOpenScene", "MainRoomScene","GalleryScene" ,"TheBanquet","GalleryScene2","LibraryScene","EndCreditsScene"};
+      
         public float fadeDuration = 1f;
-       // public AsyncOperation asyncload;
+       
        public CrossFade crossFade;
 
-       // public SceneTransition transition;
-       
-     //   public Animator transition;
-
-        //   public Slider progressBar;
+      
         public int currentSceneIndex = 0; 
-        //public bool isdebug = true;
+     
 
         public string sceneName;
-       // int currentSceneIndex = 0;
+        public const int BanquetSceneIndex = 8;
+       public string Scenes 
+       {
+           get => scenes[currentSceneIndex];
+           set
+           {
+               if (currentSceneIndex >= 0 && currentSceneIndex < scenes.Length)
+                   scenes[currentSceneIndex] = value;
+           } // 'value' is the new value being set
+       }
 
         private void Awake()
         {
+            VerifyScenesInBuildSettings();
+          if (scenes.Length <= BanquetSceneIndex)
+            {
+                Debug.LogError($"Scenes array must have at least {BanquetSceneIndex + 1} elements!");
+            }
             if (instance == null)
             {
                 instance = this;
                 DontDestroyOnLoad(gameObject);
                 Debug.Log("SceneLoader Awake");
+                
+                if (scenes.Length <= BanquetSceneIndex)
+                {
+                    Debug.LogError($"Scenes array must have at least {BanquetSceneIndex + 1} elements!");
+                }
             }
-            else if (instance != this)
+            else  
             {
                 Destroy(gameObject);
-                Debug.Log("SceneLoader destroyed");
+               // Debug.Log("SceneLoader destroyed");
+            }
+            
+
+           
+        }
+        private void VerifyScenesInBuildSettings()
+        {
+            Debug.Log("Starting scene verification...");
+            Debug.Log($"Scenes in array: {scenes.Length}");
+            Debug.Log($"Scenes in build: {SceneManager.sceneCountInBuildSettings}");
+
+            // First log all scenes in build settings
+            for (int j = 0; j < SceneManager.sceneCountInBuildSettings; j++)
+            {
+                string scenePath = SceneUtility.GetScenePathByBuildIndex(j);
+                string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePath);
+                Debug.Log($"Build Index {j}: {sceneName} (Path: {scenePath})");
             }
 
-            if (scenes.Length == 0 || scenes==null)
+            // Now verify each expected scene
+            for (int i = 0; i < scenes.Length; i++)
             {
-                Debug.Log("Scene not found");
-                scenes = new string[10];
-             //   return;
+                bool sceneExists = false;
+                string expectedScene = scenes[i];
+        
+                for (int j = 0; j < SceneManager.sceneCountInBuildSettings; j++)
+                {
+                    string scenePath = SceneUtility.GetScenePathByBuildIndex(j);
+                    string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePath);
+            
+                    if (sceneName == expectedScene)
+                    {
+                        sceneExists = true;
+                        Debug.Log($"✓ Found scene: {expectedScene} at index {j}");
+                        break;
+                    }
+                }
+
+                if (!sceneExists)
+                {
+                    Debug.LogError($"✗ MISSING FROM BUILD: {expectedScene} (array index {i})");
+                }
             }
-           
+        }
+        public bool IsSceneInArray(string sceneName)
+        {
+            // Case-sensitive comparison
+            return System.Array.Exists(scenes, s => s == sceneName);
         }
 
         void Start()
@@ -61,15 +115,7 @@ namespace InventorySystem{
 
         void Update()
         {
-            // if (isdebug)
-            // {
-            //     //Debug.Log("debug mode activates,sceneloading cancelld");
-            //
-            // }
-            // else
-            // {
-
-
+         
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     // currentSceneIndex ++;
@@ -78,26 +124,29 @@ namespace InventorySystem{
                     StartCoroutine(LoadSceneAsync());
                 }
             
-            /* if (Input.GetKeyDown(KeyCode.Space))
-             {
-                 transition.SetTrigger("End");
-                 Debug.Log($"Loading: {scenes[currentSceneIndex]}"); // Verify in Console
-                 SceneManager.LoadScene(scenes[currentSceneIndex]);
-                 currentSceneIndex = (currentSceneIndex + 1) % scenes.Length;
-                 transition.SetTrigger("Start");
-             }*/
+           
 
+        }
 
+        public bool IsCurrentSceneBanquet()
+        {
+            if (scenes == null || scenes.Length <= BanquetSceneIndex)
+            {
+                Debug.LogError("Scenes array not properly initialized!");
+                return false;
+            }
 
-            /*  private IEnumerator Transition()
-               {
+            // Then get current scene safely
+            Scene currentScene = SceneManager.GetActiveScene();
+            if (!currentScene.IsValid())
+            {
+                Debug.LogError("Current scene is not valid!");
+                return false;
+            }
 
-                //   transition.SetTrigger("End");
-                   yield return StartCoroutine(LoadSceneAsync());
-                   //   crossFade.FaidIn();
-                 //   transition.SetTrigger("Start");
-               }*/
-
+            // Finally compare
+            return currentScene.name.Equals(scenes[BanquetSceneIndex], 
+                System.StringComparison.Ordinal);
         }
 
         private IEnumerator LoadSceneAsync()

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraScroll : MonoBehaviour
 {
@@ -8,9 +9,20 @@ public class CameraScroll : MonoBehaviour
 
     void Update()
     {
+        // Add to your main camera if using world-space clicks:
+       
         float move = Input.GetAxis("Horizontal") * panSpeed * Time.deltaTime;
         Vector3 newPosition = transform.position + new Vector3(move, 0f, 0f);
         newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
         transform.position = newPosition;
+    }
+
+  
+    void Start()
+    {
+        // Add this once (not in Update!)
+        if (Camera.main.GetComponent<Physics2DRaycaster>() == null)
+            Camera.main.gameObject.AddComponent<Physics2DRaycaster>();
+        
     }
 }

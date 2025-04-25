@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace InventorySystem
@@ -16,66 +17,151 @@ namespace InventorySystem
         public Sprite colouredSprite;
 
         public GameObject cipherGameObject;
+        public LevelManager levelManager;
+
+        public bool isMaidClicked = false;
+        public bool debugLogs = true;
+      //  string currentSceneName = SceneManager.GetActiveScene().name;
+        
+        //public const string BanquetScene = "TheBanquet";
        /* public void OnPointerClick(PointerEventData eventData)
         {
             ItemClicked(gameObject.name);
          
         }*/
+       
 
         public void   OnPointerClick(PointerEventData eventData)
         {
-            HandleMaidClick(gameObject.name);
-            HandleBanquetClick(gameObject.name);
+            
+            
+            //HandleBanquetClick();
+            if (gameObject.name=="maid_blackedout")
+            {
+                 HandleMaidClick();
+            }
+           
+            
            
         }
 
-        public void HandleMaidClick(string itemName)
+        void Update()
         {
-            if ( colouredSprite == null  && itemName == "")
+            if (Input.GetMouseButtonDown(0))
+            {
+                HandleBanquetClick();
+            }
+        }
+
+        public void HandleMaidClick()
+        {
+            /*if ( colouredSprite == null  && itemName == "")
             {
                 Debug.LogWarning("Reference missing in cclickItemUI script");
                 return;
-            }
+            }*/
 
-            if (itemName == "maid_blackedout")
-            {
+            if (isMaidClicked == null) return;
+
+       
 
                 Debug.Log("maid_blackedout clicked");
                 // blackImage = colouredImage;
-                if (blackImage.sprite != colouredSprite)
-                {
-                    Debug.Log("Doenst have cooured sprite");
-                    blackImage.sprite = colouredSprite;
-                    progressBar.AddProgress();
-
-
-                }
-            }
-        }
-
-        public void HandleBanquetClick(string itemName)
-        {
-           
-
-            if (itemName == "banquet_brunette_aritocrat")
-            {
-                if (!progressBar.isProgressFull())
-                {
-                    string progress=$"{progressBar.completedTasks}/{progressBar.TotalTasks}";
-                    Debug.Log($"ProgressBar not full: {progress}");
-                    return;
-                }
-                if (cipherGameObject!=null&&cipherGameObject.name.Contains("Cipher"))
-                {
-                    inventory.AddItem(cipherGameObject);
-                }
-                else
-                {
-                    Debug.Log($" No valid Cipher.name as a gameobject");
-                }
                 
-            }
-            Debug.Log($"Clicked item {itemName} but progressBar isnt full");
+                    if (blackImage.sprite != colouredSprite)
+                    {
+                        
+                        isMaidClicked = true;
+                        Debug.Log("Changing to coloured version");
+                        blackImage.sprite = colouredSprite;
+                        progressBar.AddProgress();
+                        isMaidClicked = true;
+
+
+                    }
+                    //isMaidClicked = false;
+                    
+                
+            
         }
+
+        private void HandleBanquetClick()
+        {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                if (debugLogs) Debug.Log("Clicked on UI - ignoring world click");
+                return;
+            }
+           
+            Vector2 mousePos;
+            mousePos=Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit=Physics2D.Raycast(mousePos,Vector2.zero);
+
+            if (hit.collider == null)
+            {
+                Debug.Log($"No collider clicked");
+                return;
+            }
+            
+
+                string clickedItem = hit.collider.name;
+                if (debugLogs) Debug.Log($"Clicked: {clickedItem}");
+                if (clickedItem == "banquet_brunette_aritocrat")
+                {
+                    if (!levelManager.IsCurrentSceneBanquet())
+                    {
+                        if (debugLogs) Debug.Log("Not in banquet scene");
+                        return;
+                    }
+
+                    Debug.Log($"{gameObject.name} is clicked ,lets start");
+                    ProcessBanquetClick();
+                }
+
+        }
+        public void ProcessBanquetClick(){
+            if (levelManager == null)
+            {
+                Debug.LogError("LevelManager reference missing!");
+                return;
+            }
+            if (levelManager.IsCurrentSceneBanquet())
+            {
+                Debug.Log("BANQUET");
+            }
+            else
+            {
+                Debug.Log(" NOT BANQUET");
+            }
+            if (!levelManager.IsCurrentSceneBanquet())
+            {
+                if (debugLogs) Debug.Log("Not in banquet scene");
+                return;
+            }
+            Debug.Log($"{gameObject.name} is clicked ,lets start");
+            if (!progressBar.isProgressFull())
+            {
+                string progress=$"{progressBar.completedTasks}/{progressBar.TotalTasks}";
+                Debug.Log($"ProgressBar not full: {progress}");
+                return;
+            }
+            if (cipherGameObject!=null&&cipherGameObject.name.Contains("Cipher"))
+            {
+                inventory.AddItem(cipherGameObject);
+            }
+            else
+            {
+                Debug.Log($" No valid Cipher.name as a gameobject");
+            }
+                        
+        }
+  
+            
+            
+       
+            
+          
+
+           
     }
 }

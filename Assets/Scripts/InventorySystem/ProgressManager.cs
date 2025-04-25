@@ -157,7 +157,7 @@ namespace InventorySystem
            if (!paintingUnlock) return;
 
 
-           if (!levelManager.scenes.Equals("GalleryScene")) return;
+           if (!levelManager.Scenes.Equals("GalleryScene")) return;
            
            
             if (paintingUnlock&&painting=="Painting2_1")
@@ -249,6 +249,7 @@ namespace InventorySystem
                         if (levelManager != null)
                         {
                             SceneManager.LoadScene("GalleryScene");
+                            SceneManager.LoadScene("TheBanquet");
                         }
                         
                    // }

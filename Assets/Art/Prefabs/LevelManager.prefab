@@ -44,18 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df8b39ad35b4740b424a667bdbc99a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenes:
-  - towerScene
-  - DoorFocus
-  - Fall_Transition
-  - BlackScreen
-  - Main_Menu
-  - MainRoom
-  - Gallery
-  - Banquet
-  - Library
-  - Courtroom
+  scenes: []
   fadeDuration: 2
   crossFade: {fileID: 0}
   currentSceneIndex: 0
-  isdebug: 1
+  sceneName: 

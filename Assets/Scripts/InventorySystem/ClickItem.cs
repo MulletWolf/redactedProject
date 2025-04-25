@@ -143,7 +143,7 @@ public class ClickItem : MonoBehaviour
               Debug.Log($" {itemName} hasn't been unlocked yet: status {item.isUnlocked}");
               unlockManager.UnlockItem(itemName);
               Debug.Log($" {itemName} is unlocked : status {item.isUnlocked}");
-              SceneManager.LoadScene(levelManager.scenes[8]);
+              SceneManager.LoadScene(levelManager.Scenes[8]);
               return itemName;
             }
           }
@@ -225,7 +225,7 @@ public class ClickItem : MonoBehaviour
           bool painting2Unlocked = unlockable.IsUnlocked("Painting2_1");
 
 
-          if (cipherUnlocked && paintingUnlocked && !levelManager.scenes.Equals("GalleryScene"))
+          if (cipherUnlocked && paintingUnlocked && !levelManager.Scenes.Equals("GalleryScene"))
           {
             if (!painting2Unlocked)
             {

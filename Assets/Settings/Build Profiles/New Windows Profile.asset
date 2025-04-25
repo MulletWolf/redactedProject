@@ -33,7 +33,6 @@ MonoBehaviour:
   - MainRoom
   - Gallery
   - Banquet
-  - Library
   m_PlayerSettingsYaml:
     m_Settings:
     - line: '| PlayerSettings:'
