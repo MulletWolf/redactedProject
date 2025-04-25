@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4167f782d315e9f448ad623b702cc5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMusic: {fileID: 8300000, guid: 5588d245670d2b346a16bc7189a7d7ff, type: 3}
+  mainMusic: {fileID: 8300000, guid: 668fba873776cfb478de9719c82f949e, type: 3}
   wind: {fileID: 8300000, guid: e6989a8cd1564f640b950005d6b3a1fa, type: 3}
 --- !u!4 &366945956
 Transform:
@@ -176,8 +176,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f4367dfe237b55f4994a8422b79fca6e, type: 3}
-  m_Resource: {fileID: 8300000, guid: f4367dfe237b55f4994a8422b79fca6e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 668fba873776cfb478de9719c82f949e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 668fba873776cfb478de9719c82f949e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
