@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - Inventory
+  - gem
+  - cherryy
+  - ScrewHole_TR
+  - ScrewHole_TL
+  - ScrewHole_BR
+  - ScrewHole_BL
   layers:
   - Default
   - TransparentFX
@@ -41,6 +47,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 925898913
+    locked: 0
+  - name: Foreground
+    uniqueID: 2985929371
+    locked: 0
+  - name: Interactive
+    uniqueID: 1993497575
+    locked: 0
+  - name: UI
+    uniqueID: 1910660161
     locked: 0
   m_RenderingLayers:
   - Default

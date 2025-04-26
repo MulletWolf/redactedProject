@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Narrative;
 using UnityEngine.UI;
 //using Microsoft.Unity.VisualStudio.Editor;
 [Serializable]
 public class InventoryItem 
 {
    [Header ("UI")]
-   public ItemData itemData;
+   public UnlockableItem itemData;
    public Image image;
    public int quantity;
 
-   public InventoryItem(ItemData item){
-    this.itemData=item;
+   public InventoryItem(UnlockableItem item){
+    itemData=item;
     IncreaseQuantity();
     //inventory inventory =ne inventory(); it takes in itemdata 
 
